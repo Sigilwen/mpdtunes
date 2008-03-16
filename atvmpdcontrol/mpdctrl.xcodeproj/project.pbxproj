@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01230D300C25288E00A52041 /* MADGLLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 01230D2F0C25288E00A52041 /* MADGLLayer.m */; };
+		01230DFA0C252F7300A52041 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01230DF90C252F7300A52041 /* OpenGL.framework */; };
+		012539DC0C259E6700889AC2 /* MADGLControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 012539DB0C259E6700889AC2 /* MADGLControl.m */; };
+		0127FD670C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0127FD660C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.m */; };
+		0127FE890C3D68F500A8A7F3 /* MADFileItemLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0127FE880C3D68F500A8A7F3 /* MADFileItemLayer.m */; };
+		01A171E50C2266A60090C36F /* MPDSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A171E40C2266A60090C36F /* MPDSettingsController.m */; };
+		01A172000C226F960090C36F /* MPDDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A171FF0C226F960090C36F /* MPDDevice.m */; };
+		01DA7D3F0C26659800932C4D /* MPDIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 01DA7D3E0C26659800932C4D /* MPDIcon.png */; };
+		01DA7D560C2665FE00932C4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01DA7D520C2665FE00932C4D /* InfoPlist.strings */; };
+		01DA7D570C2665FE00932C4D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01DA7D540C2665FE00932C4D /* Localizable.strings */; };
+		38FAF9B40C0129D500853CFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089C1672FE841209C02AAC07 /* Foundation.framework */; };
+		38FAFC320C012A7800853CFE /* mpdctrlAppliance.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FAFC2F0C012A7800853CFE /* mpdctrlAppliance.m */; };
+		38FAFC330C012A7800853CFE /* mpdctrlApplianceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FAFC310C012A7800853CFE /* mpdctrlApplianceController.m */; };
+		4E066E420C1228EE00DC29BF /* MPDPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */; };
+		4E066EE20C12309500DC29BF /* MPDServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E066EE10C12309500DC29BF /* MPDServerController.m */; };
+		4E066F710C1236FC00DC29BF /* MPDListControlServerSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E066F700C1236FC00DC29BF /* MPDListControlServerSource.m */; };
+		4E066FD40C123ACF00DC29BF /* MPDAddressEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E066FD20C123ACE00DC29BF /* MPDAddressEntryController.m */; };
+		4E0670AA0C1241B200DC29BF /* MADAdvancedListControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0670A90C1241B200DC29BF /* MADAdvancedListControl.m */; };
+		4E0A841E0C198C9C00BF8797 /* debug_printf.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A840B0C198C9C00BF8797 /* debug_printf.c */; };
+		4E0A841F0C198C9C00BF8797 /* libmpd-database.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A840D0C198C9C00BF8797 /* libmpd-database.c */; };
+		4E0A84200C198C9C00BF8797 /* libmpd-player.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A84100C198C9C00BF8797 /* libmpd-player.c */; };
+		4E0A84210C198C9C00BF8797 /* libmpd-playlist.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A84120C198C9C00BF8797 /* libmpd-playlist.c */; };
+		4E0A84220C198C9C00BF8797 /* libmpd-status.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A84140C198C9C00BF8797 /* libmpd-status.c */; };
+		4E0A84230C198C9C00BF8797 /* libmpd-strfsong.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A84160C198C9C00BF8797 /* libmpd-strfsong.c */; };
+		4E0A84240C198C9C00BF8797 /* libmpd-version.h.in in Resources */ = {isa = PBXBuildFile; fileRef = 4E0A84190C198C9C00BF8797 /* libmpd-version.h.in */; };
+		4E0A84250C198C9C00BF8797 /* libmpd.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A841A0C198C9C00BF8797 /* libmpd.c */; };
+		4E0A84260C198C9C00BF8797 /* libmpdclient.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A841C0C198C9C00BF8797 /* libmpdclient.c */; };
+		4E0A846D0C1991D700BF8797 /* MADHorizontalList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A846C0C1991D700BF8797 /* MADHorizontalList.m */; };
+		4E0A855C0C199CA400BF8797 /* MADDebugSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A855B0C199CA400BF8797 /* MADDebugSelector.m */; };
+		4E0A85E40C19A93500BF8797 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0A85E30C19A93500BF8797 /* QuartzCore.framework */; };
+		4E73F3180C13290400C21E2B /* MPDStatusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73F3170C13290400C21E2B /* MPDStatusController.m */; };
+		4E73F3AF0C1332F600C21E2B /* MADObjectWithAutoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73F3AE0C1332F600C21E2B /* MADObjectWithAutoSize.m */; };
+		4E73F9A80C16D74200C21E2B /* MPDConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73F9A70C16D74200C21E2B /* MPDConnection.m */; };
+		4E8BD28C0C108D4E0009F8EF /* MADListControlArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BD28B0C108D4E0009F8EF /* MADListControlArrayDataSource.m */; };
+		4E8BD42F0C10AB830009F8EF /* MADListControlArtistSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BD42E0C10AB830009F8EF /* MADListControlArtistSource.m */; };
+		4E8BD5AC0C10B9430009F8EF /* MADListControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BD5AB0C10B9430009F8EF /* MADListControl.m */; };
+		4E8BD68F0C10C8660009F8EF /* MADListControlAlbumSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BD68E0C10C8660009F8EF /* MADListControlAlbumSource.m */; };
+		4E8BD6920C10C8860009F8EF /* MADListControlSongSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BD6910C10C8860009F8EF /* MADListControlSongSource.m */; };
+		4E8BD82A0C1110F00009F8EF /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8BD8290C1110F00009F8EF /* AppKit.framework */; };
+		4E8BD9190C1176AD0009F8EF /* MPDSmallTextControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BD9180C1176AD0009F8EF /* MPDSmallTextControl.m */; };
+		4E8BD9610C1190A50009F8EF /* MADHorzLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BD9600C1190A50009F8EF /* MADHorzLayout.m */; };
+		4E8BD9640C11919C0009F8EF /* MADVertLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BD9630C11919C0009F8EF /* MADVertLayout.m */; };
+		4E8BD9680C1191B10009F8EF /* MADLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BD9670C1191B10009F8EF /* MADLayout.m */; };
+		4E8BD9D40C119EAF0009F8EF /* MADObjectWithConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BD9D30C119EAF0009F8EF /* MADObjectWithConstraint.m */; };
+		4E8BD9DD0C119F670009F8EF /* MADObjectWithSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BD9DC0C119F670009F8EF /* MADObjectWithSize.m */; };
+		4E8F8E770C1707DF000A217E /* MADObjectWithAspect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F8E760C1707DF000A217E /* MADObjectWithAspect.m */; };
+		4E8F8F620C1748FE000A217E /* MADVerticalSegmentedWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F8F610C1748FE000A217E /* MADVerticalSegmentedWidget.m */; };
+		4E8F8FA60C1759E5000A217E /* MADVerticalProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F8FA50C1759E5000A217E /* MADVerticalProgressBar.m */; };
+		4E8F913A0C1772BA000A217E /* MADObjectWithSizeFromObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F91390C1772BA000A217E /* MADObjectWithSizeFromObject.m */; };
+		4E8F92050C1814FE000A217E /* MPDListControlPlaylistSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F92040C1814FE000A217E /* MPDListControlPlaylistSource.m */; };
+		4E8F92D20C182549000A217E /* MADDeactivateableControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F92D10C182549000A217E /* MADDeactivateableControl.m */; };
+		4E8F93200C182D0B000A217E /* MADPlaylistList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F931F0C182D0B000A217E /* MADPlaylistList.m */; };
+		4E8F960D0C18345A000A217E /* MADMultiReceiverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F960C0C18345A000A217E /* MADMultiReceiverController.m */; };
+		4E8F96140C18350A000A217E /* MADAlphaFriendlyRenderLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F96130C18350A000A217E /* MADAlphaFriendlyRenderLayer.m */; };
+		4E8F965A0C18388D000A217E /* MPDVolumeCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F96590C18388D000A217E /* MPDVolumeCtrl.m */; };
+		4E8F96A10C183EEC000A217E /* MPDControlBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F96A00C183EEC000A217E /* MPDControlBar.m */; };
+		4E8F98340C1848DB000A217E /* MADObjectDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F98330C1848DB000A217E /* MADObjectDictionary.m */; };
+		4EDF1D9D0C18D3400009FD68 /* MADHorizontalProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF1D9C0C18D3400009FD68 /* MADHorizontalProgressBar.m */; };
+		4EDF1DA10C18D3670009FD68 /* MADHorizontalSegmentedWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF1DA00C18D3670009FD68 /* MADHorizontalSegmentedWidget.m */; };
+		710BCC6E0D8C55910079CC88 /* BackRow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710BCC6C0D8C55910079CC88 /* BackRow.framework */; };
+		710BCC6F0D8C55910079CC88 /* iPhotoAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710BCC6D0D8C55910079CC88 /* iPhotoAccess.framework */; };
+		71202B0C0D84BCC200E8E5AE /* AppleTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71202B0B0D84BCC200E8E5AE /* AppleTV.framework */; };
+		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01230D2E0C25288E00A52041 /* MADGLLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADGLLayer.h; sourceTree = "<group>"; };
+		01230D2F0C25288E00A52041 /* MADGLLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADGLLayer.m; sourceTree = "<group>"; };
+		01230DF90C252F7300A52041 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
+		01230F2F0C25465F00A52041 /* MPDControlBarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDControlBarDelegate.h; sourceTree = "<group>"; };
+		012539DA0C259E6700889AC2 /* MADGLControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADGLControl.h; sourceTree = "<group>"; };
+		012539DB0C259E6700889AC2 /* MADGLControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADGLControl.m; sourceTree = "<group>"; };
+		0127FD650C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDPlaylistOptionsController.h; sourceTree = "<group>"; };
+		0127FD660C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDPlaylistOptionsController.m; sourceTree = "<group>"; };
+		0127FE870C3D68F500A8A7F3 /* MADFileItemLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADFileItemLayer.h; sourceTree = "<group>"; };
+		0127FE880C3D68F500A8A7F3 /* MADFileItemLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADFileItemLayer.m; sourceTree = "<group>"; };
+		01A171E30C2266A60090C36F /* MPDSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDSettingsController.h; sourceTree = "<group>"; };
+		01A171E40C2266A60090C36F /* MPDSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDSettingsController.m; sourceTree = "<group>"; };
+		01A171FE0C226F960090C36F /* MPDDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDDevice.h; sourceTree = "<group>"; };
+		01A171FF0C226F960090C36F /* MPDDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDDevice.m; sourceTree = "<group>"; };
+		01DA7D3E0C26659800932C4D /* MPDIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPDIcon.png; sourceTree = "<group>"; };
+		01DA7D530C2665FE00932C4D /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = InfoPlist.strings; sourceTree = "<group>"; };
+		01DA7D550C2665FE00932C4D /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = Localizable.strings; sourceTree = "<group>"; };
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32DBCF630370AF2F00C91783 /* mpdctrl_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mpdctrl_Prefix.pch; sourceTree = "<group>"; };
+		3834DF340C031FDC009BE46D /* BackRowUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackRowUtils.h; sourceTree = "<group>"; };
+		38FAFC2E0C012A7800853CFE /* mpdctrlApplianceController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = mpdctrlApplianceController.h; sourceTree = "<group>"; };
+		38FAFC2F0C012A7800853CFE /* mpdctrlAppliance.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = mpdctrlAppliance.m; sourceTree = "<group>"; };
+		38FAFC300C012A7800853CFE /* mpdctrlAppliance.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = mpdctrlAppliance.h; sourceTree = "<group>"; };
+		38FAFC310C012A7800853CFE /* mpdctrlApplianceController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = mpdctrlApplianceController.m; sourceTree = "<group>"; };
+		4E066E400C1228EE00DC29BF /* MPDPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDPlayerController.h; sourceTree = "<group>"; };
+		4E066E410C1228EE00DC29BF /* MPDPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDPlayerController.m; sourceTree = "<group>"; };
+		4E066EE00C12309500DC29BF /* MPDServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDServerController.h; sourceTree = "<group>"; };
+		4E066EE10C12309500DC29BF /* MPDServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDServerController.m; sourceTree = "<group>"; };
+		4E066F6F0C1236FC00DC29BF /* MPDListControlServerSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDListControlServerSource.h; sourceTree = "<group>"; };
+		4E066F700C1236FC00DC29BF /* MPDListControlServerSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDListControlServerSource.m; sourceTree = "<group>"; };
+		4E066FD20C123ACE00DC29BF /* MPDAddressEntryController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MPDAddressEntryController.m; sourceTree = "<group>"; };
+		4E066FD30C123ACF00DC29BF /* MPDAddressEntryController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MPDAddressEntryController.h; sourceTree = "<group>"; };
+		4E0670A80C1241B200DC29BF /* MADAdvancedListControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADAdvancedListControl.h; sourceTree = "<group>"; };
+		4E0670A90C1241B200DC29BF /* MADAdvancedListControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADAdvancedListControl.m; sourceTree = "<group>"; };
+		4E0670C30C1243A700DC29BF /* MADAdvancedListControlDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADAdvancedListControlDelegate.h; sourceTree = "<group>"; };
+		4E0A840A0C198C9C00BF8797 /* config.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		4E0A840B0C198C9C00BF8797 /* debug_printf.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = debug_printf.c; sourceTree = "<group>"; };
+		4E0A840C0C198C9C00BF8797 /* debug_printf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = debug_printf.h; sourceTree = "<group>"; };
+		4E0A840D0C198C9C00BF8797 /* libmpd-database.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = "libmpd-database.c"; sourceTree = "<group>"; };
+		4E0A840E0C198C9C00BF8797 /* libmpd-database.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "libmpd-database.h"; sourceTree = "<group>"; };
+		4E0A840F0C198C9C00BF8797 /* libmpd-internal.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "libmpd-internal.h"; sourceTree = "<group>"; };
+		4E0A84100C198C9C00BF8797 /* libmpd-player.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = "libmpd-player.c"; sourceTree = "<group>"; };
+		4E0A84110C198C9C00BF8797 /* libmpd-player.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "libmpd-player.h"; sourceTree = "<group>"; };
+		4E0A84120C198C9C00BF8797 /* libmpd-playlist.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = "libmpd-playlist.c"; sourceTree = "<group>"; };
+		4E0A84130C198C9C00BF8797 /* libmpd-playlist.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "libmpd-playlist.h"; sourceTree = "<group>"; };
+		4E0A84140C198C9C00BF8797 /* libmpd-status.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = "libmpd-status.c"; sourceTree = "<group>"; };
+		4E0A84150C198C9C00BF8797 /* libmpd-status.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "libmpd-status.h"; sourceTree = "<group>"; };
+		4E0A84160C198C9C00BF8797 /* libmpd-strfsong.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = "libmpd-strfsong.c"; sourceTree = "<group>"; };
+		4E0A84170C198C9C00BF8797 /* libmpd-strfsong.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "libmpd-strfsong.h"; sourceTree = "<group>"; };
+		4E0A84180C198C9C00BF8797 /* libmpd-version.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "libmpd-version.h"; sourceTree = "<group>"; };
+		4E0A84190C198C9C00BF8797 /* libmpd-version.h.in */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "libmpd-version.h.in"; sourceTree = "<group>"; };
+		4E0A841A0C198C9C00BF8797 /* libmpd.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = libmpd.c; sourceTree = "<group>"; };
+		4E0A841B0C198C9C00BF8797 /* libmpd.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = libmpd.h; sourceTree = "<group>"; };
+		4E0A841C0C198C9C00BF8797 /* libmpdclient.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = libmpdclient.c; sourceTree = "<group>"; };
+		4E0A841D0C198C9C00BF8797 /* libmpdclient.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = libmpdclient.h; sourceTree = "<group>"; };
+		4E0A846B0C1991D700BF8797 /* MADHorizontalList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADHorizontalList.h; sourceTree = "<group>"; };
+		4E0A846C0C1991D700BF8797 /* MADHorizontalList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADHorizontalList.m; sourceTree = "<group>"; };
+		4E0A855A0C199CA400BF8797 /* MADDebugSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADDebugSelector.h; sourceTree = "<group>"; };
+		4E0A855B0C199CA400BF8797 /* MADDebugSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADDebugSelector.m; sourceTree = "<group>"; };
+		4E0A85E30C19A93500BF8797 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
+		4E73F3160C13290400C21E2B /* MPDStatusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDStatusController.h; sourceTree = "<group>"; };
+		4E73F3170C13290400C21E2B /* MPDStatusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDStatusController.m; sourceTree = "<group>"; };
+		4E73F3AD0C1332F600C21E2B /* MADObjectWithAutoSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADObjectWithAutoSize.h; sourceTree = "<group>"; };
+		4E73F3AE0C1332F600C21E2B /* MADObjectWithAutoSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADObjectWithAutoSize.m; sourceTree = "<group>"; };
+		4E73F9A60C16D74200C21E2B /* MPDConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDConnection.h; sourceTree = "<group>"; };
+		4E73F9A70C16D74200C21E2B /* MPDConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDConnection.m; sourceTree = "<group>"; };
+		4E73FA080C16DE7B00C21E2B /* MPDConnectionLostDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDConnectionLostDelegate.h; sourceTree = "<group>"; };
+		4E8BD28A0C108D4E0009F8EF /* MADListControlArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADListControlArrayDataSource.h; sourceTree = "<group>"; };
+		4E8BD28B0C108D4E0009F8EF /* MADListControlArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADListControlArrayDataSource.m; sourceTree = "<group>"; };
+		4E8BD42D0C10AB830009F8EF /* MADListControlArtistSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADListControlArtistSource.h; sourceTree = "<group>"; };
+		4E8BD42E0C10AB830009F8EF /* MADListControlArtistSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADListControlArtistSource.m; sourceTree = "<group>"; };
+		4E8BD5AA0C10B9430009F8EF /* MADListControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADListControl.h; sourceTree = "<group>"; };
+		4E8BD5AB0C10B9430009F8EF /* MADListControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADListControl.m; sourceTree = "<group>"; };
+		4E8BD68D0C10C8660009F8EF /* MADListControlAlbumSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADListControlAlbumSource.h; sourceTree = "<group>"; };
+		4E8BD68E0C10C8660009F8EF /* MADListControlAlbumSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADListControlAlbumSource.m; sourceTree = "<group>"; };
+		4E8BD6900C10C8860009F8EF /* MADListControlSongSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADListControlSongSource.h; sourceTree = "<group>"; };
+		4E8BD6910C10C8860009F8EF /* MADListControlSongSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADListControlSongSource.m; sourceTree = "<group>"; };
+		4E8BD8290C1110F00009F8EF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
+		4E8BD9170C1176AD0009F8EF /* MPDSmallTextControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDSmallTextControl.h; sourceTree = "<group>"; };
+		4E8BD9180C1176AD0009F8EF /* MPDSmallTextControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDSmallTextControl.m; sourceTree = "<group>"; };
+		4E8BD95F0C1190A50009F8EF /* MADHorzLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADHorzLayout.h; sourceTree = "<group>"; };
+		4E8BD9600C1190A50009F8EF /* MADHorzLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADHorzLayout.m; sourceTree = "<group>"; };
+		4E8BD9620C11919C0009F8EF /* MADVertLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADVertLayout.h; sourceTree = "<group>"; };
+		4E8BD9630C11919C0009F8EF /* MADVertLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADVertLayout.m; sourceTree = "<group>"; };
+		4E8BD9660C1191B10009F8EF /* MADLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADLayout.h; sourceTree = "<group>"; };
+		4E8BD9670C1191B10009F8EF /* MADLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADLayout.m; sourceTree = "<group>"; };
+		4E8BD9D20C119EAF0009F8EF /* MADObjectWithConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADObjectWithConstraint.h; sourceTree = "<group>"; };
+		4E8BD9D30C119EAF0009F8EF /* MADObjectWithConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADObjectWithConstraint.m; sourceTree = "<group>"; };
+		4E8BD9DB0C119F670009F8EF /* MADObjectWithSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADObjectWithSize.h; sourceTree = "<group>"; };
+		4E8BD9DC0C119F670009F8EF /* MADObjectWithSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADObjectWithSize.m; sourceTree = "<group>"; };
+		4E8F8DD60C16FE8F000A217E /* MPDStatusChangedDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDStatusChangedDelegate.h; sourceTree = "<group>"; };
+		4E8F8E750C1707DF000A217E /* MADObjectWithAspect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADObjectWithAspect.h; sourceTree = "<group>"; };
+		4E8F8E760C1707DF000A217E /* MADObjectWithAspect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADObjectWithAspect.m; sourceTree = "<group>"; };
+		4E8F8F600C1748FE000A217E /* MADVerticalSegmentedWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADVerticalSegmentedWidget.h; sourceTree = "<group>"; };
+		4E8F8F610C1748FE000A217E /* MADVerticalSegmentedWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADVerticalSegmentedWidget.m; sourceTree = "<group>"; };
+		4E8F8FA40C1759E5000A217E /* MADVerticalProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADVerticalProgressBar.h; sourceTree = "<group>"; };
+		4E8F8FA50C1759E5000A217E /* MADVerticalProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADVerticalProgressBar.m; sourceTree = "<group>"; };
+		4E8F91380C1772BA000A217E /* MADObjectWithSizeFromObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADObjectWithSizeFromObject.h; sourceTree = "<group>"; };
+		4E8F91390C1772BA000A217E /* MADObjectWithSizeFromObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADObjectWithSizeFromObject.m; sourceTree = "<group>"; };
+		4E8F92030C1814FE000A217E /* MPDListControlPlaylistSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDListControlPlaylistSource.h; sourceTree = "<group>"; };
+		4E8F92040C1814FE000A217E /* MPDListControlPlaylistSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDListControlPlaylistSource.m; sourceTree = "<group>"; };
+		4E8F92D00C182549000A217E /* MADDeactivateableControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADDeactivateableControl.h; sourceTree = "<group>"; };
+		4E8F92D10C182549000A217E /* MADDeactivateableControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADDeactivateableControl.m; sourceTree = "<group>"; };
+		4E8F93070C182C22000A217E /* MADEventForwarder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADEventForwarder.h; sourceTree = "<group>"; };
+		4E8F931E0C182D0B000A217E /* MADPlaylistList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADPlaylistList.h; sourceTree = "<group>"; };
+		4E8F931F0C182D0B000A217E /* MADPlaylistList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADPlaylistList.m; sourceTree = "<group>"; };
+		4E8F960B0C18345A000A217E /* MADMultiReceiverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADMultiReceiverController.h; sourceTree = "<group>"; };
+		4E8F960C0C18345A000A217E /* MADMultiReceiverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADMultiReceiverController.m; sourceTree = "<group>"; };
+		4E8F96120C18350A000A217E /* MADAlphaFriendlyRenderLayer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MADAlphaFriendlyRenderLayer.h; sourceTree = "<group>"; };
+		4E8F96130C18350A000A217E /* MADAlphaFriendlyRenderLayer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MADAlphaFriendlyRenderLayer.m; sourceTree = "<group>"; };
+		4E8F96580C18388D000A217E /* MPDVolumeCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDVolumeCtrl.h; sourceTree = "<group>"; };
+		4E8F96590C18388D000A217E /* MPDVolumeCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDVolumeCtrl.m; sourceTree = "<group>"; };
+		4E8F969F0C183EEC000A217E /* MPDControlBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDControlBar.h; sourceTree = "<group>"; };
+		4E8F96A00C183EEC000A217E /* MPDControlBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDControlBar.m; sourceTree = "<group>"; };
+		4E8F98320C1848DB000A217E /* MADObjectDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADObjectDictionary.h; sourceTree = "<group>"; };
+		4E8F98330C1848DB000A217E /* MADObjectDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADObjectDictionary.m; sourceTree = "<group>"; };
+		4EDF1D9B0C18D33F0009FD68 /* MADHorizontalProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADHorizontalProgressBar.h; sourceTree = "<group>"; };
+		4EDF1D9C0C18D3400009FD68 /* MADHorizontalProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADHorizontalProgressBar.m; sourceTree = "<group>"; };
+		4EDF1D9F0C18D3670009FD68 /* MADHorizontalSegmentedWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADHorizontalSegmentedWidget.h; sourceTree = "<group>"; };
+		4EDF1DA00C18D3670009FD68 /* MADHorizontalSegmentedWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADHorizontalSegmentedWidget.m; sourceTree = "<group>"; };
+		710BCC6C0D8C55910079CC88 /* BackRow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BackRow.framework; path = ../../../robclark/Desktop/atv/brd/BackRow.framework; sourceTree = SOURCE_ROOT; };
+		710BCC6D0D8C55910079CC88 /* iPhotoAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iPhotoAccess.framework; path = ../../../robclark/Desktop/atv/brd/iPhotoAccess.framework; sourceTree = SOURCE_ROOT; };
+		71202B0B0D84BCC200E8E5AE /* AppleTV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleTV.framework; path = SDKs/MacOSX10.4u.sdk/System/Library/PrivateFrameworks/AppleTV.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
+		8D5B49B6048680CD000E48DA /* mpdctrl.frappliance */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mpdctrl.frappliance; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71202B0C0D84BCC200E8E5AE /* AppleTV.framework in Frameworks */,
+				38FAF9B40C0129D500853CFE /* Foundation.framework in Frameworks */,
+				4E8BD82A0C1110F00009F8EF /* AppKit.framework in Frameworks */,
+				4E0A85E40C19A93500BF8797 /* QuartzCore.framework in Frameworks */,
+				01230DFA0C252F7300A52041 /* OpenGL.framework in Frameworks */,
+				710BCC6E0D8C55910079CC88 /* BackRow.framework in Frameworks */,
+				710BCC6F0D8C55910079CC88 /* iPhotoAccess.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01230F2E0C25461000A52041 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4E73FA080C16DE7B00C21E2B /* MPDConnectionLostDelegate.h */,
+				4E8F8DD60C16FE8F000A217E /* MPDStatusChangedDelegate.h */,
+				4E0670C30C1243A700DC29BF /* MADAdvancedListControlDelegate.h */,
+				01230F2F0C25465F00A52041 /* MPDControlBarDelegate.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		012539D80C259E4400889AC2 /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				01230D2E0C25288E00A52041 /* MADGLLayer.h */,
+				01230D2F0C25288E00A52041 /* MADGLLayer.m */,
+				012539DA0C259E6700889AC2 /* MADGLControl.h */,
+				012539DB0C259E6700889AC2 /* MADGLControl.m */,
+			);
+			name = OpenGL;
+			sourceTree = "<group>";
+		};
+		01DA7D510C2665FE00932C4D /* English.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				01DA7D520C2665FE00932C4D /* InfoPlist.strings */,
+				01DA7D540C2665FE00932C4D /* Localizable.strings */,
+			);
+			path = English.lproj;
+			sourceTree = "<group>";
+		};
+		089C166AFE841209C02AAC07 /* ApplianceBase */ = {
+			isa = PBXGroup;
+			children = (
+				71202B0B0D84BCC200E8E5AE /* AppleTV.framework */,
+				01DA7D510C2665FE00932C4D /* English.lproj */,
+				4E0A83EC0C198C6300BF8797 /* libmpd */,
+				4EC72E240C1AE3B60079A988 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = ApplianceBase;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				710BCC6C0D8C55910079CC88 /* BackRow.framework */,
+				710BCC6D0D8C55910079CC88 /* iPhotoAccess.framework */,
+				01230DF90C252F7300A52041 /* OpenGL.framework */,
+				4E0A85E30C19A93500BF8797 /* QuartzCore.framework */,
+				4E8BD8290C1110F00009F8EF /* AppKit.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01DA7D3E0C26659800932C4D /* MPDIcon.png */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* mpdctrl.frappliance */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF630370AF2F00C91783 /* mpdctrl_Prefix.pch */,
+				3834DF340C031FDC009BE46D /* BackRowUtils.h */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		4E0A83EC0C198C6300BF8797 /* libmpd */ = {
+			isa = PBXGroup;
+			children = (
+				4E0A840A0C198C9C00BF8797 /* config.h */,
+				4E0A840B0C198C9C00BF8797 /* debug_printf.c */,
+				4E0A840C0C198C9C00BF8797 /* debug_printf.h */,
+				4E0A840D0C198C9C00BF8797 /* libmpd-database.c */,
+				4E0A840E0C198C9C00BF8797 /* libmpd-database.h */,
+				4E0A840F0C198C9C00BF8797 /* libmpd-internal.h */,
+				4E0A84100C198C9C00BF8797 /* libmpd-player.c */,
+				4E0A84110C198C9C00BF8797 /* libmpd-player.h */,
+				4E0A84120C198C9C00BF8797 /* libmpd-playlist.c */,
+				4E0A84130C198C9C00BF8797 /* libmpd-playlist.h */,
+				4E0A84140C198C9C00BF8797 /* libmpd-status.c */,
+				4E0A84150C198C9C00BF8797 /* libmpd-status.h */,
+				4E0A84160C198C9C00BF8797 /* libmpd-strfsong.c */,
+				4E0A84170C198C9C00BF8797 /* libmpd-strfsong.h */,
+				4E0A84180C198C9C00BF8797 /* libmpd-version.h */,
+				4E0A84190C198C9C00BF8797 /* libmpd-version.h.in */,
+				4E0A841A0C198C9C00BF8797 /* libmpd.c */,
+				4E0A841B0C198C9C00BF8797 /* libmpd.h */,
+				4E0A841C0C198C9C00BF8797 /* libmpdclient.c */,
+				4E0A841D0C198C9C00BF8797 /* libmpdclient.h */,
+			);
+			path = libmpd;
+			sourceTree = "<group>";
+		};
+		4EC72E240C1AE3B60079A988 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				012539D80C259E4400889AC2 /* OpenGL */,
+				01230F2E0C25461000A52041 /* Protocols */,
+				4EC72E290C1AE4550079A988 /* Vertical Progressbar */,
+				4EC72E280C1AE4400079A988 /* Horizontal Progressbar */,
+				4EC72E270C1AE4120079A988 /* Controller */,
+				4EC72E260C1AE3EB0079A988 /* Layout */,
+				38FAFC300C012A7800853CFE /* mpdctrlAppliance.h */,
+				38FAFC2F0C012A7800853CFE /* mpdctrlAppliance.m */,
+				38FAFC2E0C012A7800853CFE /* mpdctrlApplianceController.h */,
+				38FAFC310C012A7800853CFE /* mpdctrlApplianceController.m */,
+				4E8BD28A0C108D4E0009F8EF /* MADListControlArrayDataSource.h */,
+				4E8BD28B0C108D4E0009F8EF /* MADListControlArrayDataSource.m */,
+				4E8BD42D0C10AB830009F8EF /* MADListControlArtistSource.h */,
+				4E8BD42E0C10AB830009F8EF /* MADListControlArtistSource.m */,
+				4E8BD5AA0C10B9430009F8EF /* MADListControl.h */,
+				4E8BD5AB0C10B9430009F8EF /* MADListControl.m */,
+				4E8BD68D0C10C8660009F8EF /* MADListControlAlbumSource.h */,
+				4E8BD68E0C10C8660009F8EF /* MADListControlAlbumSource.m */,
+				4E8BD6900C10C8860009F8EF /* MADListControlSongSource.h */,
+				4E8BD6910C10C8860009F8EF /* MADListControlSongSource.m */,
+				4E8BD9170C1176AD0009F8EF /* MPDSmallTextControl.h */,
+				4E8BD9180C1176AD0009F8EF /* MPDSmallTextControl.m */,
+				4E066F6F0C1236FC00DC29BF /* MPDListControlServerSource.h */,
+				4E066F700C1236FC00DC29BF /* MPDListControlServerSource.m */,
+				4E0670A80C1241B200DC29BF /* MADAdvancedListControl.h */,
+				4E0670A90C1241B200DC29BF /* MADAdvancedListControl.m */,
+				4E73F9A60C16D74200C21E2B /* MPDConnection.h */,
+				4E73F9A70C16D74200C21E2B /* MPDConnection.m */,
+				4E8F96580C18388D000A217E /* MPDVolumeCtrl.h */,
+				4E8F96590C18388D000A217E /* MPDVolumeCtrl.m */,
+				4E8F92D00C182549000A217E /* MADDeactivateableControl.h */,
+				4E8F92D10C182549000A217E /* MADDeactivateableControl.m */,
+				4E8F960B0C18345A000A217E /* MADMultiReceiverController.h */,
+				4E8F960C0C18345A000A217E /* MADMultiReceiverController.m */,
+				4E8F98320C1848DB000A217E /* MADObjectDictionary.h */,
+				4E8F98330C1848DB000A217E /* MADObjectDictionary.m */,
+				4E8F96120C18350A000A217E /* MADAlphaFriendlyRenderLayer.h */,
+				4E8F96130C18350A000A217E /* MADAlphaFriendlyRenderLayer.m */,
+				4E8F93070C182C22000A217E /* MADEventForwarder.h */,
+				4E0A846B0C1991D700BF8797 /* MADHorizontalList.h */,
+				4E0A846C0C1991D700BF8797 /* MADHorizontalList.m */,
+				4E0A855A0C199CA400BF8797 /* MADDebugSelector.h */,
+				4E0A855B0C199CA400BF8797 /* MADDebugSelector.m */,
+				4E8F969F0C183EEC000A217E /* MPDControlBar.h */,
+				4E8F96A00C183EEC000A217E /* MPDControlBar.m */,
+				4E8F931E0C182D0B000A217E /* MADPlaylistList.h */,
+				4E8F931F0C182D0B000A217E /* MADPlaylistList.m */,
+				4E8F92030C1814FE000A217E /* MPDListControlPlaylistSource.h */,
+				4E8F92040C1814FE000A217E /* MPDListControlPlaylistSource.m */,
+				01A171FE0C226F960090C36F /* MPDDevice.h */,
+				01A171FF0C226F960090C36F /* MPDDevice.m */,
+				0127FE870C3D68F500A8A7F3 /* MADFileItemLayer.h */,
+				0127FE880C3D68F500A8A7F3 /* MADFileItemLayer.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		4EC72E260C1AE3EB0079A988 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				4E8BD95F0C1190A50009F8EF /* MADHorzLayout.h */,
+				4E8BD9600C1190A50009F8EF /* MADHorzLayout.m */,
+				4E8BD9620C11919C0009F8EF /* MADVertLayout.h */,
+				4E8BD9630C11919C0009F8EF /* MADVertLayout.m */,
+				4E8BD9660C1191B10009F8EF /* MADLayout.h */,
+				4E8BD9670C1191B10009F8EF /* MADLayout.m */,
+				4E8BD9D20C119EAF0009F8EF /* MADObjectWithConstraint.h */,
+				4E8BD9D30C119EAF0009F8EF /* MADObjectWithConstraint.m */,
+				4E8BD9DB0C119F670009F8EF /* MADObjectWithSize.h */,
+				4E8BD9DC0C119F670009F8EF /* MADObjectWithSize.m */,
+				4E73F3AD0C1332F600C21E2B /* MADObjectWithAutoSize.h */,
+				4E73F3AE0C1332F600C21E2B /* MADObjectWithAutoSize.m */,
+				4E8F8E750C1707DF000A217E /* MADObjectWithAspect.h */,
+				4E8F8E760C1707DF000A217E /* MADObjectWithAspect.m */,
+				4E8F91380C1772BA000A217E /* MADObjectWithSizeFromObject.h */,
+				4E8F91390C1772BA000A217E /* MADObjectWithSizeFromObject.m */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		4EC72E270C1AE4120079A988 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				01A171E30C2266A60090C36F /* MPDSettingsController.h */,
+				01A171E40C2266A60090C36F /* MPDSettingsController.m */,
+				4E066E400C1228EE00DC29BF /* MPDPlayerController.h */,
+				4E066E410C1228EE00DC29BF /* MPDPlayerController.m */,
+				4E066EE00C12309500DC29BF /* MPDServerController.h */,
+				4E066EE10C12309500DC29BF /* MPDServerController.m */,
+				4E066FD20C123ACE00DC29BF /* MPDAddressEntryController.m */,
+				4E066FD30C123ACF00DC29BF /* MPDAddressEntryController.h */,
+				4E73F3160C13290400C21E2B /* MPDStatusController.h */,
+				4E73F3170C13290400C21E2B /* MPDStatusController.m */,
+				0127FD650C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.h */,
+				0127FD660C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4EC72E280C1AE4400079A988 /* Horizontal Progressbar */ = {
+			isa = PBXGroup;
+			children = (
+				4EDF1D9B0C18D33F0009FD68 /* MADHorizontalProgressBar.h */,
+				4EDF1D9C0C18D3400009FD68 /* MADHorizontalProgressBar.m */,
+				4EDF1D9F0C18D3670009FD68 /* MADHorizontalSegmentedWidget.h */,
+				4EDF1DA00C18D3670009FD68 /* MADHorizontalSegmentedWidget.m */,
+			);
+			name = "Horizontal Progressbar";
+			sourceTree = "<group>";
+		};
+		4EC72E290C1AE4550079A988 /* Vertical Progressbar */ = {
+			isa = PBXGroup;
+			children = (
+				4E8F8F600C1748FE000A217E /* MADVerticalSegmentedWidget.h */,
+				4E8F8F610C1748FE000A217E /* MADVerticalSegmentedWidget.m */,
+				4E8F8FA40C1759E5000A217E /* MADVerticalProgressBar.h */,
+				4E8F8FA50C1759E5000A217E /* MADVerticalProgressBar.m */,
+			);
+			name = "Vertical Progressbar";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* mpdctrl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "mpdctrl" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mpdctrl;
+			productInstallPath = /System/Library/CoreServices/Finder.app/Contents/PlugIns;
+			productName = mpdctrl;
+			productReference = 8D5B49B6048680CD000E48DA /* mpdctrl.frappliance */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "mpdctrl" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* ApplianceBase */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* mpdctrl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				4E0A84240C198C9C00BF8797 /* libmpd-version.h.in in Resources */,
+				01DA7D3F0C26659800932C4D /* MPDIcon.png in Resources */,
+				01DA7D560C2665FE00932C4D /* InfoPlist.strings in Resources */,
+				01DA7D570C2665FE00932C4D /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38FAFC320C012A7800853CFE /* mpdctrlAppliance.m in Sources */,
+				38FAFC330C012A7800853CFE /* mpdctrlApplianceController.m in Sources */,
+				4E8BD28C0C108D4E0009F8EF /* MADListControlArrayDataSource.m in Sources */,
+				4E8BD42F0C10AB830009F8EF /* MADListControlArtistSource.m in Sources */,
+				4E8BD5AC0C10B9430009F8EF /* MADListControl.m in Sources */,
+				4E8BD68F0C10C8660009F8EF /* MADListControlAlbumSource.m in Sources */,
+				4E8BD6920C10C8860009F8EF /* MADListControlSongSource.m in Sources */,
+				4E8BD9190C1176AD0009F8EF /* MPDSmallTextControl.m in Sources */,
+				4E8BD9610C1190A50009F8EF /* MADHorzLayout.m in Sources */,
+				4E8BD9640C11919C0009F8EF /* MADVertLayout.m in Sources */,
+				4E8BD9680C1191B10009F8EF /* MADLayout.m in Sources */,
+				4E8BD9D40C119EAF0009F8EF /* MADObjectWithConstraint.m in Sources */,
+				4E8BD9DD0C119F670009F8EF /* MADObjectWithSize.m in Sources */,
+				4E066E420C1228EE00DC29BF /* MPDPlayerController.m in Sources */,
+				4E066EE20C12309500DC29BF /* MPDServerController.m in Sources */,
+				4E066F710C1236FC00DC29BF /* MPDListControlServerSource.m in Sources */,
+				4E066FD40C123ACF00DC29BF /* MPDAddressEntryController.m in Sources */,
+				4E0670AA0C1241B200DC29BF /* MADAdvancedListControl.m in Sources */,
+				4E73F3180C13290400C21E2B /* MPDStatusController.m in Sources */,
+				4E73F3AF0C1332F600C21E2B /* MADObjectWithAutoSize.m in Sources */,
+				4E73F9A80C16D74200C21E2B /* MPDConnection.m in Sources */,
+				4E8F8E770C1707DF000A217E /* MADObjectWithAspect.m in Sources */,
+				4E8F8F620C1748FE000A217E /* MADVerticalSegmentedWidget.m in Sources */,
+				4E8F8FA60C1759E5000A217E /* MADVerticalProgressBar.m in Sources */,
+				4E8F913A0C1772BA000A217E /* MADObjectWithSizeFromObject.m in Sources */,
+				4E8F92050C1814FE000A217E /* MPDListControlPlaylistSource.m in Sources */,
+				4E8F92D20C182549000A217E /* MADDeactivateableControl.m in Sources */,
+				4E8F93200C182D0B000A217E /* MADPlaylistList.m in Sources */,
+				4E8F960D0C18345A000A217E /* MADMultiReceiverController.m in Sources */,
+				4E8F96140C18350A000A217E /* MADAlphaFriendlyRenderLayer.m in Sources */,
+				4E8F965A0C18388D000A217E /* MPDVolumeCtrl.m in Sources */,
+				4E8F96A10C183EEC000A217E /* MPDControlBar.m in Sources */,
+				4E8F98340C1848DB000A217E /* MADObjectDictionary.m in Sources */,
+				4EDF1D9D0C18D3400009FD68 /* MADHorizontalProgressBar.m in Sources */,
+				4EDF1DA10C18D3670009FD68 /* MADHorizontalSegmentedWidget.m in Sources */,
+				4E0A841E0C198C9C00BF8797 /* debug_printf.c in Sources */,
+				4E0A841F0C198C9C00BF8797 /* libmpd-database.c in Sources */,
+				4E0A84200C198C9C00BF8797 /* libmpd-player.c in Sources */,
+				4E0A84210C198C9C00BF8797 /* libmpd-playlist.c in Sources */,
+				4E0A84220C198C9C00BF8797 /* libmpd-status.c in Sources */,
+				4E0A84230C198C9C00BF8797 /* libmpd-strfsong.c in Sources */,
+				4E0A84250C198C9C00BF8797 /* libmpd.c in Sources */,
+				4E0A84260C198C9C00BF8797 /* libmpdclient.c in Sources */,
+				4E0A846D0C1991D700BF8797 /* MADHorizontalList.m in Sources */,
+				4E0A855C0C199CA400BF8797 /* MADDebugSelector.m in Sources */,
+				01A171E50C2266A60090C36F /* MPDSettingsController.m in Sources */,
+				01A172000C226F960090C36F /* MPDDevice.m in Sources */,
+				01230D300C25288E00A52041 /* MADGLLayer.m in Sources */,
+				012539DC0C259E6700889AC2 /* MADGLControl.m in Sources */,
+				0127FD670C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.m in Sources */,
+				0127FE890C3D68F500A8A7F3 /* MADFileItemLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		01DA7D520C2665FE00932C4D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01DA7D530C2665FE00932C4D /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		01DA7D540C2665FE00932C4D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01DA7D550C2665FE00932C4D /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(DEVELOPER_DIR)/SDKs/MacOSX10.4u.sdk/System/Library/PrivateFrameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../robclark/Desktop/atv/brd\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = mpdctrl_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /System/Library/CoreServices/Finder.app/Contents/PlugIns;
+				LIBRARY_SEARCH_PATHS = (
+					"$(LIBRARY_SEARCH_PATHS)",
+					"$(SRCROOT)",
+				);
+				PRODUCT_NAME = mpdctrl;
+				WRAPPER_EXTENSION = frappliance;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks",
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(DEVELOPER_DIR)/SDKs/MacOSX10.4u.sdk/System/Library/PrivateFrameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../robclark/Desktop/atv/brd\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = mpdctrl_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /System/Library/CoreServices/Finder.app/Contents/PlugIns;
+				LIBRARY_SEARCH_PATHS = (
+					"$(LIBRARY_SEARCH_PATHS)",
+					"$(SRCROOT)",
+				);
+				PRODUCT_NAME = mpdctrl;
+				VALID_ARCHS = i386;
+				WRAPPER_EXTENSION = frappliance;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "mpdctrl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "mpdctrl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
