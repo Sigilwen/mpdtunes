@@ -7,6 +7,7 @@
 //
 
 #import "MPDPlaylistOptionsController.h"
+#import "MPDPlayerRootController.h"
 #import "MADFileItemLayer.h"
 #import "MADVertLayout.h"
 
@@ -54,7 +55,7 @@
 																
 	[_layout doLayout];
 	
-	_playerCtrl = [[MPDPlayerController alloc]initWithScene:scene];
+	_playerCtrl = [[MPDPlayerRootController alloc]initWithScene:scene];
 	
 	_textEntryController = [[MPDAddressEntryController alloc]initWithScene:scene ipOnly:NO];
 	[_textEntryController setHeaderText:@"Enter playlist name:"];
@@ -414,7 +415,7 @@
 		if(selected == 0)
 			newdesc = @"Add songs by their path and filename.\nOpens a recursive view of the media directory of the server";
 		else if(selected == 1)
-			newdesc = @"Add songs based on their Informations ( like Artist, Album and title of the Song )";
+			newdesc = @"Add songs based on their Informations (like Artist, Album and title of the Song)";
 		else if(selected == 2)
 			newdesc = @"Add songs from a stored Playlist to the current Playlist";
 		else if(selected == 3)

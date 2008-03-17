@@ -1,0 +1,29 @@
+Shuffle Songs   <shuffle icon>
+Playlists
+Artists  -->  Albums(Artist)  -->  Songs(Artist+Album)
+Albums  --> Songs(Album)
+Songs
+Genres  -->  Artists(Genere)  -->  Albums(Genere+Artist)  -->  Songs(Genere+Artist+Album)
+Composers  (??)
+
+
+---
+
+note:  LHS shows album artwork, either on rotation (if multiple matches) or single 
+or for Songs() shows album plus track details:
+
+for album:
+-------
+ Artist: <>
+  Genre: <>
+ Tracks: <>
+ Length: <>
+-------
+
+for Song():
+-------
+  Album: <>
+ Artist: <>
+  Genre: <>
+ Length: <>
+-------
