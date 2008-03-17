@@ -10,6 +10,7 @@
 #import "MPDPlayerGenresController.h"
 #import "MPDPlayerArtistsController.h"
 #import "MPDPlayerAlbumsController.h"
+#import "MPDPlayerSongsController.h"
 
 
 @implementation MPDPlayerRootController
@@ -79,7 +80,7 @@ enum {
       controller = [[MPDPlayerAlbumsController alloc] initWithScene: [self scene] mpdConnection:_mpdConnection genre:nil artist:nil];
       break;
     case ID_SONGS:
-      printf("not implemented: %d\n", row);
+      controller = [[MPDPlayerSongsController alloc] initWithScene: [self scene] mpdConnection:_mpdConnection genre:nil artist:nil album:nil];
       break;
     case ID_GENRES:
       controller = [[MPDPlayerGenresController alloc] initWithScene: [self scene] mpdConnection: _mpdConnection];

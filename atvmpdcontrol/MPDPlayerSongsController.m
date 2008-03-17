@@ -1,21 +1,20 @@
 //
-//  MPDPlayerAlbumsController.m
+//  MPDPlayerSongsController.m
 //  mpdctrl
 //
 //  Created by Rob Clark on 3/16/08.
 //  Copyright 2008 __MyCompanyName__. All rights reserved.
 //
 
-#import "MPDPlayerAlbumsController.h"
 #import "MPDPlayerSongsController.h"
 
 
-@implementation MPDPlayerAlbumsController
-
+@implementation MPDPlayerSongsController
 - (id) initWithScene: (BRRenderScene *) scene 
     mpdConnection: (MPDConnection *) mpdConnection 
     genre: (NSString *)genre
-    artist: (NSString *)artist;
+    artist: (NSString *)artist
+    album: (NSString *)album;
 {
   if( [super initWithScene: scene] == nil )
     return nil;
@@ -24,10 +23,11 @@
   
   _genre = genre;
   _artist = artist;
-  if( _artist == NULL )
-    [self setListTitle: @"Albums"];
+  _album = album;
+  if( _album == NULL )
+    [self setListTitle: @"Songs"];
   else
-    [self setListTitle: _artist];
+    [self setListTitle: _album];
   
   if( ! [_mpdConnection commandAllowed:@"list"] )
   {
@@ -38,10 +38,11 @@
     MpdData *data;
     const char *cGenre;
     const char *cArtist;
+    const char *cAlbum;
     
     _names = [[NSMutableArray alloc] initWithObjects: @"All", nil];
     
-    mpd_database_search_field_start([_mpdConnection object], MPD_TAG_ITEM_ALBUM);
+    mpd_database_search_field_start([_mpdConnection object], MPD_TAG_ITEM_TITLE);
     if( _genre != NULL )
     {
       cGenre = [_genre UTF8String];
@@ -51,6 +52,11 @@
     {
       cArtist = [_artist UTF8String];
       mpd_database_search_add_constraint([_mpdConnection object], MPD_TAG_ITEM_ARTIST, cArtist);
+    }
+    if( _album != NULL )
+    {
+      cAlbum = [_album UTF8String];
+      mpd_database_search_add_constraint([_mpdConnection object], MPD_TAG_ITEM_ALBUM, cAlbum);
     }
     for( data = mpd_database_search_commit([_mpdConnection object]);
         data != NULL;
@@ -79,18 +85,8 @@
 
 - (void) itemSelected: (long) row
 {
-  NSString *album = nil;
-  MPDPlayerController *controller = nil;
   
-  if( row >= [_names count] )
-    return;
-  
-  if( row != 0 )
-    album = [_names objectAtIndex: row];
-  
-  controller = [[MPDPlayerSongsController alloc] initWithScene: [self scene] mpdConnection:_mpdConnection genre:_genre artist:_artist album:album];
-  [controller autorelease];
-  [[self stack] pushController: controller];
+  printf("not implemented: %d\n", row);
 }
 
 @end
