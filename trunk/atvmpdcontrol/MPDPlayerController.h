@@ -6,43 +6,33 @@
 //  Copyright 2007 __MyCompanyName__. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import <Cocoa/Cocoa.h>
+#import <BackRow/BRMenuController.h>
 #import <BackRow/BackRow.h>
+
 #import "libmpd/libmpd.h"
 
 #import "MPDConnection.h"
-#import "MADVertLayout.h"
-#import "MADMultiReceiverController.h"
 
-@interface MPDPlayerController : MADMultiReceiverController <MPDConnectionLostDelegate, MPDStatusChangedDelegate> 
+@interface MPDPlayerController : BRMenuController <MPDConnectionLostDelegate, MPDStatusChangedDelegate> 
 {	
 	MPDConnection*					_mpdConnection;
-	BRHeaderControl *				_header;
-	MADVertLayout*					_layout;
-		
-	int								_currentSelectedArtist;
-	int								_currentSelectedAlbum;
-	
-	NSMutableArray *				_dataSrcArray;
-	NSMutableArray *				_listCtrlArray;	
-	
-	NSMutableArray*					_selectedSongIds;
 }
 
 - (id)initWithScene:(id)scene;
 - (void)dealloc;
 
+// abstract:
+- (long) itemCount;
+- (id) itemForRow: (long) row;
+- (NSString *) titleForRow: (long) row;
+
+- (long) rowForTitle: (NSString *) title;
+
 - (void)setMpdConnection:(MPDConnection*)mpdConnection; 
 - (void)onConnectionLost;
 - (void)onStatusChanged:(ChangedStatusType)what;
-
-- (void)onArtist;
-- (void)onAlbum;
-- (void)onSong;
-
-- (NSMutableArray*)getSelectedSongIds;
-
-- (BOOL)brEventAction:(BREvent *) brEvent;
 
 - (void) willBePushed;
 - (void) willBePopped;
