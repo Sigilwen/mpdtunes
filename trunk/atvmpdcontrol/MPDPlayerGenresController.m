@@ -73,4 +73,17 @@
   [[self stack] pushController: controller];
 }
 
+- (void) itemPlay: (long)row
+{
+  NSString *genre = nil;
+  
+  if( row >= [_names count] )
+    return;
+  
+  if( row != 0 )
+    genre = [_names objectAtIndex: row];
+  
+  [self addToPlaylist:_mpdConnection genre:genre artist:nil album:nil song:nil];
+}
+
 @end

@@ -12,7 +12,7 @@
 
 @implementation MPDPlayerController
 
-- (id)initWithScene:(id)scene
+- (id) initWithScene: (id)scene
 {
   if ( [super initWithScene: scene] == nil )
     return ( nil );
@@ -33,10 +33,15 @@
   return [_names count];
 }
 
+- (id) itemForRow: (long) row
+{
+  return nil;
+}
+
 - (NSString *) titleForRow: (long) row
 {
   if( row > [_names count] )
-    return ( nil );
+    return nil;
   return [_names objectAtIndex: row];
 }
 
@@ -55,6 +60,26 @@
   }
   
   return result;
+}
+
+- (void) itemSelected: (long) row {}
+- (void) itemPlay: (long) row {}
+
+- (BOOL) brEventAction:(BREvent *)event
+{
+	BREventPageUsageHash hashVal = [event pageUsageHash];
+	int selected = [(BRListControl*)[self list] selection];
+  
+	switch (hashVal)
+	{
+		case kBREventTapRight:
+      [self itemSelected:selected];
+      return YES;
+    case kBREventTapPlayPause:
+      [self itemPlay:selected];
+      return YES;
+	}
+	return [super brEventAction:event];
 }
 
 - (void) willBePushed
@@ -86,5 +111,16 @@
 	// Jump directly back to the root Controller
 	[[self stack] popToControllerWithLabel:@"com.apple.frontrow.appliance.axxr.mpdctrl.rootController"];
 }
+
+
+- (void) addToPlaylist: (MPDConnection *)mpdConnection
+    genre: (NSString *)genre
+    artist: (NSString *)artist
+    album: (NSString *)album
+    song: (NSString *)song
+{
+  printf("addToPlaylist: genre=%s artist=%s album=%s song=%s\n", genre, artist, album, song);
+}
+
 
 @end
