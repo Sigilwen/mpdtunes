@@ -69,6 +69,12 @@
 		710BCC6E0D8C55910079CC88 /* BackRow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710BCC6C0D8C55910079CC88 /* BackRow.framework */; };
 		710BCC6F0D8C55910079CC88 /* iPhotoAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710BCC6D0D8C55910079CC88 /* iPhotoAccess.framework */; };
 		71202B0C0D84BCC200E8E5AE /* AppleTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71202B0B0D84BCC200E8E5AE /* AppleTV.framework */; };
+		717233BA0D8DD144001E578B /* NOTES in Resources */ = {isa = PBXBuildFile; fileRef = 717233B90D8DD144001E578B /* NOTES */; };
+		717233C30D8DEBDD001E578B /* MPDPlayerRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */; };
+		717233CA0D8DF841001E578B /* MPDPlayerGenresController.m in Sources */ = {isa = PBXBuildFile; fileRef = 717233C90D8DF841001E578B /* MPDPlayerGenresController.m */; };
+		717234860D8E07F9001E578B /* MPDPlayerArtistsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 717234850D8E07F9001E578B /* MPDPlayerArtistsController.m */; };
+		717234AF0D8E13B4001E578B /* MPDPlayerAlbumsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */; };
+		717234C70D8E17A0001E578B /* MPDPlayerSongsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
@@ -197,6 +203,17 @@
 		710BCC6C0D8C55910079CC88 /* BackRow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BackRow.framework; path = ../../../robclark/Desktop/atv/brd/BackRow.framework; sourceTree = SOURCE_ROOT; };
 		710BCC6D0D8C55910079CC88 /* iPhotoAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iPhotoAccess.framework; path = ../../../robclark/Desktop/atv/brd/iPhotoAccess.framework; sourceTree = SOURCE_ROOT; };
 		71202B0B0D84BCC200E8E5AE /* AppleTV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleTV.framework; path = SDKs/MacOSX10.4u.sdk/System/Library/PrivateFrameworks/AppleTV.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
+		717233B90D8DD144001E578B /* NOTES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTES; sourceTree = "<group>"; };
+		717233C10D8DEBDD001E578B /* MPDPlayerRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDPlayerRootController.h; sourceTree = "<group>"; };
+		717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDPlayerRootController.m; sourceTree = "<group>"; };
+		717233C80D8DF841001E578B /* MPDPlayerGenresController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDPlayerGenresController.h; sourceTree = "<group>"; };
+		717233C90D8DF841001E578B /* MPDPlayerGenresController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDPlayerGenresController.m; sourceTree = "<group>"; };
+		717234840D8E07F9001E578B /* MPDPlayerArtistsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDPlayerArtistsController.h; sourceTree = "<group>"; };
+		717234850D8E07F9001E578B /* MPDPlayerArtistsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDPlayerArtistsController.m; sourceTree = "<group>"; };
+		717234AD0D8E13B4001E578B /* MPDPlayerAlbumsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDPlayerAlbumsController.h; sourceTree = "<group>"; };
+		717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDPlayerAlbumsController.m; sourceTree = "<group>"; };
+		717234C50D8E17A0001E578B /* MPDPlayerSongsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDPlayerSongsController.h; sourceTree = "<group>"; };
+		717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDPlayerSongsController.m; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* mpdctrl.frappliance */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mpdctrl.frappliance; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -388,6 +405,17 @@
 				01A171FF0C226F960090C36F /* MPDDevice.m */,
 				0127FE870C3D68F500A8A7F3 /* MADFileItemLayer.h */,
 				0127FE880C3D68F500A8A7F3 /* MADFileItemLayer.m */,
+				717233B90D8DD144001E578B /* NOTES */,
+				717233C10D8DEBDD001E578B /* MPDPlayerRootController.h */,
+				717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */,
+				717233C80D8DF841001E578B /* MPDPlayerGenresController.h */,
+				717233C90D8DF841001E578B /* MPDPlayerGenresController.m */,
+				717234840D8E07F9001E578B /* MPDPlayerArtistsController.h */,
+				717234850D8E07F9001E578B /* MPDPlayerArtistsController.m */,
+				717234AD0D8E13B4001E578B /* MPDPlayerAlbumsController.h */,
+				717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */,
+				717234C50D8E17A0001E578B /* MPDPlayerSongsController.h */,
+				717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -504,6 +532,7 @@
 				01DA7D3F0C26659800932C4D /* MPDIcon.png in Resources */,
 				01DA7D560C2665FE00932C4D /* InfoPlist.strings in Resources */,
 				01DA7D570C2665FE00932C4D /* Localizable.strings in Resources */,
+				717233BA0D8DD144001E578B /* NOTES in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,6 +594,11 @@
 				012539DC0C259E6700889AC2 /* MADGLControl.m in Sources */,
 				0127FD670C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.m in Sources */,
 				0127FE890C3D68F500A8A7F3 /* MADFileItemLayer.m in Sources */,
+				717233C30D8DEBDD001E578B /* MPDPlayerRootController.m in Sources */,
+				717233CA0D8DF841001E578B /* MPDPlayerGenresController.m in Sources */,
+				717234860D8E07F9001E578B /* MPDPlayerArtistsController.m in Sources */,
+				717234AF0D8E13B4001E578B /* MPDPlayerAlbumsController.m in Sources */,
+				717234C70D8E17A0001E578B /* MPDPlayerSongsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
