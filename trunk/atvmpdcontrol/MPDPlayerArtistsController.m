@@ -1,37 +1,46 @@
 //
-//  MPDPlayerGenresController.m
+//  MPDPlayerArtistsController.m
 //  mpdctrl
 //
 //  Created by Rob Clark on 3/16/08.
 //  Copyright 2008 __MyCompanyName__. All rights reserved.
 //
 
-#import "MPDPlayerGenresController.h"
 #import "MPDPlayerArtistsController.h"
-#import "libmpd/libmpd.h"
 
 
-@implementation MPDPlayerGenresController
+@implementation MPDPlayerArtistsController
 
-- (id) initWithScene: (BRRenderScene *) scene mpdConnection: (MPDConnection *) mpdConnection;
+- (id) initWithScene: (BRRenderScene *) scene mpdConnection: (MPDConnection *) mpdConnection genre: (NSString *)genre;
 {
   if( [super initWithScene: scene] == nil )
     return nil;
   
   [self setMpdConnection: mpdConnection];
-  [self setListTitle: @"Genres"];
+  
+  _genre = genre;
+  if( _genre == NULL )
+    [self setListTitle: @"Artists"];
+  else
+    [self setListTitle: _genre];
   
   if( ! [_mpdConnection commandAllowed:@"list"] )
   {
-    [_names addObject: @"Couldn't fetch genre list, check password"];
+    [_names addObject: @"Couldn't fetch artist list, check password"];
   }
   else
   {
     MpdData *data;
+    const char *cGenre;
     
     _names = [[NSMutableArray alloc] initWithObjects: @"All", nil];
     
-    mpd_database_search_field_start([_mpdConnection object], MPD_TAG_ITEM_GENRE);
+    mpd_database_search_field_start([_mpdConnection object], MPD_TAG_ITEM_ARTIST);
+    if( _genre != NULL )
+    {
+      cGenre = [_genre UTF8String];
+      mpd_database_search_add_constraint([_mpdConnection object], MPD_TAG_ITEM_GENRE, cGenre);
+    }
     for( data = mpd_database_search_commit([_mpdConnection object]);
         data != NULL;
         data = mpd_data_get_next(data) )
@@ -59,18 +68,8 @@
 
 - (void) itemSelected: (long) row
 {
-  NSString *genre = nil;
-  MPDPlayerController *controller = nil;
   
-  if( row >= [_names count] )
-    return;
-  
-  if( row != 0 )
-    genre = [_names objectAtIndex: row];
-  
-  controller = [[MPDPlayerArtistsController alloc] initWithScene: [self scene] mpdConnection: _mpdConnection genre: genre];
-  [controller autorelease];
-  [[self stack] pushController: controller];
+  printf("not implemented: %d\n", row);
 }
 
 @end
