@@ -36,17 +36,6 @@ enum {
   return self;
 }
 
-- (void) dealloc
-{
-  [_names release];
-  [super dealloc];
-}
-
-- (long) itemCount
-{
-  return [_names count];
-}
-
 - (id) itemForRow: (long) row
 {
   BRAdornedMenuItemLayer *result = nil;
@@ -71,16 +60,9 @@ enum {
   return result;
 }
 
-- (NSString *) titleForRow: (long) row
-{
-  if( row > [_names count] )
-    return ( nil );
-  return [_names objectAtIndex: row];
-}
-
 - (void) itemSelected: (long) row
 {
-  id controller = nil;
+  MPDPlayerController *controller = nil;
   
   switch(row)
   {
@@ -92,7 +74,7 @@ enum {
       printf("not implemented: %d\n", row);
       break;
     case ID_GENRES:
-      controller = [[MPDPlayerGenresController alloc] initWithScene: [self scene]];
+      controller = [[MPDPlayerGenresController alloc] initWithScene: [self scene] mpdConnection: _mpdConnection];
       break;
   }
   

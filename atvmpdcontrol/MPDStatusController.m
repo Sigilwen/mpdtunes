@@ -7,6 +7,7 @@
 //
 
 #import "MPDStatusController.h"
+#import "MPDPlayerRootController.h"
 
 #import "MADVertLayout.h"
 #import "MADHorzLayout.h"
@@ -24,7 +25,7 @@
 			
 	_mpdConnection = nil;
 	
-	_playerController = [[MPDPlayerController alloc] initWithScene:scene];
+	_playerController = [[MPDPlayerRootController alloc] initWithScene:scene];
 	_settingsController = [[MPDSettingsController alloc] initWithScene:scene];
 	_playlistController = [[MPDPlaylistOptionsController alloc]initWithScene:scene];
 	
