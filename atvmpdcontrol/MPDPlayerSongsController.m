@@ -85,8 +85,21 @@
 
 - (void) itemSelected: (long) row
 {
+  [self itemPlay:row];
+}
+
+
+- (void) itemPlay: (long)row
+{
+  NSString *song = nil;
   
-  printf("not implemented: %d\n", row);
+  if( row >= [_names count] )
+    return;
+  
+  if( row != 0 )
+    song = [_names objectAtIndex: row];
+  
+  [self addToPlaylist:_mpdConnection genre:_genre artist:_artist album:_album song:song];
 }
 
 @end

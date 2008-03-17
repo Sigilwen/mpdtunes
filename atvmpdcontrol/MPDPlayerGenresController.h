@@ -15,5 +15,6 @@
 - (id) initWithScene: (BRRenderScene *) scene mpdConnection: (MPDConnection *) mpdConnection;
 - (id) itemForRow: (long) row;
 - (void) itemSelected: (long) row;
+- (void) itemPlay: (long)row;
 
 @end

@@ -21,19 +21,28 @@
   NSMutableArray *_names;
 }
 
-- (id)initWithScene:(id)scene;
+- (id)initWithScene: (id)scene;
 - (void)dealloc;
 
 - (long) itemCount;
-- (id) itemForRow: (long) row;   /* abstract */
-- (NSString *) titleForRow: (long) row;
-- (long) rowForTitle: (NSString *) title;
+- (id) itemForRow: (long)row;
+- (NSString *) titleForRow: (long)row;
+- (long) rowForTitle: (NSString *)title;
+- (void) itemSelected: (long)row;
+- (void) itemPlay: (long)row;
+- (BOOL) brEventAction: (BREvent *)event;
 
-- (void)setMpdConnection:(MPDConnection*)mpdConnection; 
-- (void)onConnectionLost;
-- (void)onStatusChanged:(ChangedStatusType)what;
+- (void) setMpdConnection: (MPDConnection *)mpdConnection; 
+- (void) onConnectionLost;
+- (void) onStatusChanged: (ChangedStatusType)what;
 
 - (void) willBePushed;
 - (void) willBePopped;
+
+- (void) addToPlaylist: (MPDConnection *)mpdConnection
+    genre: (NSString *)genre
+    artist: (NSString *)artist
+    album: (NSString *)album
+    song: (NSString *)song;
 
 @end
