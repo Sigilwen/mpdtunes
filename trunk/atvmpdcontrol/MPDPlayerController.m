@@ -22,10 +22,22 @@
 	return ( self );
 }
 
-- (void)dealloc
+- (void) dealloc
 {
-  // always remember to deallocate your resources
+  [_names release];
   [super dealloc];
+}
+
+- (long) itemCount
+{
+  return [_names count];
+}
+
+- (NSString *) titleForRow: (long) row
+{
+  if( row > [_names count] )
+    return ( nil );
+  return [_names objectAtIndex: row];
 }
 
 - (long) rowForTitle: (NSString *) title

@@ -16,18 +16,17 @@
 #import "MPDConnection.h"
 
 @interface MPDPlayerController : BRMenuController <MPDConnectionLostDelegate, MPDStatusChangedDelegate> 
-{	
-	MPDConnection*					_mpdConnection;
+{
+	MPDConnection  *_mpdConnection;
+  NSMutableArray *_names;
 }
 
 - (id)initWithScene:(id)scene;
 - (void)dealloc;
 
-// abstract:
 - (long) itemCount;
-- (id) itemForRow: (long) row;
+- (id) itemForRow: (long) row;   /* abstract */
 - (NSString *) titleForRow: (long) row;
-
 - (long) rowForTitle: (NSString *) title;
 
 - (void)setMpdConnection:(MPDConnection*)mpdConnection; 

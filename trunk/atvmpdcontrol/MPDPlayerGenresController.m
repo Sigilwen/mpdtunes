@@ -7,33 +7,44 @@
 //
 
 #import "MPDPlayerGenresController.h"
+#import "libmpd/libmpd.h"
 
 
 @implementation MPDPlayerGenresController
-- (id) initWithScene: (BRRenderScene *) scene
+
+- (id) initWithScene: (BRRenderScene *) scene mpdConnection: (MPDConnection *) mpdConnection;
 {
   if( [super initWithScene: scene] == nil )
     return nil;
   
+  [self setMpdConnection: mpdConnection];
   [self setListTitle: @"Genres"];
   
-  _names = [[NSMutableArray alloc] initWithObjects: @"All", @"One", @"Two", @"Three", nil];
+  if( ! [_mpdConnection commandAllowed:@"list"] )
+  {
+    [_names addObject: @"Couldn't fetch genre list, check password"];
+  }
+  else
+  {
+    MpdData *data;
+    
+    _names = [[NSMutableArray alloc] initWithObjects: @"All", nil];
+    
+    mpd_database_search_field_start([_mpdConnection object], MPD_TAG_ITEM_GENRE);
+    for( data = mpd_database_search_commit([_mpdConnection object]);
+        data != NULL;
+        data = mpd_data_get_next(data) )
+    {
+      if( data->type == MPD_DATA_TYPE_TAG )
+        [_names addObject: [[NSString alloc] initWithCString: data->tag encoding:NSUTF8StringEncoding]];
+    }
+    // last mpd_data_get_next() free's the search
+  }
   
   // set the datasource *after* you've setup your array....
   [[self list] setDatasource: self];
   
   return self;
-}
-
-- (void) dealloc
-{
-  [_names release];
-  [super dealloc];
-}
-
-- (long) itemCount
-{
-  return [_names count];
 }
 
 - (id) itemForRow: (long) row
@@ -43,13 +54,6 @@
   BRAdornedMenuItemLayer *result = [BRAdornedMenuItemLayer adornedFolderMenuItemWithScene: [self scene]];
   [[result textItem] setTitle: [_names objectAtIndex: row]];
   return result;
-}
-
-- (NSString *) titleForRow: (long) row
-{
-  if( row > [_names count] )
-    return ( nil );
-  return [_names objectAtIndex: row];
 }
 
 - (void) itemSelected: (long) row

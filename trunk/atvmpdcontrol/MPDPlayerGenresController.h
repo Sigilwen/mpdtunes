@@ -10,16 +10,10 @@
 #import "MPDPlayerController.h"
 
 @interface MPDPlayerGenresController : MPDPlayerController {
-  NSMutableArray * _names;
 }
 
-- (id) initWithScene: (BRRenderScene *) scene;
-- (void) dealloc;
-
-- (long) itemCount;
+- (id) initWithScene: (BRRenderScene *) scene mpdConnection: (MPDConnection *) mpdConnection;
 - (id) itemForRow: (long) row;
-- (NSString *) titleForRow: (long) row;
-
 - (void) itemSelected: (long) row;
 
 @end
