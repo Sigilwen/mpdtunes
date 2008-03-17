@@ -1,5 +1,5 @@
 //
-//  MPDPlayerArtistsController.h
+//  MPDPlayerAlbumsController.h
 //  mpdctrl
 //
 //  Created by Rob Clark on 3/16/08.
@@ -9,13 +9,15 @@
 #import <Cocoa/Cocoa.h>
 #import "MPDPlayerController.h"
 
-@interface MPDPlayerArtistsController : MPDPlayerController {
+@interface MPDPlayerAlbumsController : MPDPlayerController {
   NSString *_genre;
+  NSString *_artist;
 }
 
 - (id) initWithScene: (BRRenderScene *) scene 
     mpdConnection: (MPDConnection *) mpdConnection 
-    genre: (NSString *)genre;
+    genre: (NSString *)genre
+    artist: (NSString *)artist;
 - (id) itemForRow: (long) row;
 - (void) itemSelected: (long) row;
 
