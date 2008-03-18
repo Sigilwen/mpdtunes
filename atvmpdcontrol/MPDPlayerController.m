@@ -65,6 +65,7 @@
 
 - (void) itemSelected: (long) row {}
 - (void) itemPlay: (long) row {}
+- (void) itemRemove: (long) row {}
 
 - (BOOL) brEventAction:(BREvent *)event
 {
@@ -73,12 +74,26 @@
   
 	switch (hashVal)
 	{
-		case kBREventTapRight:
+		case kBREventTapRight:             /* descend */
+    case kBREventTapPlayPause:
+      printf("descend\n");
       [self itemSelected:selected];
       return YES;
-    case kBREventTapPlayPause:
-      [self itemPlay:selected];
+		case kBREventTapLeft:              /* ascend */
+      printf("ascend\n");
+      [[self stack]popController];
       return YES;
+    case kBREventFastForward:          /* add to playlist */
+      printf("add to playlist\n");
+      [self itemPlay:selected];
+      [[self stack] popToControllerWithLabel:@"com.apple.frontrow.appliance.axxr.mpdctrl.rootController"];
+      return YES;
+		case kBREventRewind:               /* remove from playlist */
+      printf("remove from playlist\n");
+      [self itemRemove:selected];
+      [[self stack] popToControllerWithLabel:@"com.apple.frontrow.appliance.axxr.mpdctrl.rootController"];
+      return YES;
+    
 	}
 	return [super brEventAction:event];
 }
@@ -161,36 +176,5 @@
   printf("mpd_playlist_queue_commit()\n");
   mpd_playlist_queue_commit([mpdConnection object]);
 }
-
-/*
- [_currentSongIds addObject: [NSString stringWithCString:pData->song->file encoding:NSUTF8StringEncoding] ];
-- (void)onSong
-{
-        int i;
-        MADListControl* list = [_listCtrlArray objectAtIndex:2];
-        [list stopScrolling];
-        int selectedSong = [list selection];
-        
-        if(selectedSong == 0)
-        {
-                [_selectedSongIds addObjectsFromArray: [[_dataSrcArray objectAtIndex:2] getCurrentSongIds ] ];
-        }
-        else
-        {
-                NSMutableArray* songIds = [[_dataSrcArray objectAtIndex:2] getCurrentSongIds ];
-                [_selectedSongIds addObject:[songIds objectAtIndex:selectedSong-1 ] ];
-        }
-        
-        for(i=0;i<[_selectedSongIds count];i++)
-        {
-                NSString * sFile = [_selectedSongIds objectAtIndex:i];
-                mpd_playlist_queue_add([_mpdConnection object],(char*)[sFile cStringUsingEncoding:NSUTF8StringEncoding]);
-        }
-        
-        mpd_playlist_queue_commit([_mpdConnection object]);
-                
-        [[self stack]popController];
-}
-*/
 
 @end
