@@ -29,7 +29,8 @@
 - (NSString *) titleForRow: (long)row;
 - (long) rowForTitle: (NSString *)title;
 - (void) itemSelected: (long)row;
-- (void) itemPlay: (long)row;
+- (void) itemPlay: (long)row;      /* should be renamed 'addToPlaylist'? */
+- (void) itemRemove: (long)row;      /* should be renamed 'removeFromPlaylist'? */
 - (BOOL) brEventAction: (BREvent *)event;
 
 - (void) setMpdConnection: (MPDConnection *)mpdConnection; 
