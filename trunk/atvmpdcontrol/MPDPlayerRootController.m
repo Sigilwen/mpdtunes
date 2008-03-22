@@ -155,19 +155,19 @@ printf("wasPopped\n");
   }
   else if( [item isEqualToString:@"Artists"] )
   {
-    controller = [[MPDPlayerArtistsController alloc] initWithScene: [self scene] mpdConnection:_mpdConnection genre:nil];
+    controller = [[[MPDPlayerArtistsController alloc] autorelease] initWithScene: [self scene] mpdConnection:_mpdConnection genre:nil];
   }
   else if( [item isEqualToString:@"Albums"] )
   {
-    controller = [[MPDPlayerAlbumsController alloc] initWithScene: [self scene] mpdConnection:_mpdConnection genre:nil artist:nil];
+    controller = [[[MPDPlayerAlbumsController alloc] autorelease] initWithScene: [self scene] mpdConnection:_mpdConnection genre:nil artist:nil];
   }
   else if( [item isEqualToString:@"Songs"] )
   {
-    controller = [[MPDPlayerSongsController alloc] initWithScene: [self scene] mpdConnection:_mpdConnection genre:nil artist:nil album:nil];
+    controller = [[[MPDPlayerSongsController alloc] autorelease] initWithScene: [self scene] mpdConnection:_mpdConnection genre:nil artist:nil album:nil];
   }
   else if( [item isEqualToString:@"Genres"] )
   {
-    controller = [[MPDPlayerGenresController alloc] initWithScene: [self scene] mpdConnection: _mpdConnection];
+    controller = [[[MPDPlayerGenresController alloc] autorelease] initWithScene: [self scene] mpdConnection: _mpdConnection];
   }
   else if( [item isEqualToString:@"Now Playing"] )
   {
@@ -175,7 +175,7 @@ printf("wasPopped\n");
   }
   else if( [item isEqualToString:@"Settings"] )
   {
-    controller = [[MPDSettingsController alloc] initWithScene: [self scene] mpdConnection: _mpdConnection];
+    controller = [[[MPDSettingsController alloc] autorelease] initWithScene: [self scene] mpdConnection: _mpdConnection];
   }
   else if( [item isEqualToString:@"Servers"] )
   {
@@ -184,7 +184,6 @@ printf("wasPopped\n");
   
   if( controller != nil )
   {
-    [controller autorelease];
     [[self stack] pushController: controller];
   }
 }
