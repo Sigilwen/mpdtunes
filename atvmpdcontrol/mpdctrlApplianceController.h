@@ -26,7 +26,6 @@
 
 @interface mpdctrlApplianceController : MPDServerController
 {
-	MPDConnection*					_mpdConnection;
 	BRAlertController *				_alertController;
 
 	MPDStatusController *			_statusController;

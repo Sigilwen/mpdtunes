@@ -23,12 +23,17 @@
 	MADAdvancedListControl*			_serverListCtrl;
 	MPDListControlServerSource*		_serverListSource;
 	
+  MPDConnection *_mpdConnection;
+  
 	NSString*						_selectedHost;
 	int								_selectedPort;
 	NSString*						_selectedPassword;
 }
 
-- (id)initWithScene:(id)scene;
+- (id) initWithScene: (BRRenderScene *) scene
+    mpdConnection: (MPDConnection *) mpdConnection;
+
+- (MPDConnectionResult)autoconnect;
 
 - (BOOL)brEventAction:(BREvent*) brEvent;
 

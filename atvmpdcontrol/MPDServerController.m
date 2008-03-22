@@ -14,11 +14,14 @@
 
 @implementation MPDServerController
 
-- (id)initWithScene:(id)scene;
+- (id) initWithScene: (BRRenderScene *) scene
+    mpdConnection: (MPDConnection *) mpdConnection
 {
     if ( [super initWithScene: scene] == nil )
         return ( nil );
 
+  _mpdConnection = mpdConnection;
+  
 	_textEntryController = nil;
 		
 	MADVertLayout * layout = [MADVertLayout createSafeLayout:scene];
@@ -113,7 +116,10 @@
 		
 		[_serverListSource setDefaultServer:selected];
 		
-		// TODO: SelectedPort and password !
+    if( [_mpdConnection isConnected] )
+      [_mpdConnection disconnect];
+    
+    [[self stack]popController];
 	}	
 	if(selected > 0 && hash == kBREventTapLeft)
 	{
@@ -122,6 +128,15 @@
 		[_serverListSource store];	
 		[[self scene] renderScene];	
 	}
+}
+
+- (MPDConnectionResult)autoconnect
+{
+  if( _selectedHost == nil )
+    return MPDConnectionFailed;
+  return [_mpdConnection connectToHost:_selectedHost 
+                              withPort:_selectedPort 
+                          withPassword:_selectedPassword];
 }
 
 - (BOOL)brEventAction:(BREvent*) brEvent

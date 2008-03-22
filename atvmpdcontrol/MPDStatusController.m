@@ -7,7 +7,6 @@
 //
 
 #import "MPDStatusController.h"
-#import "MPDPlayerRootController.h"
 
 #import "MADVertLayout.h"
 #import "MADHorzLayout.h"
@@ -25,9 +24,7 @@
 			
 	_mpdConnection = nil;
 	
-	_playerController = [[MPDPlayerRootController alloc] initWithScene:scene];
 	_settingsController = [[MPDSettingsController alloc] initWithScene:scene];
-	_playlistController = [[MPDPlaylistOptionsController alloc]initWithScene:scene];
 	
 	_glControl = [[MADGLControl alloc] initWithScene:scene];
 	
@@ -174,8 +171,6 @@
 	[_progressCtrl release];
 	
 	[_settingsController release];
-	[_playerController release];
-	[_playlistController release];
 	
 	[_glControl release];
 	
@@ -195,16 +190,6 @@
 - (void)onAction
 {
 	[[self stack] pushController:_settingsController];
-}
-
-- (void)onAddSongPressed
-{
-	[[self stack] pushController:_playerController];
-}
-
-- (void)onEditClicked
-{
-	[[self stack] pushController:_playlistController];
 }
 
 - (void)updateVolumeCtrl
@@ -291,9 +276,7 @@
 	[_volumeBar setMpdConnection:mpdConnection];
 	[_controlBar setMpdConnection:mpdConnection];
 	[_playlistCtrl setMpdConnection:mpdConnection];
-	[_playerController setMpdConnection:_mpdConnection];
 	[_settingsController setMpdConnection:_mpdConnection];
-	[_playlistController setMpdConnection:_mpdConnection];
 }
 
 - (void) onConnectionLost

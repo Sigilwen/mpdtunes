@@ -7,7 +7,7 @@
 //
 
 #import "mpdctrlAppliance.h"
-#import "mpdctrlApplianceController.h"
+#import "MPDPlayerRootController.h"
 #import <BackRow/BackRow.h>
 #import <objc/objc-class.h>
 
@@ -57,7 +57,7 @@
 - (NSString *) moduleIconName
 {
     // replace this with your own icon name
-    return ( @"ApplianceIcon.png" );
+    return ( @"MPDIcon.png" );
 }
 
 - (NSString *) moduleName
@@ -80,7 +80,7 @@
 - (BRLayerController *) applianceControllerWithScene: (BRRenderScene *) scene
 {
     // this function is called when your item is selected on the main menu
-    return ( [[[mpdctrlApplianceController alloc] initWithScene: scene] autorelease] );
+    return ( [[[MPDPlayerRootController alloc] initWithScene: scene] autorelease] );
 }
 
 @end

@@ -21,13 +21,11 @@
 #import "MADMultiReceiverController.h"
 #import "MPDControlBar.h"
 #import "MADHorizontalProgressBar.h"
-#import "MPDPlayerController.h"
 #import "MPDControlBarDelegate.h"
 #import "MPDSettingsController.h"
 
 #import "MADGLControl.h"
 
-#import "MPDPlaylistOptionsController.h"
 
 @interface MPDStatusController : MADMultiReceiverController <MPDConnectionLostDelegate, MPDStatusChangedDelegate, MPDControlBarDelegate> {
 	MPDControlBar*					_controlBar;
@@ -43,9 +41,7 @@
 	MADVertLayout*					_volumeLayout;
 	MADHorzLayout*					_timeLayout;
 
-	MPDPlayerController *			_playerController;
 	MPDSettingsController*			_settingsController;
-	MPDPlaylistOptionsController*	_playlistController;
 	
 	MADGLControl*					_glControl;
 }
@@ -59,8 +55,6 @@
 - (void)setMpdConnection:(MPDConnection*)mpdConnection; 
 - (void)onConnectionLost;
 - (void)onStatusChanged:(ChangedStatusType)what;
-- (void)onAddSongPressed;
-- (void)onEditClicked;
 
 - (void)updateProgressCtrl;
 

@@ -78,18 +78,6 @@
 					sel -= 1;
 			}
 			
-			
-			if(sel == 0)
-			{
-				if(_target)
-					[_target onEditClicked];
-			
-				return YES;
-			}
-			
-			
-			sel -= 1;
-			
 			if(_modeRemoveSongs)
 			{
 				mpd_playlist_delete_pos([_mpdConnection object],sel);
@@ -129,13 +117,6 @@
 		}
 		row -= 1;
 	}
-	
-	if(row == 0)
-	{
-		return [self createItemWithText:@"Edit Playlist"];
-	}
-	
-	row -= 1;
 	
 	
 	mpd_Song* pSong = mpd_playlist_get_song_from_pos([_mpdConnection object],row);
@@ -180,8 +161,6 @@
 
 	if([_mpdConnection commandAllowed:@"delete" ] )
 		count += 1;
-		
-	count += 1;
 	
 	count += mpd_playlist_get_playlist_length([_mpdConnection object]);
 	return count;
