@@ -19,7 +19,6 @@
 		01DA7D570C2665FE00932C4D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01DA7D540C2665FE00932C4D /* Localizable.strings */; };
 		38FAF9B40C0129D500853CFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089C1672FE841209C02AAC07 /* Foundation.framework */; };
 		38FAFC320C012A7800853CFE /* mpdctrlAppliance.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FAFC2F0C012A7800853CFE /* mpdctrlAppliance.m */; };
-		38FAFC330C012A7800853CFE /* mpdctrlApplianceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FAFC310C012A7800853CFE /* mpdctrlApplianceController.m */; };
 		4E066E420C1228EE00DC29BF /* MPDPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */; };
 		4E066EE20C12309500DC29BF /* MPDServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E066EE10C12309500DC29BF /* MPDServerController.m */; };
 		4E066F710C1236FC00DC29BF /* MPDListControlServerSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E066F700C1236FC00DC29BF /* MPDListControlServerSource.m */; };
@@ -100,10 +99,8 @@
 		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32DBCF630370AF2F00C91783 /* mpdctrl_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mpdctrl_Prefix.pch; sourceTree = "<group>"; };
 		3834DF340C031FDC009BE46D /* BackRowUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackRowUtils.h; sourceTree = "<group>"; };
-		38FAFC2E0C012A7800853CFE /* mpdctrlApplianceController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = mpdctrlApplianceController.h; sourceTree = "<group>"; };
 		38FAFC2F0C012A7800853CFE /* mpdctrlAppliance.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = mpdctrlAppliance.m; sourceTree = "<group>"; };
 		38FAFC300C012A7800853CFE /* mpdctrlAppliance.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = mpdctrlAppliance.h; sourceTree = "<group>"; };
-		38FAFC310C012A7800853CFE /* mpdctrlApplianceController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = mpdctrlApplianceController.m; sourceTree = "<group>"; };
 		4E066E400C1228EE00DC29BF /* MPDPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDPlayerController.h; sourceTree = "<group>"; };
 		4E066E410C1228EE00DC29BF /* MPDPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDPlayerController.m; sourceTree = "<group>"; };
 		4E066EE00C12309500DC29BF /* MPDServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDServerController.h; sourceTree = "<group>"; };
@@ -360,8 +357,6 @@
 				4EC72E260C1AE3EB0079A988 /* Layout */,
 				38FAFC300C012A7800853CFE /* mpdctrlAppliance.h */,
 				38FAFC2F0C012A7800853CFE /* mpdctrlAppliance.m */,
-				38FAFC2E0C012A7800853CFE /* mpdctrlApplianceController.h */,
-				38FAFC310C012A7800853CFE /* mpdctrlApplianceController.m */,
 				4E8BD28A0C108D4E0009F8EF /* MADListControlArrayDataSource.h */,
 				4E8BD28B0C108D4E0009F8EF /* MADListControlArrayDataSource.m */,
 				4E8BD42D0C10AB830009F8EF /* MADListControlArtistSource.h */,
@@ -544,7 +539,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				38FAFC320C012A7800853CFE /* mpdctrlAppliance.m in Sources */,
-				38FAFC330C012A7800853CFE /* mpdctrlApplianceController.m in Sources */,
 				4E8BD28C0C108D4E0009F8EF /* MADListControlArrayDataSource.m in Sources */,
 				4E8BD42F0C10AB830009F8EF /* MADListControlArtistSource.m in Sources */,
 				4E8BD5AC0C10B9430009F8EF /* MADListControl.m in Sources */,

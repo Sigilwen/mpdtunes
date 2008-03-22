@@ -7,7 +7,6 @@
 //
 
 #import "MPDPlayerController.h"
-#import "mpdctrlApplianceController.h"
 #import "libmpd/libmpd.h"
 
 
@@ -84,7 +83,7 @@
 {
   if(_visible)
   {
-printf("got event: 0x%08x 0x%08x %s\n", [event value], [self selectedObject], [[self listTitle] UTF8String]);
+//printf("got event: 0x%08x 0x%08x %s\n", [event value], [self selectedObject], [[self listTitle] UTF8String]);
 //printf("%s\n", [[BRBacktracingException backtrace] UTF8String]);
     BREventPageUsageHash hashVal = [event pageUsageHash];
     int selected = [(BRListControl*)[self list] selection];
@@ -112,10 +111,6 @@ printf("got event: 0x%08x 0x%08x %s\n", [event value], [self selectedObject], [[
         return YES;
         
     }
-  }
-  else
-  {
-printf("not visible: 0x%08x 0x%08x %s\n", [event value], [self selectedObject], [[self listTitle] UTF8String]);
   }
 	return [super brEventAction:event];
 }
