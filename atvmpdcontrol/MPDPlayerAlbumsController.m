@@ -8,6 +8,10 @@
 
 #import "MPDPlayerAlbumsController.h"
 #import "MPDPlayerSongsController.h"
+#import "MPDAlbumArtworkManager.h"
+
+// XXX
+//#import <BackRow/BRMediaPreviewControllerProtocol.h>
 
 
 @implementation MPDPlayerAlbumsController
@@ -24,6 +28,7 @@
   
   _genre = genre;
   _artist = artist;
+  
   if( _artist == NULL )
     [self setListTitle: @"Albums"];
   else
@@ -104,6 +109,23 @@
     album = [_names objectAtIndex: row];
   
   [self addToPlaylist:_mpdConnection genre:_genre artist:_artist album:album song:nil];
+}
+
+
+
+- (id<BRMediaPreviewController>) previewControllerForItem: (long) item
+{
+/*
+SapphireMedia *asset  =[SapphireMedia alloc];
+[asset setImagePath:[[NSBundle bundleForClass:[self class]] pathForResource:@"DefaultPreview" ofType:@"png"]];
+[self setAsset:asset];	
+*/
+printf("previewControllerForItem: %d\n", item);
+NSString *album = [self titleForRow:item];
+id<BRMediaPreviewController> preview = [[BRMetadataPreviewController alloc] initWithScene: [self scene]];
+[preview setAsset: [[MPDAlbumArtworkManager sharedInstance] getAlbumAsset:album forArtist:_artist]];
+//[preview setShowsMetadataImmediately:YES];
+return [preview autorelease];
 }
 
 

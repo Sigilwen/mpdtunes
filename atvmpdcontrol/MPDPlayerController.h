@@ -15,7 +15,7 @@
 
 #import "MPDConnection.h"
 
-@interface MPDPlayerController : BRMenuController <MPDConnectionLostDelegate, MPDStatusChangedDelegate> 
+@interface MPDPlayerController : BRMediaMenuController <MPDConnectionLostDelegate, MPDStatusChangedDelegate> 
 {
 	MPDConnection  *_mpdConnection;
   NSMutableArray *_names;
