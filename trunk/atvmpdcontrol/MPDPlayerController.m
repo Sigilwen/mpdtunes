@@ -17,6 +17,8 @@
   if ( [super initWithScene: scene] == nil )
     return ( nil );
   
+  printf("scene=0x%08x\n",scene);
+  
 	_mpdConnection = nil;
   _visible = TRUE;
 	

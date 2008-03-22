@@ -149,11 +149,19 @@ printf("wasPopped\n");
   
   if( [item isEqualToString:@"Shuffle"] )
   {
-    printf("not implemented: %d\n", row);
+    controller = [[BRAlertController alertOfType:2
+                                          titled:@"Error"
+                                     primaryText:@"Not implemented"
+                                   secondaryText:@""
+                                       withScene:[self scene]] autorelease];
   }
   else if( [item isEqualToString:@"Playlists"] )
   {
-    printf("not implemented: %d\n", row);
+    controller = [[BRAlertController alertOfType:2
+                                          titled:@"Error"
+                                     primaryText:@"Not implemented"
+                                   secondaryText:@""
+                                       withScene:[self scene]] autorelease];
   }
   else if( [item isEqualToString:@"Artists"] )
   {

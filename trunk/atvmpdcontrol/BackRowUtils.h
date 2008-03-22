@@ -21,6 +21,7 @@ void BRSystemLogv( int level, NSString * format, va_list args );
 CGImageRef CreateImageForURL( NSURL * imageURL );
 CGImageRef CreatePNGForURL( NSURL * imageURL );
 CGImageRef CreateJPEGForURL( NSURL * imageURL );
+NSData * CreateBitmapDataFromImage( CGImageRef image, int width, int height );
 
 NSData * CreateBitmapDataFromAttributedString( CFAttributedStringRef string,
                                                UInt32 width, UInt32 height );
