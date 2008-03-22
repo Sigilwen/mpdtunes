@@ -34,7 +34,7 @@
 - (BOOL)brEventAction:(BREvent*)event
 {
 	int ret =  [_eventReceiver processEvent:event];
-	
+printf("ret=%d\n",ret);	
 	if(ret == -1)
 		return NO;
 	
@@ -71,6 +71,7 @@
 		}
 	}
 		
+printf("going to call super\n");
 
 	return [super brEventAction:event];
 }
