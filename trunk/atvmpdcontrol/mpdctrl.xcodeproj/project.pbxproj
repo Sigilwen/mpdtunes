@@ -10,7 +10,6 @@
 		01230D300C25288E00A52041 /* MADGLLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 01230D2F0C25288E00A52041 /* MADGLLayer.m */; };
 		01230DFA0C252F7300A52041 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01230DF90C252F7300A52041 /* OpenGL.framework */; };
 		012539DC0C259E6700889AC2 /* MADGLControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 012539DB0C259E6700889AC2 /* MADGLControl.m */; };
-		0127FD670C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0127FD660C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.m */; };
 		0127FE890C3D68F500A8A7F3 /* MADFileItemLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0127FE880C3D68F500A8A7F3 /* MADFileItemLayer.m */; };
 		01A171E50C2266A60090C36F /* MPDSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A171E40C2266A60090C36F /* MPDSettingsController.m */; };
 		01A172000C226F960090C36F /* MPDDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A171FF0C226F960090C36F /* MPDDevice.m */; };
@@ -40,10 +39,7 @@
 		4E73F3AF0C1332F600C21E2B /* MADObjectWithAutoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73F3AE0C1332F600C21E2B /* MADObjectWithAutoSize.m */; };
 		4E73F9A80C16D74200C21E2B /* MPDConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73F9A70C16D74200C21E2B /* MPDConnection.m */; };
 		4E8BD28C0C108D4E0009F8EF /* MADListControlArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BD28B0C108D4E0009F8EF /* MADListControlArrayDataSource.m */; };
-		4E8BD42F0C10AB830009F8EF /* MADListControlArtistSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BD42E0C10AB830009F8EF /* MADListControlArtistSource.m */; };
 		4E8BD5AC0C10B9430009F8EF /* MADListControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BD5AB0C10B9430009F8EF /* MADListControl.m */; };
-		4E8BD68F0C10C8660009F8EF /* MADListControlAlbumSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BD68E0C10C8660009F8EF /* MADListControlAlbumSource.m */; };
-		4E8BD6920C10C8860009F8EF /* MADListControlSongSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BD6910C10C8860009F8EF /* MADListControlSongSource.m */; };
 		4E8BD82A0C1110F00009F8EF /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8BD8290C1110F00009F8EF /* AppKit.framework */; };
 		4E8BD9190C1176AD0009F8EF /* MPDSmallTextControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BD9180C1176AD0009F8EF /* MPDSmallTextControl.m */; };
 		4E8BD9610C1190A50009F8EF /* MADHorzLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BD9600C1190A50009F8EF /* MADHorzLayout.m */; };
@@ -55,7 +51,6 @@
 		4E8F8F620C1748FE000A217E /* MADVerticalSegmentedWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F8F610C1748FE000A217E /* MADVerticalSegmentedWidget.m */; };
 		4E8F8FA60C1759E5000A217E /* MADVerticalProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F8FA50C1759E5000A217E /* MADVerticalProgressBar.m */; };
 		4E8F913A0C1772BA000A217E /* MADObjectWithSizeFromObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F91390C1772BA000A217E /* MADObjectWithSizeFromObject.m */; };
-		4E8F92050C1814FE000A217E /* MPDListControlPlaylistSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F92040C1814FE000A217E /* MPDListControlPlaylistSource.m */; };
 		4E8F92D20C182549000A217E /* MADDeactivateableControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F92D10C182549000A217E /* MADDeactivateableControl.m */; };
 		4E8F93200C182D0B000A217E /* MADPlaylistList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F931F0C182D0B000A217E /* MADPlaylistList.m */; };
 		4E8F960D0C18345A000A217E /* MADMultiReceiverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F960C0C18345A000A217E /* MADMultiReceiverController.m */; };
@@ -84,8 +79,6 @@
 		01230F2F0C25465F00A52041 /* MPDControlBarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDControlBarDelegate.h; sourceTree = "<group>"; };
 		012539DA0C259E6700889AC2 /* MADGLControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADGLControl.h; sourceTree = "<group>"; };
 		012539DB0C259E6700889AC2 /* MADGLControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADGLControl.m; sourceTree = "<group>"; };
-		0127FD650C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDPlaylistOptionsController.h; sourceTree = "<group>"; };
-		0127FD660C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDPlaylistOptionsController.m; sourceTree = "<group>"; };
 		0127FE870C3D68F500A8A7F3 /* MADFileItemLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADFileItemLayer.h; sourceTree = "<group>"; };
 		0127FE880C3D68F500A8A7F3 /* MADFileItemLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADFileItemLayer.m; sourceTree = "<group>"; };
 		01A171E30C2266A60090C36F /* MPDSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDSettingsController.h; sourceTree = "<group>"; };
@@ -146,14 +139,8 @@
 		4E73FA080C16DE7B00C21E2B /* MPDConnectionLostDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDConnectionLostDelegate.h; sourceTree = "<group>"; };
 		4E8BD28A0C108D4E0009F8EF /* MADListControlArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADListControlArrayDataSource.h; sourceTree = "<group>"; };
 		4E8BD28B0C108D4E0009F8EF /* MADListControlArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADListControlArrayDataSource.m; sourceTree = "<group>"; };
-		4E8BD42D0C10AB830009F8EF /* MADListControlArtistSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADListControlArtistSource.h; sourceTree = "<group>"; };
-		4E8BD42E0C10AB830009F8EF /* MADListControlArtistSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADListControlArtistSource.m; sourceTree = "<group>"; };
 		4E8BD5AA0C10B9430009F8EF /* MADListControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADListControl.h; sourceTree = "<group>"; };
 		4E8BD5AB0C10B9430009F8EF /* MADListControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADListControl.m; sourceTree = "<group>"; };
-		4E8BD68D0C10C8660009F8EF /* MADListControlAlbumSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADListControlAlbumSource.h; sourceTree = "<group>"; };
-		4E8BD68E0C10C8660009F8EF /* MADListControlAlbumSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADListControlAlbumSource.m; sourceTree = "<group>"; };
-		4E8BD6900C10C8860009F8EF /* MADListControlSongSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADListControlSongSource.h; sourceTree = "<group>"; };
-		4E8BD6910C10C8860009F8EF /* MADListControlSongSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADListControlSongSource.m; sourceTree = "<group>"; };
 		4E8BD8290C1110F00009F8EF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
 		4E8BD9170C1176AD0009F8EF /* MPDSmallTextControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDSmallTextControl.h; sourceTree = "<group>"; };
 		4E8BD9180C1176AD0009F8EF /* MPDSmallTextControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDSmallTextControl.m; sourceTree = "<group>"; };
@@ -176,8 +163,6 @@
 		4E8F8FA50C1759E5000A217E /* MADVerticalProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADVerticalProgressBar.m; sourceTree = "<group>"; };
 		4E8F91380C1772BA000A217E /* MADObjectWithSizeFromObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADObjectWithSizeFromObject.h; sourceTree = "<group>"; };
 		4E8F91390C1772BA000A217E /* MADObjectWithSizeFromObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADObjectWithSizeFromObject.m; sourceTree = "<group>"; };
-		4E8F92030C1814FE000A217E /* MPDListControlPlaylistSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDListControlPlaylistSource.h; sourceTree = "<group>"; };
-		4E8F92040C1814FE000A217E /* MPDListControlPlaylistSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDListControlPlaylistSource.m; sourceTree = "<group>"; };
 		4E8F92D00C182549000A217E /* MADDeactivateableControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADDeactivateableControl.h; sourceTree = "<group>"; };
 		4E8F92D10C182549000A217E /* MADDeactivateableControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADDeactivateableControl.m; sourceTree = "<group>"; };
 		4E8F93070C182C22000A217E /* MADEventForwarder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADEventForwarder.h; sourceTree = "<group>"; };
@@ -359,14 +344,8 @@
 				38FAFC2F0C012A7800853CFE /* mpdctrlAppliance.m */,
 				4E8BD28A0C108D4E0009F8EF /* MADListControlArrayDataSource.h */,
 				4E8BD28B0C108D4E0009F8EF /* MADListControlArrayDataSource.m */,
-				4E8BD42D0C10AB830009F8EF /* MADListControlArtistSource.h */,
-				4E8BD42E0C10AB830009F8EF /* MADListControlArtistSource.m */,
 				4E8BD5AA0C10B9430009F8EF /* MADListControl.h */,
 				4E8BD5AB0C10B9430009F8EF /* MADListControl.m */,
-				4E8BD68D0C10C8660009F8EF /* MADListControlAlbumSource.h */,
-				4E8BD68E0C10C8660009F8EF /* MADListControlAlbumSource.m */,
-				4E8BD6900C10C8860009F8EF /* MADListControlSongSource.h */,
-				4E8BD6910C10C8860009F8EF /* MADListControlSongSource.m */,
 				4E8BD9170C1176AD0009F8EF /* MPDSmallTextControl.h */,
 				4E8BD9180C1176AD0009F8EF /* MPDSmallTextControl.m */,
 				4E066F6F0C1236FC00DC29BF /* MPDListControlServerSource.h */,
@@ -394,8 +373,6 @@
 				4E8F96A00C183EEC000A217E /* MPDControlBar.m */,
 				4E8F931E0C182D0B000A217E /* MADPlaylistList.h */,
 				4E8F931F0C182D0B000A217E /* MADPlaylistList.m */,
-				4E8F92030C1814FE000A217E /* MPDListControlPlaylistSource.h */,
-				4E8F92040C1814FE000A217E /* MPDListControlPlaylistSource.m */,
 				01A171FE0C226F960090C36F /* MPDDevice.h */,
 				01A171FF0C226F960090C36F /* MPDDevice.m */,
 				0127FE870C3D68F500A8A7F3 /* MADFileItemLayer.h */,
@@ -451,8 +428,6 @@
 				4E066FD30C123ACF00DC29BF /* MPDAddressEntryController.h */,
 				4E73F3160C13290400C21E2B /* MPDStatusController.h */,
 				4E73F3170C13290400C21E2B /* MPDStatusController.m */,
-				0127FD650C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.h */,
-				0127FD660C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -540,10 +515,7 @@
 			files = (
 				38FAFC320C012A7800853CFE /* mpdctrlAppliance.m in Sources */,
 				4E8BD28C0C108D4E0009F8EF /* MADListControlArrayDataSource.m in Sources */,
-				4E8BD42F0C10AB830009F8EF /* MADListControlArtistSource.m in Sources */,
 				4E8BD5AC0C10B9430009F8EF /* MADListControl.m in Sources */,
-				4E8BD68F0C10C8660009F8EF /* MADListControlAlbumSource.m in Sources */,
-				4E8BD6920C10C8860009F8EF /* MADListControlSongSource.m in Sources */,
 				4E8BD9190C1176AD0009F8EF /* MPDSmallTextControl.m in Sources */,
 				4E8BD9610C1190A50009F8EF /* MADHorzLayout.m in Sources */,
 				4E8BD9640C11919C0009F8EF /* MADVertLayout.m in Sources */,
@@ -562,7 +534,6 @@
 				4E8F8F620C1748FE000A217E /* MADVerticalSegmentedWidget.m in Sources */,
 				4E8F8FA60C1759E5000A217E /* MADVerticalProgressBar.m in Sources */,
 				4E8F913A0C1772BA000A217E /* MADObjectWithSizeFromObject.m in Sources */,
-				4E8F92050C1814FE000A217E /* MPDListControlPlaylistSource.m in Sources */,
 				4E8F92D20C182549000A217E /* MADDeactivateableControl.m in Sources */,
 				4E8F93200C182D0B000A217E /* MADPlaylistList.m in Sources */,
 				4E8F960D0C18345A000A217E /* MADMultiReceiverController.m in Sources */,
@@ -586,7 +557,6 @@
 				01A172000C226F960090C36F /* MPDDevice.m in Sources */,
 				01230D300C25288E00A52041 /* MADGLLayer.m in Sources */,
 				012539DC0C259E6700889AC2 /* MADGLControl.m in Sources */,
-				0127FD670C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.m in Sources */,
 				0127FE890C3D68F500A8A7F3 /* MADFileItemLayer.m in Sources */,
 				717233C30D8DEBDD001E578B /* MPDPlayerRootController.m in Sources */,
 				717233CA0D8DF841001E578B /* MPDPlayerGenresController.m in Sources */,

@@ -23,6 +23,12 @@
 		};
 	};
 	0127FD650C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = MPDPlaylistOptionsController.h;
+		path = "/Users/Shared/open-src/atvmpdcontrol/MPDPlaylistOptionsController.h";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1134, 976}}";
 			sepNavSelRange = "{632, 19}";
@@ -30,10 +36,16 @@
 		};
 	};
 	0127FD660C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = MPDPlaylistOptionsController.m;
+		path = "/Users/Shared/open-src/atvmpdcontrol/MPDPlaylistOptionsController.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1134, 5776}}";
-			sepNavSelRange = "{1106, 78}";
-			sepNavVisRange = "{257, 1911}";
+			sepNavIntBoundsRect = "{{0, 0}, {1134, 5836}}";
+			sepNavSelRange = "{12505, 0}";
+			sepNavVisRange = "{11548, 1013}";
 		};
 	};
 	01A171E30C2266A60090C36F /* MPDSettingsController.h */ = {
@@ -528,6 +540,33 @@
 			718C50B00D94C08800FD9A5D /* PBXTextBookmark */ = 718C50B00D94C08800FD9A5D /* PBXTextBookmark */;
 			718C50B10D94C08800FD9A5D /* PBXTextBookmark */ = 718C50B10D94C08800FD9A5D /* PBXTextBookmark */;
 			718C50B20D94C08800FD9A5D /* PBXTextBookmark */ = 718C50B20D94C08800FD9A5D /* PBXTextBookmark */;
+			718C50BB0D94C25E00FD9A5D /* PBXTextBookmark */ = 718C50BB0D94C25E00FD9A5D /* PBXTextBookmark */;
+			718C50BC0D94C25E00FD9A5D /* PBXTextBookmark */ = 718C50BC0D94C25E00FD9A5D /* PBXTextBookmark */;
+			718C50BD0D94C25E00FD9A5D /* PBXTextBookmark */ = 718C50BD0D94C25E00FD9A5D /* PBXTextBookmark */;
+			718C50BE0D94C25E00FD9A5D /* PBXTextBookmark */ = 718C50BE0D94C25E00FD9A5D /* PBXTextBookmark */;
+			718C50BF0D94C25E00FD9A5D /* PBXTextBookmark */ = 718C50BF0D94C25E00FD9A5D /* PBXTextBookmark */;
+			718C50C00D94C25E00FD9A5D /* PBXTextBookmark */ = 718C50C00D94C25E00FD9A5D /* PBXTextBookmark */;
+			718C50C20D94C26900FD9A5D /* PBXTextBookmark */ = 718C50C20D94C26900FD9A5D /* PBXTextBookmark */;
+			718C50C60D94C29300FD9A5D /* PBXTextBookmark */ = 718C50C60D94C29300FD9A5D /* PBXTextBookmark */;
+			718C50C70D94C29300FD9A5D /* PBXTextBookmark */ = 718C50C70D94C29300FD9A5D /* PBXTextBookmark */;
+			718C50CC0D94C38E00FD9A5D /* PBXTextBookmark */ = 718C50CC0D94C38E00FD9A5D /* PBXTextBookmark */;
+			718C50CD0D94C38E00FD9A5D /* PBXTextBookmark */ = 718C50CD0D94C38E00FD9A5D /* PBXTextBookmark */;
+			718C50CE0D94C38E00FD9A5D /* PBXTextBookmark */ = 718C50CE0D94C38E00FD9A5D /* PBXTextBookmark */;
+			718C50CF0D94C38E00FD9A5D /* PBXTextBookmark */ = 718C50CF0D94C38E00FD9A5D /* PBXTextBookmark */;
+			718C50D00D94C38E00FD9A5D /* PBXTextBookmark */ = 718C50D00D94C38E00FD9A5D /* PBXTextBookmark */;
+			718C50D10D94C38E00FD9A5D /* PBXTextBookmark */ = 718C50D10D94C38E00FD9A5D /* PBXTextBookmark */;
+			718C50D20D94C38E00FD9A5D /* PBXTextBookmark */ = 718C50D20D94C38E00FD9A5D /* PBXTextBookmark */;
+			718C50D30D94C38E00FD9A5D /* PBXTextBookmark */ = 718C50D30D94C38E00FD9A5D /* PBXTextBookmark */;
+			718C50D40D94C38E00FD9A5D /* PBXTextBookmark */ = 718C50D40D94C38E00FD9A5D /* PBXTextBookmark */;
+			718C50D50D94C38E00FD9A5D /* PBXTextBookmark */ = 718C50D50D94C38E00FD9A5D /* PBXTextBookmark */;
+			718C50D60D94C38E00FD9A5D /* PBXTextBookmark */ = 718C50D60D94C38E00FD9A5D /* PBXTextBookmark */;
+			718C50D80D94C41700FD9A5D /* PBXTextBookmark */ = 718C50D80D94C41700FD9A5D /* PBXTextBookmark */;
+			718C50D90D94C41700FD9A5D /* PBXTextBookmark */ = 718C50D90D94C41700FD9A5D /* PBXTextBookmark */;
+			718C50DA0D94C41700FD9A5D /* PBXTextBookmark */ = 718C50DA0D94C41700FD9A5D /* PBXTextBookmark */;
+			718C50DB0D94C41700FD9A5D /* PBXTextBookmark */ = 718C50DB0D94C41700FD9A5D /* PBXTextBookmark */;
+			718C50DC0D94C4AB00FD9A5D /* PBXTextBookmark */ = 718C50DC0D94C4AB00FD9A5D /* PBXTextBookmark */;
+			718C50E00D94C4F500FD9A5D /* PBXTextBookmark */ = 718C50E00D94C4F500FD9A5D /* PBXTextBookmark */;
+			718C50E10D94C4F500FD9A5D /* PBXTextBookmark */ = 718C50E10D94C4F500FD9A5D /* PBXTextBookmark */;
 		};
 		sourceControlManager = 71A11DA50D839DE300E38D42 /* Source Control */;
 		userBuildSettings = {
@@ -649,6 +688,13 @@
 			sepNavVisRange = "{0, 471}";
 		};
 	};
+	4E0A840B0C198C9C00BF8797 /* debug_printf.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1134, 588}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{19, 976}";
+		};
+	};
 	4E0A84120C198C9C00BF8797 /* libmpd-playlist.c */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1134, 11552}}";
@@ -679,16 +725,16 @@
 	};
 	4E73F3160C13290400C21E2B /* MPDStatusController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1134, 804}}";
-			sepNavSelRange = "{616, 26}";
-			sepNavVisRange = "{41, 1439}";
+			sepNavIntBoundsRect = "{{0, 0}, {1134, 792}}";
+			sepNavSelRange = "{233, 0}";
+			sepNavVisRange = "{0, 1433}";
 		};
 	};
 	4E73F3170C13290400C21E2B /* MPDStatusController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1134, 3636}}";
-			sepNavSelRange = "{4862, 11}";
-			sepNavVisRange = "{2402, 2393}";
+			sepNavIntBoundsRect = "{{0, 0}, {1134, 3756}}";
+			sepNavSelRange = "{323, 19}";
+			sepNavVisRange = "{0, 1001}";
 			sepNavWindowFrame = "{{15, 4}, {1118, 874}}";
 		};
 	};
@@ -715,8 +761,8 @@
 	};
 	4E8BD28A0C108D4E0009F8EF /* MADListControlArrayDataSource.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1059, 802}}";
-			sepNavSelRange = "{161, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1134, 516}}";
+			sepNavSelRange = "{199, 29}";
 			sepNavVisRange = "{0, 692}";
 			sepNavWindowFrame = "{{15, 4}, {1118, 874}}";
 		};
@@ -730,14 +776,26 @@
 		};
 	};
 	4E8BD42D0C10AB830009F8EF /* MADListControlArtistSource.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = MADListControlArtistSource.h;
+		path = "/Users/Shared/open-src/atvmpdcontrol/MADListControlArtistSource.h";
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1059, 802}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1134, 516}}";
 			sepNavSelRange = "{318, 29}";
 			sepNavVisRange = "{0, 533}";
 			sepNavWindowFrame = "{{15, 4}, {1118, 874}}";
 		};
 	};
 	4E8BD42E0C10AB830009F8EF /* MADListControlArtistSource.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = MADListControlArtistSource.m;
+		path = "/Users/Shared/open-src/atvmpdcontrol/MADListControlArtistSource.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1059, 1072}}";
 			sepNavSelRange = "{216, 26}";
@@ -812,7 +870,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1134, 2520}}";
 			sepNavSelRange = "{754, 13}";
-			sepNavVisRange = "{484, 643}";
+			sepNavVisRange = "{486, 684}";
 		};
 	};
 	4E8F960B0C18345A000A217E /* MADMultiReceiverController.h */ = {
@@ -1118,9 +1176,9 @@
 	};
 	717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1086, 2220}}";
-			sepNavSelRange = "{5047, 0}";
-			sepNavVisRange = "{3859, 641}";
+			sepNavIntBoundsRect = "{{0, 0}, {1134, 2352}}";
+			sepNavSelRange = "{1423, 0}";
+			sepNavVisRange = "{222, 1640}";
 			sepNavWindowFrame = "{{15, 4}, {1118, 874}}";
 		};
 	};
@@ -1445,7 +1503,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 84";
 		rLen = 0;
-		rLoc = 5081;
+		rLoc = 5285;
 		rType = 0;
 		vrLen = 984;
 		vrLoc = 848;
@@ -2218,7 +2276,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 77";
 		rLen = 0;
-		rLoc = 5048;
+		rLoc = 5252;
 		rType = 0;
 		vrLen = 1096;
 		vrLoc = 1290;
@@ -2238,7 +2296,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 77";
 		rLen = 0;
-		rLoc = 5048;
+		rLoc = 5252;
 		rType = 0;
 		vrLen = 1096;
 		vrLoc = 1290;
@@ -2396,7 +2454,7 @@
 		fRef = 4E73F3160C13290400C21E2B /* MPDStatusController.h */;
 		name = "MPDStatusController.h: 28";
 		rLen = 0;
-		rLoc = 581;
+		rLoc = 540;
 		rType = 0;
 		vrLen = 1436;
 		vrLoc = 44;
@@ -2416,7 +2474,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 63";
 		rLen = 0;
-		rLoc = 1467;
+		rLoc = 1462;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 2075;
@@ -2456,7 +2514,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 63";
 		rLen = 0;
-		rLoc = 1467;
+		rLoc = 1462;
 		rType = 0;
 		vrLen = 1536;
 		vrLoc = 144;
@@ -2496,7 +2554,7 @@
 		fRef = 4E73F3160C13290400C21E2B /* MPDStatusController.h */;
 		name = "MPDStatusController.h: 45";
 		rLen = 0;
-		rLoc = 1085;
+		rLoc = 1044;
 		rType = 0;
 		vrLen = 1073;
 		vrLoc = 521;
@@ -2556,7 +2614,7 @@
 		fRef = 4E73F3160C13290400C21E2B /* MPDStatusController.h */;
 		name = "MPDStatusController.h: 45";
 		rLen = 0;
-		rLoc = 1085;
+		rLoc = 1044;
 		rType = 0;
 		vrLen = 1040;
 		vrLoc = 582;
@@ -2576,7 +2634,7 @@
 		fRef = 4E73F3160C13290400C21E2B /* MPDStatusController.h */;
 		name = "MPDStatusController.h: 60";
 		rLen = 0;
-		rLoc = 1381;
+		rLoc = 1340;
 		rType = 0;
 		vrLen = 1017;
 		vrLoc = 556;
@@ -2606,7 +2664,7 @@
 		fRef = 4E73F3160C13290400C21E2B /* MPDStatusController.h */;
 		name = "MPDStatusController.h: 28";
 		rLen = 0;
-		rLoc = 581;
+		rLoc = 540;
 		rType = 0;
 		vrLen = 1436;
 		vrLoc = 44;
@@ -2646,7 +2704,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 74";
 		rLen = 0;
-		rLoc = 3519;
+		rLoc = 3612;
 		rType = 0;
 		vrLen = 1745;
 		vrLoc = 630;
@@ -2656,7 +2714,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 111";
 		rLen = 0;
-		rLoc = 5048;
+		rLoc = 5252;
 		rType = 0;
 		vrLen = 1728;
 		vrLoc = 1475;
@@ -2666,7 +2724,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 111";
 		rLen = 0;
-		rLoc = 5048;
+		rLoc = 5252;
 		rType = 0;
 		vrLen = 1668;
 		vrLoc = 0;
@@ -2714,7 +2772,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 112";
 		rLen = 0;
-		rLoc = 5048;
+		rLoc = 5252;
 		rType = 0;
 		vrLen = 1747;
 		vrLoc = 1660;
@@ -2754,7 +2812,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 112";
 		rLen = 0;
-		rLoc = 5048;
+		rLoc = 5252;
 		rType = 0;
 		vrLen = 1747;
 		vrLoc = 1660;
@@ -2834,7 +2892,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 63";
 		rLen = 0;
-		rLoc = 1467;
+		rLoc = 1462;
 		rType = 0;
 		vrLen = 1534;
 		vrLoc = 261;
@@ -2874,7 +2932,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 108";
 		rLen = 0;
-		rLoc = 3668;
+		rLoc = 3761;
 		rType = 0;
 		vrLen = 1753;
 		vrLoc = 1935;
@@ -2884,7 +2942,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 137";
 		rLen = 0;
-		rLoc = 5048;
+		rLoc = 5252;
 		rType = 0;
 		vrLen = 1680;
 		vrLoc = 678;
@@ -2920,7 +2978,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 83";
 		rLen = 0;
-		rLoc = 3519;
+		rLoc = 3612;
 		rType = 0;
 		vrLen = 1394;
 		vrLoc = 1422;
@@ -2962,7 +3020,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 101";
 		rLen = 0;
-		rLoc = 3519;
+		rLoc = 3612;
 		rType = 0;
 		vrLen = 1391;
 		vrLoc = 1422;
@@ -2972,7 +3030,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 101";
 		rLen = 0;
-		rLoc = 3519;
+		rLoc = 3612;
 		rType = 0;
 		vrLen = 1391;
 		vrLoc = 1422;
@@ -2992,7 +3050,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 101";
 		rLen = 0;
-		rLoc = 3519;
+		rLoc = 3612;
 		rType = 0;
 		vrLen = 1391;
 		vrLoc = 1422;
@@ -3072,7 +3130,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 48";
 		rLen = 0;
-		rLoc = 1466;
+		rLoc = 1461;
 		rType = 0;
 		vrLen = 1312;
 		vrLoc = 707;
@@ -3092,7 +3150,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 48";
 		rLen = 0;
-		rLoc = 1466;
+		rLoc = 1461;
 		rType = 0;
 		vrLen = 1312;
 		vrLoc = 707;
@@ -3112,7 +3170,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 56";
 		rLen = 0;
-		rLoc = 1518;
+		rLoc = 1513;
 		rType = 0;
 		vrLen = 1396;
 		vrLoc = 786;
@@ -3172,7 +3230,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 147";
 		rLen = 0;
-		rLoc = 5134;
+		rLoc = 5338;
 		rType = 0;
 		vrLen = 1771;
 		vrLoc = 2388;
@@ -3212,7 +3270,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 59";
 		rLen = 0;
-		rLoc = 1584;
+		rLoc = 1579;
 		rType = 0;
 		vrLen = 1771;
 		vrLoc = 2398;
@@ -3222,7 +3280,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 74";
 		rLen = 0;
-		rLoc = 2532;
+		rLoc = 2570;
 		rType = 0;
 		vrLen = 1659;
 		vrLoc = 690;
@@ -3232,7 +3290,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 77";
 		rLen = 0;
-		rLoc = 2532;
+		rLoc = 2570;
 		rType = 0;
 		vrLen = 1679;
 		vrLoc = 1046;
@@ -3242,7 +3300,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 151";
 		rLen = 0;
-		rLoc = 5044;
+		rLoc = 5248;
 		rType = 0;
 		vrLen = 1837;
 		vrLoc = 2618;
@@ -3252,7 +3310,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 150";
 		rLen = 0;
-		rLoc = 5025;
+		rLoc = 5229;
 		rType = 0;
 		vrLen = 1839;
 		vrLoc = 2618;
@@ -3262,7 +3320,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 56";
 		rLen = 0;
-		rLoc = 1560;
+		rLoc = 1555;
 		rType = 0;
 		vrLen = 1775;
 		vrLoc = 930;
@@ -3282,7 +3340,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 150";
 		rLen = 0;
-		rLoc = 5025;
+		rLoc = 5229;
 		rType = 0;
 		vrLen = 1887;
 		vrLoc = 2569;
@@ -3322,7 +3380,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 150";
 		rLen = 0;
-		rLoc = 5025;
+		rLoc = 5229;
 		rType = 0;
 		vrLen = 1887;
 		vrLoc = 2569;
@@ -3402,7 +3460,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 80";
 		rLen = 0;
-		rLoc = 2532;
+		rLoc = 2570;
 		rType = 0;
 		vrLen = 1813;
 		vrLoc = 1413;
@@ -3422,7 +3480,7 @@
 		comments = "error: request for member ‘_selectedHost’ in something not a structure or union";
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		rLen = 0;
-		rLoc = 97;
+		rLoc = 98;
 		rType = 1;
 	};
 	718C4FEB0D9495E800FD9A5D /* PBXTextBookmark */ = {
@@ -3450,7 +3508,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 83";
 		rLen = 0;
-		rLoc = 2532;
+		rLoc = 2570;
 		rType = 0;
 		vrLen = 1813;
 		vrLoc = 845;
@@ -3470,7 +3528,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 88";
 		rLen = 0;
-		rLoc = 2532;
+		rLoc = 2570;
 		rType = 0;
 		vrLen = 1713;
 		vrLoc = 848;
@@ -3480,7 +3538,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 78";
 		rLen = 0;
-		rLoc = 2532;
+		rLoc = 2570;
 		rType = 0;
 		vrLen = 1858;
 		vrLoc = 739;
@@ -3510,7 +3568,7 @@
 		comments = "error: request for member ‘_selectedHost’ in something not a structure or union";
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		rLen = 0;
-		rLoc = 97;
+		rLoc = 98;
 		rType = 1;
 	};
 	718C4FF80D94960200FD9A5D /* PBXTextBookmark */ = {
@@ -3538,7 +3596,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 78";
 		rLen = 0;
-		rLoc = 2532;
+		rLoc = 2570;
 		rType = 0;
 		vrLen = 304;
 		vrLoc = 1956;
@@ -3558,7 +3616,7 @@
 		comments = "warning: assignment from distinct Objective-C type";
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		rLen = 1;
-		rLoc = 181;
+		rLoc = 187;
 		rType = 1;
 	};
 	718C4FFE0D9496DB00FD9A5D /* PBXTextBookmark */ = {
@@ -3566,7 +3624,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 78";
 		rLen = 0;
-		rLoc = 2532;
+		rLoc = 2570;
 		rType = 0;
 		vrLen = 297;
 		vrLoc = 1956;
@@ -3586,7 +3644,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 157";
 		rLen = 0;
-		rLoc = 5047;
+		rLoc = 5251;
 		rType = 0;
 		vrLen = 313;
 		vrLoc = 4289;
@@ -3626,7 +3684,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 73";
 		rLen = 0;
-		rLoc = 2083;
+		rLoc = 2121;
 		rType = 0;
 		vrLen = 1386;
 		vrLoc = 1467;
@@ -3636,7 +3694,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 73";
 		rLen = 0;
-		rLoc = 2083;
+		rLoc = 2121;
 		rType = 0;
 		vrLen = 1386;
 		vrLoc = 1467;
@@ -3666,7 +3724,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 123";
 		rLen = 0;
-		rLoc = 3650;
+		rLoc = 3743;
 		rType = 0;
 		vrLen = 1747;
 		vrLoc = 2849;
@@ -3686,7 +3744,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 123";
 		rLen = 0;
-		rLoc = 3650;
+		rLoc = 3743;
 		rType = 0;
 		vrLen = 1747;
 		vrLoc = 2849;
@@ -3696,7 +3754,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 123";
 		rLen = 0;
-		rLoc = 3650;
+		rLoc = 3743;
 		rType = 0;
 		vrLen = 1747;
 		vrLoc = 2849;
@@ -3716,7 +3774,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 79";
 		rLen = 0;
-		rLoc = 2182;
+		rLoc = 2220;
 		rType = 0;
 		vrLen = 1541;
 		vrLoc = 845;
@@ -3726,7 +3784,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 90";
 		rLen = 0;
-		rLoc = 2460;
+		rLoc = 2498;
 		rType = 0;
 		vrLen = 1584;
 		vrLoc = 845;
@@ -3736,7 +3794,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 69";
 		rLen = 0;
-		rLoc = 1947;
+		rLoc = 1985;
 		rType = 0;
 		vrLen = 1630;
 		vrLoc = 848;
@@ -3756,7 +3814,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 69";
 		rLen = 0;
-		rLoc = 1947;
+		rLoc = 1985;
 		rType = 0;
 		vrLen = 1448;
 		vrLoc = 1432;
@@ -3766,7 +3824,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 69";
 		rLen = 0;
-		rLoc = 1947;
+		rLoc = 1985;
 		rType = 0;
 		vrLen = 1448;
 		vrLoc = 1432;
@@ -3786,7 +3844,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 92";
 		rLen = 0;
-		rLoc = 2483;
+		rLoc = 2521;
 		rType = 0;
 		vrLen = 1409;
 		vrLoc = 1432;
@@ -3806,7 +3864,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 166";
 		rLen = 0;
-		rLoc = 4773;
+		rLoc = 4866;
 		rType = 0;
 		vrLen = 1703;
 		vrLoc = 3260;
@@ -3944,7 +4002,7 @@
 		fRef = 4E73F3160C13290400C21E2B /* MPDStatusController.h */;
 		name = "MPDStatusController.h: 32";
 		rLen = 15;
-		rLoc = 756;
+		rLoc = 715;
 		rType = 0;
 		vrLen = 1436;
 		vrLoc = 44;
@@ -3984,7 +4042,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 104";
 		rLen = 0;
-		rLoc = 2616;
+		rLoc = 2654;
 		rType = 0;
 		vrLen = 1548;
 		vrLoc = 1798;
@@ -3994,7 +4052,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 104";
 		rLen = 0;
-		rLoc = 2616;
+		rLoc = 2654;
 		rType = 0;
 		vrLen = 1518;
 		vrLoc = 1832;
@@ -4004,7 +4062,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 104";
 		rLen = 0;
-		rLoc = 2616;
+		rLoc = 2654;
 		rType = 0;
 		vrLen = 1518;
 		vrLoc = 1832;
@@ -4106,7 +4164,7 @@
 		fRef = 4E73F3160C13290400C21E2B /* MPDStatusController.h */;
 		name = "MPDStatusController.h: 30";
 		rLen = 26;
-		rLoc = 616;
+		rLoc = 575;
 		rType = 0;
 		vrLen = 1439;
 		vrLoc = 41;
@@ -4252,7 +4310,7 @@
 		fRef = 4E73F3160C13290400C21E2B /* MPDStatusController.h */;
 		name = "MPDStatusController.h: 30";
 		rLen = 26;
-		rLoc = 616;
+		rLoc = 575;
 		rType = 0;
 		vrLen = 1439;
 		vrLoc = 41;
@@ -4352,7 +4410,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 89";
 		rLen = 0;
-		rLoc = 2351;
+		rLoc = 2389;
 		rType = 0;
 		vrLen = 1518;
 		vrLoc = 1832;
@@ -4488,7 +4546,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 187";
 		rLen = 0;
-		rLoc = 5081;
+		rLoc = 5285;
 		rType = 0;
 		vrLen = 1703;
 		vrLoc = 3397;
@@ -4534,7 +4592,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 176";
 		rLen = 0;
-		rLoc = 4799;
+		rLoc = 5003;
 		rType = 0;
 		vrLen = 1820;
 		vrLoc = 3350;
@@ -4544,7 +4602,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 187";
 		rLen = 0;
-		rLoc = 5081;
+		rLoc = 5285;
 		rType = 0;
 		vrLen = 1790;
 		vrLoc = 3350;
@@ -4554,7 +4612,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 187";
 		rLen = 0;
-		rLoc = 5081;
+		rLoc = 5285;
 		rType = 0;
 		vrLen = 1790;
 		vrLoc = 3350;
@@ -4564,7 +4622,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 187";
 		rLen = 0;
-		rLoc = 5081;
+		rLoc = 5285;
 		rType = 0;
 		vrLen = 1790;
 		vrLoc = 3350;
@@ -4584,7 +4642,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 82";
 		rLen = 11;
-		rLoc = 2215;
+		rLoc = 2253;
 		rType = 0;
 		vrLen = 1644;
 		vrLoc = 845;
@@ -4611,7 +4669,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 82";
 		rLen = 11;
-		rLoc = 2215;
+		rLoc = 2253;
 		rType = 0;
 		vrLen = 1644;
 		vrLoc = 845;
@@ -4641,7 +4699,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 183";
 		rLen = 0;
-		rLoc = 5047;
+		rLoc = 5251;
 		rType = 0;
 		vrLen = 641;
 		vrLoc = 3859;
@@ -4659,7 +4717,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 183";
 		rLen = 0;
-		rLoc = 5047;
+		rLoc = 5251;
 		rType = 0;
 		vrLen = 641;
 		vrLoc = 3859;
@@ -4679,7 +4737,7 @@
 		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
 		name = "MPDPlayerRootController.m: 82";
 		rLen = 11;
-		rLoc = 2215;
+		rLoc = 2253;
 		rType = 0;
 		vrLen = 1747;
 		vrLoc = 742;
@@ -4993,6 +5051,273 @@
 		rType = 0;
 		vrLen = 1618;
 		vrLoc = 356;
+	};
+	718C50BB0D94C25E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 38FAFC2F0C012A7800853CFE /* mpdctrlAppliance.m */;
+		name = "mpdctrlAppliance.m: 27";
+		rLen = 0;
+		rLoc = 557;
+		rType = 0;
+		vrLen = 1618;
+		vrLoc = 356;
+	};
+	718C50BC0D94C25E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4E73F3170C13290400C21E2B /* MPDStatusController.m */;
+		name = "MPDStatusController.m: 18";
+		rLen = 19;
+		rLoc = 323;
+		rType = 0;
+		vrLen = 1001;
+		vrLoc = 0;
+	};
+	718C50BD0D94C25E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4E73F3160C13290400C21E2B /* MPDStatusController.h */;
+		rLen = 1;
+		rLoc = 28;
+		rType = 1;
+	};
+	718C50BE0D94C25E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 38FAFC2F0C012A7800853CFE /* mpdctrlAppliance.m */;
+		name = "mpdctrlAppliance.m: 27";
+		rLen = 0;
+		rLoc = 557;
+		rType = 0;
+		vrLen = 1618;
+		vrLoc = 356;
+	};
+	718C50BF0D94C25E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4E73F3170C13290400C21E2B /* MPDStatusController.m */;
+		name = "MPDStatusController.m: 18";
+		rLen = 19;
+		rLoc = 323;
+		rType = 0;
+		vrLen = 1001;
+		vrLoc = 0;
+	};
+	718C50C00D94C25E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4E73F3160C13290400C21E2B /* MPDStatusController.h */;
+		name = "MPDStatusController.h: 18";
+		rLen = 0;
+		rLoc = 315;
+		rType = 0;
+		vrLen = 1126;
+		vrLoc = 41;
+	};
+	718C50C20D94C26900FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4E73F3160C13290400C21E2B /* MPDStatusController.h */;
+		name = "MPDStatusController.h: 18";
+		rLen = 0;
+		rLoc = 315;
+		rType = 0;
+		vrLen = 1085;
+		vrLoc = 41;
+	};
+	718C50C60D94C29300FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4E73F3160C13290400C21E2B /* MPDStatusController.h */;
+		name = "MPDStatusController.h: 18";
+		rLen = 0;
+		rLoc = 315;
+		rType = 0;
+		vrLen = 1085;
+		vrLoc = 41;
+	};
+	718C50C70D94C29300FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4E73F3160C13290400C21E2B /* MPDStatusController.h */;
+		name = "MPDStatusController.h: 18";
+		rLen = 0;
+		rLoc = 315;
+		rType = 0;
+		vrLen = 1085;
+		vrLoc = 41;
+	};
+	718C50CC0D94C38E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4E73F3160C13290400C21E2B /* MPDStatusController.h */;
+		name = "MPDStatusController.h: 11";
+		rLen = 0;
+		rLoc = 233;
+		rType = 0;
+		vrLen = 1433;
+		vrLoc = 0;
+	};
+	718C50CD0D94C38E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4E8BD28A0C108D4E0009F8EF /* MADListControlArrayDataSource.h */;
+		name = "MADListControlArrayDataSource.h: 12";
+		rLen = 29;
+		rLoc = 199;
+		rType = 0;
+		vrLen = 692;
+		vrLoc = 0;
+	};
+	718C50CE0D94C38E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4E0A840B0C198C9C00BF8797 /* debug_printf.c */;
+		name = "debug_printf.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 976;
+		vrLoc = 19;
+	};
+	718C50CF0D94C38E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4E8F931F0C182D0B000A217E /* MADPlaylistList.m */;
+		name = "MADPlaylistList.m: 51";
+		rLen = 13;
+		rLoc = 754;
+		rType = 0;
+		vrLen = 684;
+		vrLoc = 486;
+	};
+	718C50D00D94C38E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0127FD660C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.m */;
+		name = "MPDPlaylistOptionsController.m: 6";
+		rLen = 0;
+		rLoc = 111;
+		rType = 0;
+		vrLen = 1391;
+		vrLoc = 0;
+	};
+	718C50D10D94C38E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4E73F3160C13290400C21E2B /* MPDStatusController.h */;
+		name = "MPDStatusController.h: 11";
+		rLen = 0;
+		rLoc = 233;
+		rType = 0;
+		vrLen = 1433;
+		vrLoc = 0;
+	};
+	718C50D20D94C38E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4E8BD28A0C108D4E0009F8EF /* MADListControlArrayDataSource.h */;
+		name = "MADListControlArrayDataSource.h: 12";
+		rLen = 29;
+		rLoc = 199;
+		rType = 0;
+		vrLen = 692;
+		vrLoc = 0;
+	};
+	718C50D30D94C38E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4E0A840B0C198C9C00BF8797 /* debug_printf.c */;
+		name = "debug_printf.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 976;
+		vrLoc = 19;
+	};
+	718C50D40D94C38E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4E8F931F0C182D0B000A217E /* MADPlaylistList.m */;
+		name = "MADPlaylistList.m: 51";
+		rLen = 13;
+		rLoc = 754;
+		rType = 0;
+		vrLen = 684;
+		vrLoc = 486;
+	};
+	718C50D50D94C38E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0127FD660C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.m */;
+		name = "MPDPlaylistOptionsController.m: 6";
+		rLen = 0;
+		rLoc = 111;
+		rType = 0;
+		vrLen = 1391;
+		vrLoc = 0;
+	};
+	718C50D60D94C38E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
+		name = "MPDPlayerRootController.m: 180";
+		rLen = 0;
+		rLoc = 4934;
+		rType = 0;
+		vrLen = 1684;
+		vrLoc = 3613;
+	};
+	718C50D80D94C41700FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0127FD660C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.m */;
+		name = "MPDPlaylistOptionsController.m: 485";
+		rLen = 0;
+		rLoc = 12505;
+		rType = 0;
+		vrLen = 1045;
+		vrLoc = 11516;
+	};
+	718C50D90D94C41700FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
+		name = "MPDPlayerRootController.m: 180";
+		rLen = 0;
+		rLoc = 4934;
+		rType = 0;
+		vrLen = 1684;
+		vrLoc = 3613;
+	};
+	718C50DA0D94C41700FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0127FD660C3AA21F00A8A7F3 /* MPDPlaylistOptionsController.m */;
+		name = "MPDPlaylistOptionsController.m: 485";
+		rLen = 0;
+		rLoc = 12505;
+		rType = 0;
+		vrLen = 1045;
+		vrLoc = 11516;
+	};
+	718C50DB0D94C41700FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
+		name = "MPDPlayerRootController.m: 180";
+		rLen = 4;
+		rLoc = 4930;
+		rType = 0;
+		vrLen = 1728;
+		vrLoc = 3613;
+	};
+	718C50DC0D94C4AB00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
+		name = "MPDPlayerRootController.m: 49";
+		rLen = 0;
+		rLoc = 1423;
+		rType = 0;
+		vrLen = 1640;
+		vrLoc = 222;
+	};
+	718C50E00D94C4F500FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
+		name = "MPDPlayerRootController.m: 49";
+		rLen = 0;
+		rLoc = 1423;
+		rType = 0;
+		vrLen = 1640;
+		vrLoc = 222;
+	};
+	718C50E10D94C4F500FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
+		name = "MPDPlayerRootController.m: 49";
+		rLen = 0;
+		rLoc = 1423;
+		rType = 0;
+		vrLen = 1640;
+		vrLoc = 222;
 	};
 	71A11DA50D839DE300E38D42 /* Source Control */ = {
 		isa = PBXSourceControlManager;
