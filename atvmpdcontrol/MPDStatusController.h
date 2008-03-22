@@ -15,7 +15,6 @@
 #import "MADHorzLayout.h"
 #import "MADVertLayout.h"
 
-#import "MPDListControlPlaylistSource.h"
 #import "MADPlaylistList.h"
 
 #import "MADMultiReceiverController.h"

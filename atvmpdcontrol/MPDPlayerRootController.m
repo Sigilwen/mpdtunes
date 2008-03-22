@@ -46,7 +46,7 @@
   
   printf("2\n");
   
-  [self setListTitle: @"Rob's Menu"];
+  [self setListTitle: @"Music"];
   
   [self updateConnectionState];
   
@@ -66,6 +66,7 @@
     [_names addObject: @"Songs"];
     [_names addObject: @"Genres"];
     [_names addObject: @"Now Playing"];
+    [_names addObject: @"Clear Playlist"];
     [_names addObject: @"Settings"];
   }
   [_names addObject: @"Servers"];
@@ -123,6 +124,7 @@ printf("wasPopped\n");
            [item isEqualToString:@"Songs"] ||
            [item isEqualToString:@"Genres"] ||
            [item isEqualToString:@"Now Playing"] ||
+           [item isEqualToString:@"Clear Playlist"] ||
            [item isEqualToString:@"Settings"] )
   {
     result = [BRAdornedMenuItemLayer adornedFolderMenuItemWithScene: [self scene]];
@@ -172,6 +174,10 @@ printf("wasPopped\n");
   else if( [item isEqualToString:@"Now Playing"] )
   {
     controller = _statusController;
+  }
+  else if( [item isEqualToString:@"Clear Playlist"] )
+  {
+    mpd_playlist_clear([_mpdConnection object]);
   }
   else if( [item isEqualToString:@"Settings"] )
   {
