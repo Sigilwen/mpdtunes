@@ -79,7 +79,7 @@
 	[self addControl: header];
 	[self addControl: _serverListCtrl];
 	
-	_selectedHost = nil;
+	_selectedHost = (defServer == -1) ? nil : [[_serverListSource getArray] objectAtIndex:defServer];
 	_selectedPort = 6600;
 	_selectedPassword = nil;
 	
