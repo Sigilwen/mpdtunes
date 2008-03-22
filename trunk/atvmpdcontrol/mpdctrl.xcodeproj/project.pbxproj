@@ -13,7 +13,6 @@
 		0127FE890C3D68F500A8A7F3 /* MADFileItemLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0127FE880C3D68F500A8A7F3 /* MADFileItemLayer.m */; };
 		01A171E50C2266A60090C36F /* MPDSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A171E40C2266A60090C36F /* MPDSettingsController.m */; };
 		01A172000C226F960090C36F /* MPDDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A171FF0C226F960090C36F /* MPDDevice.m */; };
-		01DA7D3F0C26659800932C4D /* MPDIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 01DA7D3E0C26659800932C4D /* MPDIcon.png */; };
 		01DA7D560C2665FE00932C4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01DA7D520C2665FE00932C4D /* InfoPlist.strings */; };
 		01DA7D570C2665FE00932C4D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01DA7D540C2665FE00932C4D /* Localizable.strings */; };
 		38FAF9B40C0129D500853CFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089C1672FE841209C02AAC07 /* Foundation.framework */; };
@@ -69,6 +68,7 @@
 		717234860D8E07F9001E578B /* MPDPlayerArtistsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 717234850D8E07F9001E578B /* MPDPlayerArtistsController.m */; };
 		717234AF0D8E13B4001E578B /* MPDPlayerAlbumsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */; };
 		717234C70D8E17A0001E578B /* MPDPlayerSongsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */; };
+		718C50EC0D94CA2400FD9A5D /* ApplianceIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 718C50EB0D94CA2400FD9A5D /* ApplianceIcon.png */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
@@ -85,7 +85,6 @@
 		01A171E40C2266A60090C36F /* MPDSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDSettingsController.m; sourceTree = "<group>"; };
 		01A171FE0C226F960090C36F /* MPDDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDDevice.h; sourceTree = "<group>"; };
 		01A171FF0C226F960090C36F /* MPDDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDDevice.m; sourceTree = "<group>"; };
-		01DA7D3E0C26659800932C4D /* MPDIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPDIcon.png; sourceTree = "<group>"; };
 		01DA7D530C2665FE00932C4D /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = InfoPlist.strings; sourceTree = "<group>"; };
 		01DA7D550C2665FE00932C4D /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = Localizable.strings; sourceTree = "<group>"; };
 		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
@@ -196,6 +195,7 @@
 		717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDPlayerAlbumsController.m; sourceTree = "<group>"; };
 		717234C50D8E17A0001E578B /* MPDPlayerSongsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDPlayerSongsController.h; sourceTree = "<group>"; };
 		717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDPlayerSongsController.m; sourceTree = "<group>"; };
+		718C50EB0D94CA2400FD9A5D /* ApplianceIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ApplianceIcon.png; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* mpdctrl.frappliance */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mpdctrl.frappliance; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -280,7 +280,7 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				01DA7D3E0C26659800932C4D /* MPDIcon.png */,
+				718C50EB0D94CA2400FD9A5D /* ApplianceIcon.png */,
 				8D5B49B7048680CD000E48DA /* Info.plist */,
 				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
 			);
@@ -497,9 +497,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				718C50EC0D94CA2400FD9A5D /* ApplianceIcon.png in Resources */,
 				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
 				4E0A84240C198C9C00BF8797 /* libmpd-version.h.in in Resources */,
-				01DA7D3F0C26659800932C4D /* MPDIcon.png in Resources */,
 				01DA7D560C2665FE00932C4D /* InfoPlist.strings in Resources */,
 				01DA7D570C2665FE00932C4D /* Localizable.strings in Resources */,
 				717233BA0D8DD144001E578B /* NOTES in Resources */,
