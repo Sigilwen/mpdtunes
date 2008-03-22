@@ -19,6 +19,7 @@
 {
 	MPDConnection  *_mpdConnection;
   NSMutableArray *_names;
+  BOOL  _visible;
 }
 
 - (id)initWithScene: (id)scene;

@@ -43,7 +43,7 @@
 {
 	BOOL returnYes = NO;
 	int ret =  [_eventReceiver processEvent:brEvent];
-	
+  
 	if(ret == -1)
 		return NO;
 	

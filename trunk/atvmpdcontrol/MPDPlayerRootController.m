@@ -88,6 +88,7 @@
 
 - (void) willBeExhumed
 {
+printf("willBeExhumed\n");
   if( ! [self autoconnect] )
     [[self stack]pushController:_alertController];
   [super willBeExhumed];
@@ -95,8 +96,15 @@
 
 - (void) wasPushed
 {
+printf("wasPushed\n");
   [self autoconnect];
   [super wasPushed];
+}
+
+- (void) wasPopped    /* for debug */
+{
+printf("wasPopped\n");
+  [super wasPopped];
 }
 
 

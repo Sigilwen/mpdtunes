@@ -202,10 +202,10 @@
 		{
 			if(_selected < [_itemArray count] - 1)
 				[self setSelected:_selected+1];
-			return NO;
+			return YES;
 		}
 	}
-
+  
 	return [super brEventAction:brEvent];
 }
 

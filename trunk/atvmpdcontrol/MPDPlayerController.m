@@ -19,6 +19,7 @@
     return ( nil );
   
 	_mpdConnection = nil;
+  _visible = TRUE;
 	
 	return ( self );
 }
@@ -63,38 +64,59 @@
   return result;
 }
 
+- (void) willBeBuried
+{
+  _visible = FALSE;
+  [super willBeBuried];
+}
+
+- (void) willBeExhumed
+{
+  _visible = TRUE;
+  [super willBeExhumed];
+}
+
 - (void) itemSelected: (long) row {}
 - (void) itemPlay: (long) row {}
 - (void) itemRemove: (long) row {}
 
 - (BOOL) brEventAction:(BREvent *)event
 {
-	BREventPageUsageHash hashVal = [event pageUsageHash];
-	int selected = [(BRListControl*)[self list] selection];
-  
-	switch (hashVal)
-	{
-		case kBREventTapRight:             /* descend */
-    case kBREventTapPlayPause:
-      printf("descend\n");
-      [self itemSelected:selected];
-      return YES;
-		case kBREventTapLeft:              /* ascend */
-      printf("ascend\n");
-      [[self stack]popController];
-      return YES;
-    case kBREventFastForward:          /* add to playlist */
-      printf("add to playlist\n");
-      [self itemPlay:selected];
-      [[self stack] popToControllerWithLabel:@"com.apple.frontrow.appliance.axxr.mpdctrl.rootController"];
-      return YES;
-		case kBREventRewind:               /* remove from playlist */
-      printf("remove from playlist\n");
-      [self itemRemove:selected];
-      [[self stack] popToControllerWithLabel:@"com.apple.frontrow.appliance.axxr.mpdctrl.rootController"];
-      return YES;
+  if(_visible)
+  {
+printf("got event: 0x%08x 0x%08x %s\n", [event value], [self selectedObject], [[self listTitle] UTF8String]);
+//printf("%s\n", [[BRBacktracingException backtrace] UTF8String]);
+    BREventPageUsageHash hashVal = [event pageUsageHash];
+    int selected = [(BRListControl*)[self list] selection];
     
-	}
+    switch (hashVal)
+    {
+      case kBREventTapRight:           /* descend */
+      case kBREventTapPlayPause:
+        printf("descend\n");
+        [self itemSelected:selected];
+        return YES;
+      case kBREventTapLeft:            /* ascend */
+        printf("ascend\n");
+        [[self stack]popController];
+        return YES;
+      case kBREventFastForward:        /* add to playlist */
+        printf("add to playlist\n");
+        [self itemPlay:selected];
+        [[self stack] popToControllerWithLabel:@"com.apple.frontrow.appliance.axxr.mpdctrl.rootController"];
+        return YES;
+      case kBREventRewind:             /* remove from playlist */
+        printf("remove from playlist\n");
+        [self itemRemove:selected];
+        [[self stack] popToControllerWithLabel:@"com.apple.frontrow.appliance.axxr.mpdctrl.rootController"];
+        return YES;
+        
+    }
+  }
+  else
+  {
+printf("not visible: 0x%08x 0x%08x %s\n", [event value], [self selectedObject], [[self listTitle] UTF8String]);
+  }
 	return [super brEventAction:event];
 }
 
