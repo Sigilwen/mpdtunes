@@ -11,12 +11,13 @@
 
 @implementation MPDSettingsController
 
-- (id) initWithScene:(BRRenderScene*)scene
+- (id) initWithScene: (BRRenderScene *) scene 
+    mpdConnection: (MPDConnection *) mpdConnection
 {
 	if( [super initWithScene:scene] == nil)
 		return nil;
 	
-	_mpdConnection = nil;
+	_mpdConnection = mpdConnection;
 	_currentAudioDevice = 0;
 	
 	[[self list]setDatasource:self];

@@ -7,14 +7,27 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <BackRow/BRLayerController.h>
+#import <BackRow/BRListControl.h>
+#import "libmpd/libmpd.h"
+
 #import "MPDPlayerController.h"
 
+#import "MPDServerController.h"
+#import "MPDStatusController.h"
+
+#import "MPDConnection.h"
+
+
 @interface MPDPlayerRootController : MPDPlayerController {
+  BRAlertController   *_alertController;
+  MPDServerController *_serverController;
+  MPDStatusController *_statusController;
 }
 
 - (id) initWithScene: (BRRenderScene *) scene;
 - (id) itemForRow: (long) row;
 - (void) itemSelected: (long) row;
-- (void) itemPlay: (long)row;
+- (void) updateConnectionState;
 
 @end

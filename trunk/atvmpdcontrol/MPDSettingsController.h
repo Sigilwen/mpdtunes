@@ -23,7 +23,8 @@
 	int						_currentAudioDevice;
 }
 
-- (id) initWithScene:(BRRenderScene*)scene;
+- (id) initWithScene: (BRRenderScene *) scene 
+    mpdConnection: (MPDConnection *) mpdConnection;
 - (void) dealloc;
 
 - (void) createDescText;
