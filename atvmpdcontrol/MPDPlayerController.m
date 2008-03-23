@@ -203,6 +203,36 @@ void addConstraints( MPDConnection * mpdConnection, NSString *genre, NSString *a
 
 - (id<BRMediaPreviewController>) previewControllerForAlbum: (NSString *)album andArtist: (NSString *)artist
 {
+  MpdData *data;
+  
+  if( album == nil )
+  {
+    for( data = [self mpdSearchTag:MPD_TAG_ITEM_ALBUM forGenre:nil andArtist:artist andAlbum:album andSong:nil];
+         data != NULL;
+         data = [self mpdSearchNext: data] )
+    {
+      if( data->type == MPD_DATA_TYPE_TAG )
+      {
+        album = str2nsstr(data->tag);
+        mpd_data_free(data);
+        break;
+      }
+    }
+  }
+  else if( artist == nil )
+  {
+    for( data = [self mpdSearchTag:MPD_TAG_ITEM_ARTIST forGenre:nil andArtist:artist andAlbum:album andSong:nil];
+         data != NULL;
+         data = [self mpdSearchNext: data] )
+    {
+      if( data->type == MPD_DATA_TYPE_TAG )
+      {
+        artist = str2nsstr(data->tag);
+        mpd_data_free(data);
+        break;
+      }
+    }
+  }
   return [[[MPDAlbumArtworkPreviewController alloc] initWithScene: [self scene] forAlbum:album andArtist:artist] autorelease];
 }
 
