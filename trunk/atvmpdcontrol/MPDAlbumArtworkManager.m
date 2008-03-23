@@ -266,8 +266,6 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
 
 
 
-
-
 - (BOOL)hasCoverArt
 {
   return YES;
@@ -277,6 +275,12 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
 {
   return _image;
 }
+
+- (BOOL)waitingForUpdate
+{
+  return _image == defaultImage;
+}
+
 
 @end
 
@@ -305,7 +309,6 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
   _assets = [[NSMutableDictionary alloc] initWithCapacity: 50];
   
   _assetUrls = [NSKeyedUnarchiver unarchiveObjectWithFile:IMGDB];
-  NSLog(@"assetUrls: %@", _assetUrls);
   
   if(!_assetUrls)
     _assetUrls = [[NSMutableDictionary alloc] initWithCapacity: 50];

@@ -27,6 +27,7 @@
 
 - (id)initWithAlbum: (NSString *)album andArtist: (NSString *)artist;
 
+- (BOOL)waitingForUpdate;
 
 @end
 

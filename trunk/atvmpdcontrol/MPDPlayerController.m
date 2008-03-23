@@ -6,9 +6,10 @@
 //  Copyright 2007 __MyCompanyName__. All rights reserved.
 //
 
-#import "MPDPlayerController.h"
-#import "libmpd/libmpd.h"
 
+#import "MPDPlayerController.h"
+#import "MPDAlbumArtworkPreviewController.h"
+#import "libmpd/libmpd.h"
 
 @implementation MPDPlayerController
 
@@ -193,5 +194,13 @@
   printf("mpd_playlist_queue_commit()\n");
   mpd_playlist_queue_commit([mpdConnection object]);
 }
+
+
+
+- (id<BRMediaPreviewController>) previewControllerForAlbum: (NSString *)album andArtist: (NSString *)artist
+{
+  return [[[MPDAlbumArtworkPreviewController alloc] initWithScene: [self scene] forAlbum:album andArtist:artist] autorelease];
+}
+
 
 @end
