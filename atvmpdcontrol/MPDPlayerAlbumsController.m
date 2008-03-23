@@ -8,10 +8,6 @@
 
 #import "MPDPlayerAlbumsController.h"
 #import "MPDPlayerSongsController.h"
-#import "MPDAlbumArtworkManager.h"
-
-// XXX
-//#import <BackRow/BRMediaPreviewControllerProtocol.h>
 
 
 @implementation MPDPlayerAlbumsController
@@ -112,15 +108,11 @@
 }
 
 
-
 - (id<BRMediaPreviewController>) previewControllerForItem: (long) item
 {
   printf("previewControllerForItem: %d\n", item);
   NSString *album = [self titleForRow:item];
-  BRMetadataPreviewController *preview = [[BRMetadataPreviewController alloc] initWithScene: [self scene]];
-  [preview setAsset: [[MPDAlbumArtworkManager sharedInstance] getAlbumAsset:album forArtist:_artist]];
-  [preview setShowsMetadataImmediately:YES];
-  return [preview autorelease];
+  return [self previewControllerForAlbum:album andArtist:_artist];
 }
 
 

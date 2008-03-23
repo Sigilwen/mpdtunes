@@ -277,13 +277,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>56</integer>
+									<integer>55</integer>
 									<integer>4</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 435}, {223, 769}}</string>
+							<string>{{0, 440}, {223, 769}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -320,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MPDAlbumArtworkManager.m</string>
+								<string>MPDPlayerController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +328,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MPDAlbumArtworkManager.m</string>
+										<string>MPDPlayerController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>718C53680D962F6A00FD9A5D</string>
+										<string>718C54150D96F5C000FD9A5D</string>
 										<key>history</key>
 										<array>
 											<string>710BD34B0D8DCDD40079CC88</string>
@@ -389,41 +389,44 @@
 											<string>718C50FC0D94CAC300FD9A5D</string>
 											<string>718C50FD0D94CAC300FD9A5D</string>
 											<string>718C511D0D95746C00FD9A5D</string>
-											<string>718C513A0D957CC200FD9A5D</string>
 											<string>718C513D0D957CC200FD9A5D</string>
 											<string>718C513F0D957CC200FD9A5D</string>
 											<string>718C51460D957F2400FD9A5D</string>
 											<string>718C51660D958CA800FD9A5D</string>
 											<string>718C51680D958CA800FD9A5D</string>
 											<string>718C516A0D958CA800FD9A5D</string>
-											<string>718C51970D95922A00FD9A5D</string>
 											<string>718C51E00D95A85200FD9A5D</string>
 											<string>718C51E20D95A85200FD9A5D</string>
 											<string>718C51E40D95A85200FD9A5D</string>
 											<string>718C51E60D95A85200FD9A5D</string>
-											<string>718C51E70D95A85200FD9A5D</string>
 											<string>718C51E80D95A85200FD9A5D</string>
 											<string>718C51E90D95A85200FD9A5D</string>
-											<string>718C51EB0D95A85200FD9A5D</string>
-											<string>718C51ED0D95A85200FD9A5D</string>
-											<string>718C51F00D95A85200FD9A5D</string>
-											<string>718C52220D95AE6F00FD9A5D</string>
-											<string>718C52640D95B5A800FD9A5D</string>
 											<string>718C52C60D95DB6400FD9A5D</string>
 											<string>718C53130D96077A00FD9A5D</string>
 											<string>718C531A0D960E7E00FD9A5D</string>
-											<string>718C531B0D960E7E00FD9A5D</string>
-											<string>718C531C0D960E7E00FD9A5D</string>
-											<string>718C531D0D960E7E00FD9A5D</string>
-											<string>718C532C0D961CF900FD9A5D</string>
-											<string>718C533F0D9623CD00FD9A5D</string>
-											<string>718C53430D96241F00FD9A5D</string>
 											<string>718C53530D96277000FD9A5D</string>
-											<string>718C534D0D9626CE00FD9A5D</string>
-										</array>
-										<key>nextStack</key>
-										<array>
-											<string>718C53540D96277000FD9A5D</string>
+											<string>718C53750D96DD0A00FD9A5D</string>
+											<string>718C537B0D96DD0A00FD9A5D</string>
+											<string>718C53BD0D96E76700FD9A5D</string>
+											<string>718C53C80D96E9EF00FD9A5D</string>
+											<string>718C53CA0D96E9EF00FD9A5D</string>
+											<string>718C53E00D96EB4F00FD9A5D</string>
+											<string>718C53E40D96EB4F00FD9A5D</string>
+											<string>718C53EE0D96EC8700FD9A5D</string>
+											<string>718C53EF0D96EC8700FD9A5D</string>
+											<string>718C53F00D96EC8700FD9A5D</string>
+											<string>718C53F10D96EC8700FD9A5D</string>
+											<string>718C53FE0D96ED9E00FD9A5D</string>
+											<string>718C53FF0D96ED9E00FD9A5D</string>
+											<string>718C54000D96ED9E00FD9A5D</string>
+											<string>718C54010D96ED9E00FD9A5D</string>
+											<string>718C54030D96ED9E00FD9A5D</string>
+											<string>718C54040D96ED9E00FD9A5D</string>
+											<string>718C54050D96ED9E00FD9A5D</string>
+											<string>718C54100D96F5C000FD9A5D</string>
+											<string>718C54110D96F5C000FD9A5D</string>
+											<string>718C54120D96F5C000FD9A5D</string>
+											<string>718C53F50D96EC8700FD9A5D</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -457,7 +460,6 @@
 											<string>718C50600D94B93F00FD9A5D</string>
 											<string>718C50610D94B93F00FD9A5D</string>
 											<string>718C50620D94B93F00FD9A5D</string>
-											<string>718C50770D94BC5E00FD9A5D</string>
 											<string>718C50A30D94C08800FD9A5D</string>
 											<string>718C50A50D94C08800FD9A5D</string>
 											<string>718C50A60D94C08800FD9A5D</string>
@@ -473,7 +475,25 @@
 											<string>718C51720D958CA800FD9A5D</string>
 											<string>718C51F60D95A85200FD9A5D</string>
 											<string>718C51F70D95A85200FD9A5D</string>
-											<string>718C523B0D95B14B00FD9A5D</string>
+											<string>718C537F0D96DD0A00FD9A5D</string>
+											<string>718C53800D96DD0A00FD9A5D</string>
+											<string>718C53810D96DD0A00FD9A5D</string>
+											<string>718C53820D96DD0A00FD9A5D</string>
+											<string>718C53830D96DD0A00FD9A5D</string>
+											<string>718C538F0D96DF3800FD9A5D</string>
+											<string>718C53950D96E29600FD9A5D</string>
+											<string>718C53AC0D96E53300FD9A5D</string>
+											<string>718C53D30D96E9EF00FD9A5D</string>
+											<string>718C53F70D96EC8700FD9A5D</string>
+											<string>718C53F80D96EC8700FD9A5D</string>
+											<string>718C53F90D96EC8700FD9A5D</string>
+											<string>718C53FA0D96EC8700FD9A5D</string>
+											<string>718C54070D96ED9E00FD9A5D</string>
+											<string>718C54080D96ED9E00FD9A5D</string>
+											<string>718C54090D96ED9E00FD9A5D</string>
+											<string>718C540B0D96ED9E00FD9A5D</string>
+											<string>718C54130D96F5C000FD9A5D</string>
+											<string>718C54140D96F5C000FD9A5D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -692,7 +712,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MPDPlayerAlbumsController.m</string>
+								<string>MPDAlbumArtworkPreviewController.h</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
