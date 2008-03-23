@@ -9,6 +9,12 @@
 #import "MPDPlayerSongsController.h"
 
 
+NSString * str2nsstr( const char *str )
+{
+  return str ? [[NSString alloc] initWithCString: str encoding:NSUTF8StringEncoding] : @"";
+}
+
+
 @implementation MPDPlayerSongsController
 - (id) initWithScene: (BRRenderScene *) scene 
     mpdConnection: (MPDConnection *) mpdConnection 
@@ -36,36 +42,30 @@
   else
   {
     MpdData *data;
-    const char *cGenre;
-    const char *cArtist;
-    const char *cAlbum;
     
     _names = [[NSMutableArray alloc] initWithObjects: @"All", nil];
     
-    mpd_database_search_field_start([_mpdConnection object], MPD_TAG_ITEM_TITLE);
-    if( _genre != NULL )
+    if( artist == nil )
+      _artists = [[NSMutableArray alloc] initWithObjects: @"All", nil];
+    
+    if( album == nil )
+      _albums = [[NSMutableArray alloc] initWithObjects: @"All", nil];
+    
+    for( data = [self mpdSearchGenre:genre andArtist:artist andAlbum:album andSong:nil];
+         data != NULL;
+         data = [self mpdSearchNext: data] )
     {
-      cGenre = [_genre UTF8String];
-      mpd_database_search_add_constraint([_mpdConnection object], MPD_TAG_ITEM_GENRE, cGenre);
+      if( data->type == MPD_DATA_TYPE_SONG )
+      {
+//        printf("title=%s\n",data->song->title);
+        [_names addObject: str2nsstr(data->song->title)];
+        if( artist == nil )
+          [_artists addObject: str2nsstr(data->song->artist)];
+        if( album == nil )
+          [_albums addObject:  str2nsstr(data->song->album)];
+      }
     }
-    if( _artist != NULL )
-    {
-      cArtist = [_artist UTF8String];
-      mpd_database_search_add_constraint([_mpdConnection object], MPD_TAG_ITEM_ARTIST, cArtist);
-    }
-    if( _album != NULL )
-    {
-      cAlbum = [_album UTF8String];
-      mpd_database_search_add_constraint([_mpdConnection object], MPD_TAG_ITEM_ALBUM, cAlbum);
-    }
-    for( data = mpd_database_search_commit([_mpdConnection object]);
-        data != NULL;
-        data = mpd_data_get_next(data) )
-    {
-      if( data->type == MPD_DATA_TYPE_TAG )
-        [_names addObject: [[NSString alloc] initWithCString: data->tag encoding:NSUTF8StringEncoding]];
-    }
-    // last mpd_data_get_next() free's the search
+    // last mpdSearchNext: free's the search
   }
   
   // set the datasource *after* you've setup your array....
@@ -78,8 +78,8 @@
 {
   if( row >= [_names count] )
     return nil;
-  BRAdornedMenuItemLayer *result = [BRAdornedMenuItemLayer adornedFolderMenuItemWithScene: [self scene]];
-  [[result textItem] setTitle: [_names objectAtIndex: row]];
+  BRAdornedMenuItemLayer *result = [BRAdornedMenuItemLayer adornedMenuItemWithScene: [self scene]];
+  [[result textItem] setTitle: [self titleForRow: row]];
   return result;
 }
 
@@ -99,7 +99,16 @@
   if( row != 0 )
     song = [_names objectAtIndex: row];
   
-  [self addToPlaylist:_mpdConnection genre:_genre artist:_artist album:_album song:song];
+  [self addToPlaylistGenre:_genre andArtist:_artist andAlbum:_album andSong:song];
+}
+
+
+- (id<BRMediaPreviewController>) previewControllerForItem: (long) item
+{
+  printf("previewControllerForItem: %d\n", item);
+  NSString *artist = (_artist != nil) ? _artist : [_artists objectAtIndex:item];
+  NSString *album  = (_album != nil)  ? _album  : [_albums objectAtIndex:item];
+  return [self previewControllerForAlbum:album andArtist:artist];
 }
 
 @end

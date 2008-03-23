@@ -95,7 +95,15 @@
   if( row != 0 )
     artist = [_names objectAtIndex: row];
   
-  [self addToPlaylist:_mpdConnection genre:_genre artist:artist album:nil song:nil];
+  [self addToPlaylistGenre:_genre andArtist:artist andAlbum:nil andSong:nil];
+}
+
+
+- (id<BRMediaPreviewController>) previewControllerForItem: (long) item
+{
+  printf("previewControllerForItem: %d\n", item);
+  NSString *artist = [self titleForRow:item];
+  return [self previewControllerForAlbum:nil andArtist:artist];
 }
 
 

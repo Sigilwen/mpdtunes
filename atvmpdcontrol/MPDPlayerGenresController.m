@@ -83,7 +83,7 @@
   if( row != 0 )
     genre = [_names objectAtIndex: row];
   
-  [self addToPlaylist:_mpdConnection genre:genre artist:nil album:nil song:nil];
+  [self addToPlaylistGenre:genre andArtist:nil andAlbum:nil andSong:nil];
 }
 
 @end

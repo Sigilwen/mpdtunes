@@ -146,53 +146,68 @@
 	[[self stack] popToControllerWithLabel:@"com.apple.frontrow.appliance.axxr.mpdctrl.rootController"];
 }
 
-
-- (void) addToPlaylist: (MPDConnection *)mpdConnection
-                 genre: (NSString *)genre
-                artist: (NSString *)artist
-                 album: (NSString *)album
-                  song: (NSString *)song
+- (MpdData *)mpdSearchGenre: (NSString *)genre
+                  andArtist: (NSString *)artist
+                   andAlbum: (NSString *)album
+                    andSong: (NSString *)song
 {
-  MpdData *data;
+  if( (genre == nil) && (artist == nil) && (album == nil) && (song == nil) )
+    return mpd_database_get_complete([_mpdConnection object]);
+  
   const char *cGenre;
   const char *cArtist;
   const char *cAlbum;
   const char *cSong;
   
-  mpd_database_search_start([mpdConnection object], TRUE);
+  mpd_database_search_start([_mpdConnection object], TRUE);
   if( genre != NULL )
   {
     cGenre = [genre UTF8String];
-    mpd_database_search_add_constraint([mpdConnection object], MPD_TAG_ITEM_GENRE, cGenre);
+    mpd_database_search_add_constraint([_mpdConnection object], MPD_TAG_ITEM_GENRE, cGenre);
   }
   if( artist != NULL )
   {
     cArtist = [artist UTF8String];
-    mpd_database_search_add_constraint([mpdConnection object], MPD_TAG_ITEM_ARTIST, cArtist);
+    mpd_database_search_add_constraint([_mpdConnection object], MPD_TAG_ITEM_ARTIST, cArtist);
   }
   if( album != NULL )
   {
     cAlbum = [album UTF8String];
-    mpd_database_search_add_constraint([mpdConnection object], MPD_TAG_ITEM_ALBUM, cAlbum);
+    mpd_database_search_add_constraint([_mpdConnection object], MPD_TAG_ITEM_ALBUM, cAlbum);
   }
   if( song != NULL )
   {
     cSong = [song UTF8String];
-    mpd_database_search_add_constraint([mpdConnection object], MPD_TAG_ITEM_TITLE, cSong);
+    mpd_database_search_add_constraint([_mpdConnection object], MPD_TAG_ITEM_TITLE, cSong);
   }
-  for( data = mpd_database_search_commit([mpdConnection object]);
-      data != NULL;
-      data = mpd_data_get_next(data) )
+  return mpd_database_search_commit([_mpdConnection object]);
+}
+
+- (MpdData *)mpdSearchNext: (MpdData *)data
+{
+  return mpd_data_get_next(data);
+}
+
+- (void) addToPlaylistGenre: (NSString *)genre
+                  andArtist: (NSString *)artist
+                   andAlbum: (NSString *)album
+                    andSong: (NSString *)song
+{
+  MpdData *data;
+  
+  for( data = [self mpdSearchGenre:genre andArtist:artist andAlbum:album andSong:song];
+       data != NULL;
+       data = [self mpdSearchNext: data] )
   {
     if( data->type == MPD_DATA_TYPE_SONG )
     {
       printf("mpd_playlist_queue_add(%s)\n", data->song->file);
-      mpd_playlist_queue_add([mpdConnection object], data->song->file);
+      mpd_playlist_queue_add([_mpdConnection object], data->song->file);
     }
   }
-  // last mpd_data_get_next() free's the search
+  // last mpdSearchNext: free's the search
   printf("mpd_playlist_queue_commit()\n");
-  mpd_playlist_queue_commit([mpdConnection object]);
+  mpd_playlist_queue_commit([_mpdConnection object]);
 }
 
 
