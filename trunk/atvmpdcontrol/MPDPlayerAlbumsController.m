@@ -115,17 +115,12 @@
 
 - (id<BRMediaPreviewController>) previewControllerForItem: (long) item
 {
-/*
-SapphireMedia *asset  =[SapphireMedia alloc];
-[asset setImagePath:[[NSBundle bundleForClass:[self class]] pathForResource:@"DefaultPreview" ofType:@"png"]];
-[self setAsset:asset];	
-*/
-printf("previewControllerForItem: %d\n", item);
-NSString *album = [self titleForRow:item];
-id<BRMediaPreviewController> preview = [[BRMetadataPreviewController alloc] initWithScene: [self scene]];
-[preview setAsset: [[MPDAlbumArtworkManager sharedInstance] getAlbumAsset:album forArtist:_artist]];
-//[preview setShowsMetadataImmediately:YES];
-return [preview autorelease];
+  printf("previewControllerForItem: %d\n", item);
+  NSString *album = [self titleForRow:item];
+  BRMetadataPreviewController *preview = [[BRMetadataPreviewController alloc] initWithScene: [self scene]];
+  [preview setAsset: [[MPDAlbumArtworkManager sharedInstance] getAlbumAsset:album forArtist:_artist]];
+  [preview setShowsMetadataImmediately:YES];
+  return [preview autorelease];
 }
 
 

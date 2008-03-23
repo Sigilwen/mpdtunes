@@ -7,31 +7,37 @@
 //
 
 #import <Cocoa/Cocoa.h>
+//#import <NSDictionary.h>
 #import <BackRow/BRSingleton.h>
 #import <BackRow/BRImageManager.h>
 #import <BackRow/BRRenderLayer.h>
 
 @interface MPDAlbumArtworkAsset : BRSimpleMediaAsset {
   CGImageRef  _image;
+  NSString   *_artist;
+  NSString   *_album;
+  
+  /* used during step one of requesting artwork (querying for artwork
+   * location):
+   */
+  NSMutableData *_receivedData;
+  
+  NSString  *_imageName;
 }
 
-- (id)initWithImage: (CGImageRef)image;
+- (id)initWithAlbum: (NSString *)album andArtist: (NSString *)artist;
 
 @end
 
 @interface MPDAlbumArtworkManager : BRSingleton {
-  BRImageManager *_mgr;
-  CGImageRef      _defaultIcon;
+  MPDAlbumArtworkAsset *_defaultAsset;
+  NSMutableDictionary  *_assets;
 }
 
 + (id)singleton;
 + (void)setSingleton:(id)fp8;
 - (id)init;
 
-//- (BRRenderLayer *)getIcon: (BRRenderScene *)scene withArtist: (NSString *)artist andAlbum: (NSString *)album;
-
 - (id)getAlbumAsset: (NSString *)album forArtist: (NSString *)artist;
-
-//- (CGImageRef)defaultIcon;
 
 @end

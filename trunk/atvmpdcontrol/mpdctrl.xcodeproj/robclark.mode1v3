@@ -283,7 +283,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 431}, {223, 769}}</string>
+							<string>{{0, 435}, {223, 769}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -320,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MPDPlayerAlbumsController.m</string>
+								<string>MPDAlbumArtworkManager.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +328,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MPDPlayerAlbumsController.m</string>
+										<string>MPDAlbumArtworkManager.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>718C526D0D95B5A800FD9A5D</string>
+										<string>718C530F0D9600D800FD9A5D</string>
 										<key>history</key>
 										<array>
 											<string>710BD34B0D8DCDD40079CC88</string>
@@ -415,10 +415,11 @@
 											<string>718C52250D95AE6F00FD9A5D</string>
 											<string>718C52380D95B14B00FD9A5D</string>
 											<string>718C52390D95B14B00FD9A5D</string>
-											<string>718C52620D95B5A800FD9A5D</string>
-											<string>718C52630D95B5A800FD9A5D</string>
 											<string>718C52640D95B5A800FD9A5D</string>
-											<string>718C52650D95B5A800FD9A5D</string>
+											<string>718C52940D95BE3C00FD9A5D</string>
+											<string>718C52C60D95DB6400FD9A5D</string>
+											<string>718C52FD0D95EED700FD9A5D</string>
+											<string>718C52FE0D95EED700FD9A5D</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -482,10 +483,22 @@
 											<string>718C52660D95B5A800FD9A5D</string>
 											<string>718C52670D95B5A800FD9A5D</string>
 											<string>718C52680D95B5A800FD9A5D</string>
-											<string>718C52690D95B5A800FD9A5D</string>
 											<string>718C526A0D95B5A800FD9A5D</string>
 											<string>718C526B0D95B5A800FD9A5D</string>
 											<string>718C526C0D95B5A800FD9A5D</string>
+											<string>718C52740D95BAB500FD9A5D</string>
+											<string>718C52760D95BAB500FD9A5D</string>
+											<string>718C527D0D95BB1100FD9A5D</string>
+											<string>718C52850D95BB4B00FD9A5D</string>
+											<string>718C528D0D95BC4100FD9A5D</string>
+											<string>718C52970D95BE3C00FD9A5D</string>
+											<string>718C52C40D95DABE00FD9A5D</string>
+											<string>718C52ED0D95EC2B00FD9A5D</string>
+											<string>718C52EE0D95EC2B00FD9A5D</string>
+											<string>718C52F60D95EDE800FD9A5D</string>
+											<string>718C52FA0D95EE6700FD9A5D</string>
+											<string>718C52FF0D95EED700FD9A5D</string>
+											<string>718C53000D95EED700FD9A5D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
