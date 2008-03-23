@@ -58,7 +58,6 @@ void setInTable( NSMutableDictionary *dict, NSString *album, NSString *artist, i
   NSMutableDictionary *albums = [dict objectForKey:artist];
   if( albums == nil )
   {
-    printf("constructing albums dictionary for %s\n", [artist UTF8String]);
     albums = [[NSMutableDictionary alloc] initWithCapacity: 5];
     [dict setObject:albums forKey:artist];
   }
@@ -133,7 +132,7 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
   BRImageManager *mgr = [BRImageManager sharedInstance];
   NSURL *imageURL = [NSURL URLWithString:url];
   _imageName = [[mgr imageNameFromURL: imageURL] retain];
-  printf("loadImageFromUrl:  imageName=%s, url=%s\n", [_imageName UTF8String], [url UTF8String]);
+  printf("loadImageFromUrl: %s\n", [url UTF8String]);
   
   if ( [mgr isImageAvailable: _imageName] == NO )
   {
@@ -144,8 +143,10 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
                                                  name: @"BRAssetImageUpdated"
                                                object: nil];
     
-    // this will begin the background download
-    [mgr writeImageFromURL: imageURL];
+    // this will begin the background download... we are lucky, because
+    // writeEncryptedImageFromURL handles the encrypted high-resolution
+    // album artwork
+    [mgr writeEncryptedImageFromURL: imageURL];
   }
   else
   {
@@ -158,7 +159,6 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
 
 - (void) imageLoaded: (NSNotification *) note
 {
-printf("imageLoaded\n");
   // can check for nil _imageName here, and remove observer
   NSDictionary * userInfo = [note userInfo];
   
@@ -166,7 +166,7 @@ printf("imageLoaded\n");
   {
     return;
   }
-printf("it's my image\n");
+  printf("imageLoaded, my image\n");
   
   // we have our image, so we don't need any more notifications
   [[NSNotificationCenter defaultCenter] removeObserver: self 
@@ -244,7 +244,6 @@ printf("it's my image\n");
   NSLog(@"Succeeded! Received %d bytes of data",[_receivedData length]);
   
   NSString *decoded = [NSString stringWithCString:[_receivedData bytes] length:[_receivedData length]];
-  NSLog(@"decoded:\n%@\n", decoded);
   
   const char *buf = [decoded UTF8String];
   buf = strstr( buf, "<key>cover-art-url</key>" );
@@ -252,14 +251,10 @@ printf("it's my image\n");
   if( sscanf( buf, "<key>cover-art-url</key> <string>%[^<]</string>", url) )
   {
     printf("found url: %s\n", url);
-    char *end = strstr( url, ".enc.jpg" );
-    sprintf( end, ".170x170-75.jpg" );
     NSString *nUrl = [NSString stringWithUTF8String: url];
     setInTable( _assetUrls, _album, _artist, nUrl );
     if( [NSKeyedArchiver archiveRootObject:_assetUrls toFile:IMGDB] == NO )
       NSLog(@"error writing %@ to %@", _assetUrls, IMGDB);
-    else
-      NSLog(@"success writing %@ to %@", _assetUrls, IMGDB);
     [self loadImageFromUrl:nUrl];
   }
   
@@ -314,6 +309,8 @@ printf("it's my image\n");
   
   if(!_assetUrls)
     _assetUrls = [[NSMutableDictionary alloc] initWithCapacity: 50];
+  else
+    _assetUrls = [_assetUrls mutableCopy];
   
   NSString *path = [[[NSBundle bundleForClass:[self class]] bundlePath] stringByAppendingString:@"/Contents/Resources/DefaultPreview.png"];
   NSURL *url = [NSURL fileURLWithPath:path];
@@ -338,7 +335,6 @@ printf("it's my image\n");
   MPDAlbumArtworkAsset *asset = getFromTable( _assets, album, artist );
   if( asset == nil )
   {
-    printf("constructing artwork asset for %s\n", [album UTF8String]);
     asset = [[MPDAlbumArtworkAsset alloc] initWithAlbum:album andArtist:artist];
     setInTable( _assets, album, artist, asset );
   }
