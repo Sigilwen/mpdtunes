@@ -13,6 +13,10 @@
   NSString *_genre;
   NSString *_artist;
   NSString *_album;
+  
+  // used if _artist==nil
+  NSMutableArray *_artists;
+  NSMutableArray *_albums;
 }
 
 - (id) initWithScene: (BRRenderScene *) scene 

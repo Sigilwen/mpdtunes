@@ -248,7 +248,7 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
   const char *buf = [decoded UTF8String];
   buf = strstr( buf, "<key>cover-art-url</key>" );
   char url[512];
-  if( sscanf( buf, "<key>cover-art-url</key> <string>%[^<]</string>", url) )
+  if( buf && sscanf( buf, "<key>cover-art-url</key> <string>%[^<]</string>", url) )
   {
     printf("found url: %s\n", url);
     NSString *nUrl = [NSString stringWithUTF8String: url];

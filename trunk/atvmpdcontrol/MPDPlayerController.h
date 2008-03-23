@@ -41,11 +41,17 @@
 - (void) willBePushed;
 - (void) willBePopped;
 
-- (void) addToPlaylist: (MPDConnection *)mpdConnection
-    genre: (NSString *)genre
-    artist: (NSString *)artist
-    album: (NSString *)album
-    song: (NSString *)song;
+- (MpdData *)mpdSearchGenre: (NSString *)genre
+                  andArtist: (NSString *)artist
+                   andAlbum: (NSString *)album
+                    andSong: (NSString *)song;
+- (MpdData *)mpdSearchNext: (MpdData *)data;
+
+
+- (void) addToPlaylistGenre: (NSString *)genre
+                  andArtist: (NSString *)artist
+                   andAlbum: (NSString *)album
+                    andSong: (NSString *)song;
 
 - (id<BRMediaPreviewController>) previewControllerForAlbum: (NSString *)album andArtist: (NSString *)artist;
 
