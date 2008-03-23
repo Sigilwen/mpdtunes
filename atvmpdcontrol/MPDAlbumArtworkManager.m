@@ -12,8 +12,20 @@
 #import "MPDAlbumArtworkManager.h"
 
 
+#define IMGDB @"/Users/frontrow/mpd/imgdb"
+
+
 static MPDAlbumArtworkManager *instance;
 static CGImageRef defaultImage;
+
+static MPDAlbumArtworkAsset *_defaultAsset;
+
+// maps  artist -> album -> asset
+static NSMutableDictionary  *_assets;
+
+// maps  artist -> album -> asset-url
+static NSMutableDictionary  *_assetUrls;
+
 
 
 NSString * md5( NSString *str )
@@ -39,6 +51,28 @@ NSString *urlEncodeValue( NSString *str )
   NSString *result = (NSString *) CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)str, NULL, CFSTR("?=&+"), kCFStringEncodingUTF8);
   return [result autorelease];
 }
+
+
+void setInTable( NSMutableDictionary *dict, NSString *album, NSString *artist, id val )
+{
+  NSMutableDictionary *albums = [dict objectForKey:artist];
+  if( albums == nil )
+  {
+    printf("constructing albums dictionary for %s\n", [artist UTF8String]);
+    albums = [[NSMutableDictionary alloc] initWithCapacity: 5];
+    [dict setObject:albums forKey:artist];
+  }
+  [albums setObject:val forKey:album];
+}
+
+id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
+{
+  NSMutableDictionary *albums = [dict objectForKey:artist];
+  if( albums == nil )
+    return nil;
+  return [albums objectForKey:album];
+}
+
 
 @implementation MPDAlbumArtworkAsset
 
@@ -117,6 +151,7 @@ NSString *urlEncodeValue( NSString *str )
   {
     printf("image already available\n");
     _image = (CGImageRef)[[mgr imageNamed: _imageName] retain];
+    
     // XXX some way to notify that image has updated?
   }
 }
@@ -146,13 +181,19 @@ printf("it's my image\n");
 {
   if( [super init] == nil )
     return nil;
-  _image = defaultImage;
   
-  /* Initiate sequence to request artwork... first step is to query to find
-   * the artwork URL:
-   */
+  _album  = album;
+  _artist = artist;
+  _image  = defaultImage;
+  
   if( (album != nil) && (artist != nil) )
-    [self loadImageFromAlbum:album andArtist:artist];
+  {
+    NSString *url = getFromTable( _assetUrls, album, artist );
+    if( url != nil )
+      [self loadImageFromUrl:url];
+    else
+      [self loadImageFromAlbum:album andArtist:artist];
+  }
   
   return self;
 }
@@ -213,7 +254,13 @@ printf("it's my image\n");
     printf("found url: %s\n", url);
     char *end = strstr( url, ".enc.jpg" );
     sprintf( end, ".170x170-75.jpg" );
-    [self loadImageFromUrl: [NSString stringWithUTF8String: url]];
+    NSString *nUrl = [NSString stringWithUTF8String: url];
+    setInTable( _assetUrls, _album, _artist, nUrl );
+    if( [NSKeyedArchiver archiveRootObject:_assetUrls toFile:IMGDB] == NO )
+      NSLog(@"error writing %@ to %@", _assetUrls, IMGDB);
+    else
+      NSLog(@"success writing %@ to %@", _assetUrls, IMGDB);
+    [self loadImageFromUrl:nUrl];
   }
   
   // release the connection, and the data object
@@ -262,6 +309,12 @@ printf("it's my image\n");
   
   _assets = [[NSMutableDictionary alloc] initWithCapacity: 50];
   
+  _assetUrls = [NSKeyedUnarchiver unarchiveObjectWithFile:IMGDB];
+  NSLog(@"assetUrls: %@", _assetUrls);
+  
+  if(!_assetUrls)
+    _assetUrls = [[NSMutableDictionary alloc] initWithCapacity: 50];
+  
   NSString *path = [[[NSBundle bundleForClass:[self class]] bundlePath] stringByAppendingString:@"/Contents/Resources/DefaultPreview.png"];
   NSURL *url = [NSURL fileURLWithPath:path];
   CGImageSourceRef  sourceRef = CGImageSourceCreateWithURL((CFURLRef)url, NULL);
@@ -282,23 +335,14 @@ printf("it's my image\n");
       _defaultAsset = [[MPDAlbumArtworkAsset alloc] initWithAlbum:nil andArtist:nil];
     return _defaultAsset;
   }
-  NSMutableDictionary *albums = [_assets objectForKey:artist];
-  if( albums == nil )
-  {
-    printf("constructing albums dictionary for %s\n", [artist UTF8String]);
-    albums = [[NSMutableDictionary alloc] initWithCapacity: 5];
-    [_assets setObject:albums forKey:artist];
-  }
-  MPDAlbumArtworkAsset *asset = [albums objectForKey:album];
+  MPDAlbumArtworkAsset *asset = getFromTable( _assets, album, artist );
   if( asset == nil )
   {
     printf("constructing artwork asset for %s\n", [album UTF8String]);
     asset = [[MPDAlbumArtworkAsset alloc] initWithAlbum:album andArtist:artist];
-    [albums setObject:asset forKey:album];
+    setInTable( _assets, album, artist, asset );
   }
   return asset;
 }
 
-
 @end
-

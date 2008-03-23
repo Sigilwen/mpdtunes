@@ -22,13 +22,9 @@
   if( [super initWithScene: scene] == nil )
     return nil;
   
-  printf("initWithScene\n");
-  
   [self addLabel:@"com.apple.frontrow.appliance.axxr.mpdctrl.rootController"];
   
   _mpdConnection = [[MPDConnection alloc] init];
-  
-  printf("1\n");
   
   _serverController = [[MPDServerController alloc] initWithScene:scene mpdConnection: _mpdConnection];
   
@@ -43,8 +39,6 @@
                                           withScene:scene];
   
   [_alertController retain];
-  
-  printf("2\n");
   
   [self setListTitle: @"Music"];
   

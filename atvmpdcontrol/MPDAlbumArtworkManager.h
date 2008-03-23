@@ -27,11 +27,10 @@
 
 - (id)initWithAlbum: (NSString *)album andArtist: (NSString *)artist;
 
+
 @end
 
 @interface MPDAlbumArtworkManager : BRSingleton {
-  MPDAlbumArtworkAsset *_defaultAsset;
-  NSMutableDictionary  *_assets;
 }
 
 + (id)singleton;
