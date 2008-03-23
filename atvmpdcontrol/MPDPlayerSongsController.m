@@ -9,12 +9,6 @@
 #import "MPDPlayerSongsController.h"
 
 
-NSString * str2nsstr( const char *str )
-{
-  return str ? [[NSString alloc] initWithCString: str encoding:NSUTF8StringEncoding] : @"";
-}
-
-
 @implementation MPDPlayerSongsController
 - (id) initWithScene: (BRRenderScene *) scene 
     mpdConnection: (MPDConnection *) mpdConnection 

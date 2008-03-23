@@ -11,6 +11,8 @@
 #import "MPDAlbumArtworkPreviewController.h"
 #import "libmpd/libmpd.h"
 
+void addConstraints( MPDConnection * mpdConnection, NSString *genre, NSString *artist, NSString *album, NSString *song );
+
 @implementation MPDPlayerController
 
 - (id) initWithScene: (id)scene
@@ -146,6 +148,17 @@
 	[[self stack] popToControllerWithLabel:@"com.apple.frontrow.appliance.axxr.mpdctrl.rootController"];
 }
 
+- (MpdData *)mpdSearchTag: (mpd_TagItems)tag
+                 forGenre: (NSString *)genre
+                andArtist: (NSString *)artist
+                 andAlbum: (NSString *)album
+                  andSong: (NSString *)song
+{
+  mpd_database_search_field_start([_mpdConnection object], tag);
+  addConstraints( _mpdConnection, genre, artist, album, song );
+  return mpd_database_search_commit([_mpdConnection object]);
+}
+
 - (MpdData *)mpdSearchGenre: (NSString *)genre
                   andArtist: (NSString *)artist
                    andAlbum: (NSString *)album
@@ -154,32 +167,8 @@
   if( (genre == nil) && (artist == nil) && (album == nil) && (song == nil) )
     return mpd_database_get_complete([_mpdConnection object]);
   
-  const char *cGenre;
-  const char *cArtist;
-  const char *cAlbum;
-  const char *cSong;
-  
   mpd_database_search_start([_mpdConnection object], TRUE);
-  if( genre != NULL )
-  {
-    cGenre = [genre UTF8String];
-    mpd_database_search_add_constraint([_mpdConnection object], MPD_TAG_ITEM_GENRE, cGenre);
-  }
-  if( artist != NULL )
-  {
-    cArtist = [artist UTF8String];
-    mpd_database_search_add_constraint([_mpdConnection object], MPD_TAG_ITEM_ARTIST, cArtist);
-  }
-  if( album != NULL )
-  {
-    cAlbum = [album UTF8String];
-    mpd_database_search_add_constraint([_mpdConnection object], MPD_TAG_ITEM_ALBUM, cAlbum);
-  }
-  if( song != NULL )
-  {
-    cSong = [song UTF8String];
-    mpd_database_search_add_constraint([_mpdConnection object], MPD_TAG_ITEM_TITLE, cSong);
-  }
+  addConstraints( _mpdConnection, genre, artist, album, song );
   return mpd_database_search_commit([_mpdConnection object]);
 }
 
@@ -217,5 +206,36 @@
   return [[[MPDAlbumArtworkPreviewController alloc] initWithScene: [self scene] forAlbum:album andArtist:artist] autorelease];
 }
 
-
 @end
+
+
+NSString * str2nsstr( const char *str )
+{
+  return str ? [[NSString alloc] initWithCString: str encoding:NSUTF8StringEncoding] : @"";
+}
+
+
+void addConstraints( MPDConnection * mpdConnection, NSString *genre, NSString *artist, NSString *album, NSString *song )
+{
+  if( genre != nil )
+  {
+    const char *cGenre = [genre UTF8String];
+    mpd_database_search_add_constraint([mpdConnection object], MPD_TAG_ITEM_GENRE, cGenre);
+  }
+  if( artist != nil )
+  {
+    const char *cArtist = [artist UTF8String];
+    mpd_database_search_add_constraint([mpdConnection object], MPD_TAG_ITEM_ARTIST, cArtist);
+  }
+  if( album != nil )
+  {
+    const char *cAlbum = [album UTF8String];
+    mpd_database_search_add_constraint([mpdConnection object], MPD_TAG_ITEM_ALBUM, cAlbum);
+  }
+  if( song != nil )
+  {
+    const char *cSong = [song UTF8String];
+    mpd_database_search_add_constraint([mpdConnection object], MPD_TAG_ITEM_TITLE, cSong);
+  }
+}
+

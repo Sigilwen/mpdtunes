@@ -37,30 +37,17 @@
   else
   {
     MpdData *data;
-    const char *cGenre;
-    const char *cArtist;
     
     _names = [[NSMutableArray alloc] initWithObjects: @"All", nil];
     
-    mpd_database_search_field_start([_mpdConnection object], MPD_TAG_ITEM_ALBUM);
-    if( _genre != NULL )
-    {
-      cGenre = [_genre UTF8String];
-      mpd_database_search_add_constraint([_mpdConnection object], MPD_TAG_ITEM_GENRE, cGenre);
-    }
-    if( _artist != NULL )
-    {
-      cArtist = [_artist UTF8String];
-      mpd_database_search_add_constraint([_mpdConnection object], MPD_TAG_ITEM_ARTIST, cArtist);
-    }
-    for( data = mpd_database_search_commit([_mpdConnection object]);
-        data != NULL;
-        data = mpd_data_get_next(data) )
+    for( data = [self mpdSearchTag:MPD_TAG_ITEM_ALBUM forGenre:genre andArtist:artist andAlbum:nil andSong:nil];
+         data != NULL;
+         data = [self mpdSearchNext: data] )
     {
       if( data->type == MPD_DATA_TYPE_TAG )
         [_names addObject: [[NSString alloc] initWithCString: data->tag encoding:NSUTF8StringEncoding]];
     }
-    // last mpd_data_get_next() free's the search
+    // last mpdSearchNext: free's the search
   }
   
   // set the datasource *after* you've setup your array....

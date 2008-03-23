@@ -41,6 +41,11 @@
 - (void) willBePushed;
 - (void) willBePopped;
 
+- (MpdData *)mpdSearchTag: (mpd_TagItems)tag
+                 forGenre: (NSString *)genre
+                andArtist: (NSString *)artist
+                 andAlbum: (NSString *)album
+                  andSong: (NSString *)song;
 - (MpdData *)mpdSearchGenre: (NSString *)genre
                   andArtist: (NSString *)artist
                    andAlbum: (NSString *)album
@@ -57,3 +62,5 @@
 
 
 @end
+
+NSString * str2nsstr( const char *str );
