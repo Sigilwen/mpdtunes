@@ -45,7 +45,7 @@
          data = [self mpdSearchNext: data] )
     {
       if( data->type == MPD_DATA_TYPE_TAG )
-        [_names addObject: [[NSString alloc] initWithCString: data->tag encoding:NSUTF8StringEncoding]];
+        [_names addObject: str2nsstr(data->tag)];
     }
     // last mpdSearchNext: free's the search
   }

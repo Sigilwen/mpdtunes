@@ -831,6 +831,21 @@
 			718C54C70D9719D500FD9A5D /* PBXTextBookmark */ = 718C54C70D9719D500FD9A5D /* PBXTextBookmark */;
 			718C54C80D9719D500FD9A5D /* PBXTextBookmark */ = 718C54C80D9719D500FD9A5D /* PBXTextBookmark */;
 			718C54C90D9719D500FD9A5D /* PBXTextBookmark */ = 718C54C90D9719D500FD9A5D /* PBXTextBookmark */;
+			718C54CD0D971C4D00FD9A5D /* PBXTextBookmark */ = 718C54CD0D971C4D00FD9A5D /* PBXTextBookmark */;
+			718C54CE0D971C4D00FD9A5D /* PBXTextBookmark */ = 718C54CE0D971C4D00FD9A5D /* PBXTextBookmark */;
+			718C54CF0D971C4D00FD9A5D /* PBXTextBookmark */ = 718C54CF0D971C4D00FD9A5D /* PBXTextBookmark */;
+			718C54D00D971C4D00FD9A5D /* PBXTextBookmark */ = 718C54D00D971C4D00FD9A5D /* PBXTextBookmark */;
+			718C54D10D971C4D00FD9A5D /* PBXTextBookmark */ = 718C54D10D971C4D00FD9A5D /* PBXTextBookmark */;
+			718C54D20D971C4D00FD9A5D /* PBXTextBookmark */ = 718C54D20D971C4D00FD9A5D /* PBXTextBookmark */;
+			718C54D30D971C4D00FD9A5D /* PBXTextBookmark */ = 718C54D30D971C4D00FD9A5D /* PBXTextBookmark */;
+			718C54D40D971C4D00FD9A5D /* PBXTextBookmark */ = 718C54D40D971C4D00FD9A5D /* PBXTextBookmark */;
+			718C54D50D971C4D00FD9A5D /* PBXTextBookmark */ = 718C54D50D971C4D00FD9A5D /* PBXTextBookmark */;
+			718C54D60D971C4D00FD9A5D /* PBXTextBookmark */ = 718C54D60D971C4D00FD9A5D /* PBXTextBookmark */;
+			718C54D70D971C4D00FD9A5D /* PBXTextBookmark */ = 718C54D70D971C4D00FD9A5D /* PBXTextBookmark */;
+			718C54D80D971C4D00FD9A5D /* PBXTextBookmark */ = 718C54D80D971C4D00FD9A5D /* PBXTextBookmark */;
+			718C54D90D971C4D00FD9A5D /* PBXTextBookmark */ = 718C54D90D971C4D00FD9A5D /* PBXTextBookmark */;
+			718C54DA0D971C4D00FD9A5D /* PBXTextBookmark */ = 718C54DA0D971C4D00FD9A5D /* PBXTextBookmark */;
+			718C54DC0D971CDE00FD9A5D /* PBXTextBookmark */ = 718C54DC0D971CDE00FD9A5D /* PBXTextBookmark */;
 		};
 		sourceControlManager = 71A11DA50D839DE300E38D42 /* Source Control */;
 		userBuildSettings = {
@@ -874,9 +889,9 @@
 	};
 	4E066E410C1228EE00DC29BF /* MPDPlayerController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1134, 2904}}";
-			sepNavSelRange = "{5973, 0}";
-			sepNavVisRange = "{4238, 1883}";
+			sepNavIntBoundsRect = "{{0, 0}, {1134, 3264}}";
+			sepNavSelRange = "{5778, 0}";
+			sepNavVisRange = "{4943, 1769}";
 		};
 	};
 	4E066EE00C12309500DC29BF /* MPDServerController.h */ = {
@@ -1342,7 +1357,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1134, 2400}}";
 			sepNavSelRange = "{1526, 0}";
-			sepNavVisRange = "{3629, 2173}";
+			sepNavVisRange = "{3627, 2175}";
 			sepNavWindowFrame = "{{15, 4}, {1118, 874}}";
 		};
 	};
@@ -1355,9 +1370,9 @@
 	};
 	717233C90D8DF841001E578B /* MPDPlayerGenresController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1134, 1068}}";
-			sepNavSelRange = "{1154, 0}";
-			sepNavVisRange = "{297, 1717}";
+			sepNavIntBoundsRect = "{{0, 0}, {1134, 1044}}";
+			sepNavSelRange = "{1048, 0}";
+			sepNavVisRange = "{297, 1659}";
 		};
 	};
 	717233D30D8DFA12001E578B /* PBXTextBookmark */ = {
@@ -1461,9 +1476,9 @@
 	};
 	717234850D8E07F9001E578B /* MPDPlayerArtistsController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1134, 1248}}";
-			sepNavSelRange = "{1256, 0}";
-			sepNavVisRange = "{228, 1628}";
+			sepNavIntBoundsRect = "{{0, 0}, {1134, 1272}}";
+			sepNavSelRange = "{1150, 0}";
+			sepNavVisRange = "{228, 1531}";
 		};
 	};
 	717234930D8E1162001E578B /* PBXTextBookmark */ = {
@@ -1508,7 +1523,7 @@
 		fRef = 717234850D8E07F9001E578B /* MPDPlayerArtistsController.m */;
 		name = "MPDPlayerArtistsController.m: 44";
 		rLen = 0;
-		rLoc = 1256;
+		rLoc = 1201;
 		rType = 0;
 		vrLen = 1208;
 		vrLoc = 711;
@@ -1523,9 +1538,9 @@
 	};
 	717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1134, 1284}}";
-			sepNavSelRange = "{825, 484}";
-			sepNavVisRange = "{648, 1651}";
+			sepNavIntBoundsRect = "{{0, 0}, {1134, 1272}}";
+			sepNavSelRange = "{1153, 0}";
+			sepNavVisRange = "{3, 1621}";
 			sepNavWindowFrame = "{{15, 4}, {1118, 874}}";
 		};
 	};
@@ -1538,9 +1553,9 @@
 	};
 	717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {974, 1308}}";
-			sepNavSelRange = "{2708, 0}";
-			sepNavVisRange = "{844, 441}";
+			sepNavIntBoundsRect = "{{0, 0}, {1134, 1308}}";
+			sepNavSelRange = "{1640, 45}";
+			sepNavVisRange = "{145, 1664}";
 			sepNavWindowFrame = "{{15, 4}, {1118, 874}}";
 		};
 	};
@@ -1559,7 +1574,7 @@
 		fRef = 717234850D8E07F9001E578B /* MPDPlayerArtistsController.m */;
 		name = "MPDPlayerArtistsController.m: 98";
 		rLen = 0;
-		rLoc = 2316;
+		rLoc = 2261;
 		rType = 0;
 		vrLen = 1072;
 		vrLoc = 1493;
@@ -2411,9 +2426,9 @@
 	};
 	718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1134, 4636}}";
-			sepNavSelRange = "{8577, 0}";
-			sepNavVisRange = "{7372, 1815}";
+			sepNavIntBoundsRect = "{{0, 0}, {1134, 4660}}";
+			sepNavSelRange = "{10227, 69}";
+			sepNavVisRange = "{9258, 1488}";
 			sepNavWindowFrame = "{{15, 4}, {1118, 874}}";
 		};
 	};
@@ -2511,7 +2526,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 145";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 1157;
 		vrLoc = 3410;
@@ -2548,7 +2563,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 209";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 4633;
@@ -2672,7 +2687,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 155";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 1387;
 		vrLoc = 2933;
@@ -2790,7 +2805,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 154";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 1229;
 		vrLoc = 3109;
@@ -2800,7 +2815,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 154";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 1229;
 		vrLoc = 3109;
@@ -2900,7 +2915,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 165";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 1232;
 		vrLoc = 3426;
@@ -2910,7 +2925,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 186";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 1134;
 		vrLoc = 3558;
@@ -2927,7 +2942,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 186";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 1134;
 		vrLoc = 3558;
@@ -2967,7 +2982,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 157";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 1203;
 		vrLoc = 3608;
@@ -2977,7 +2992,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 189";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 1230;
 		vrLoc = 3634;
@@ -2997,7 +3012,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 189";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 1230;
 		vrLoc = 3634;
@@ -3055,7 +3070,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 189";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 380;
 		vrLoc = 4492;
@@ -3085,7 +3100,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 189";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 1264;
 		vrLoc = 3608;
@@ -3115,7 +3130,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 147";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 1235;
 		vrLoc = 3410;
@@ -3135,7 +3150,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 188";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 1299;
 		vrLoc = 3885;
@@ -3145,7 +3160,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 198";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 1530;
 		vrLoc = 3822;
@@ -3155,7 +3170,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 195";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 1529;
 		vrLoc = 3823;
@@ -3165,7 +3180,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 199";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 1549;
 		vrLoc = 3823;
@@ -3341,7 +3356,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 184";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 1419;
 		vrLoc = 3410;
@@ -3361,7 +3376,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 184";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 1419;
 		vrLoc = 3410;
@@ -3401,7 +3416,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 81";
 		rLen = 0;
-		rLoc = 1416;
+		rLoc = 1361;
 		rType = 0;
 		vrLen = 2000;
 		vrLoc = 1288;
@@ -3411,7 +3426,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 124";
 		rLen = 0;
-		rLoc = 2621;
+		rLoc = 2566;
 		rType = 0;
 		vrLen = 1407;
 		vrLoc = 2768;
@@ -3437,7 +3452,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 125";
 		rLen = 24;
-		rLoc = 2390;
+		rLoc = 2335;
 		rType = 0;
 		vrLen = 1378;
 		vrLoc = 2940;
@@ -3469,7 +3484,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 127";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 1388;
 		vrLoc = 2940;
@@ -3479,7 +3494,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 127";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 1398;
 		vrLoc = 2940;
@@ -3508,7 +3523,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 127";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 1398;
 		vrLoc = 2940;
@@ -3551,7 +3566,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 130";
 		rLen = 0;
-		rLoc = 2459;
+		rLoc = 2404;
 		rType = 0;
 		vrLen = 1399;
 		vrLoc = 2940;
@@ -3571,7 +3586,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 130";
 		rLen = 0;
-		rLoc = 2459;
+		rLoc = 2404;
 		rType = 0;
 		vrLen = 1399;
 		vrLoc = 2940;
@@ -3581,7 +3596,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 133";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 1434;
 		vrLoc = 2940;
@@ -3655,7 +3670,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 137";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 1569;
 		vrLoc = 2996;
@@ -3675,7 +3690,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 138";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 1497;
 		vrLoc = 3154;
@@ -3685,7 +3700,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 135";
 		rLen = 0;
-		rLoc = 2506;
+		rLoc = 2451;
 		rType = 0;
 		vrLen = 1544;
 		vrLoc = 3154;
@@ -3731,7 +3746,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 138";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 1544;
 		vrLoc = 3154;
@@ -3783,7 +3798,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 138";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 1487;
 		vrLoc = 3154;
@@ -3793,7 +3808,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 138";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 1487;
 		vrLoc = 3154;
@@ -3813,7 +3828,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 138";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 1487;
 		vrLoc = 3154;
@@ -3843,7 +3858,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 139";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 1517;
 		vrLoc = 3154;
@@ -3883,7 +3898,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 139";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 1517;
 		vrLoc = 3154;
@@ -3961,7 +3976,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 140";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 460;
 		vrLoc = 3561;
@@ -3971,7 +3986,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 140";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 1419;
 		vrLoc = 3227;
@@ -4031,7 +4046,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 140";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 1419;
 		vrLoc = 3227;
@@ -4191,7 +4206,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 140";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 1419;
 		vrLoc = 3227;
@@ -4251,7 +4266,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 140";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 1419;
 		vrLoc = 3227;
@@ -4271,7 +4286,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 124";
 		rLen = 0;
-		rLoc = 2549;
+		rLoc = 2494;
 		rType = 0;
 		vrLen = 1598;
 		vrLoc = 1960;
@@ -4281,7 +4296,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 96";
 		rLen = 0;
-		rLoc = 1933;
+		rLoc = 1878;
 		rType = 0;
 		vrLen = 1606;
 		vrLoc = 1779;
@@ -4311,7 +4326,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 96";
 		rLen = 0;
-		rLoc = 1933;
+		rLoc = 1878;
 		rType = 0;
 		vrLen = 1606;
 		vrLoc = 1779;
@@ -4541,7 +4556,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 121";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 1709;
 		vrLoc = 1674;
@@ -4568,7 +4583,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 121";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 1709;
 		vrLoc = 1674;
@@ -4728,7 +4743,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 121";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 465;
 		vrLoc = 2918;
@@ -5420,7 +5435,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 120";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 1709;
 		vrLoc = 1674;
@@ -5976,8 +5991,8 @@
 	718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1134, 960}}";
-			sepNavSelRange = "{1423, 0}";
-			sepNavVisRange = "{203, 1420}";
+			sepNavSelRange = "{552, 13}";
+			sepNavVisRange = "{203, 1419}";
 		};
 	};
 	718C53710D96DD0700FD9A5D /* PBXTextBookmark */ = {
@@ -5985,7 +6000,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 116";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 248;
 		vrLoc = 2815;
@@ -5995,7 +6010,7 @@
 		comments = "error: syntax error before ‘autorelease’";
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		rLen = 1;
-		rLoc = 205;
+		rLoc = 235;
 		rType = 1;
 	};
 	718C53730D96DD0700FD9A5D /* PBXTextBookmark */ = {
@@ -6003,7 +6018,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 116";
 		rLen = 0;
-		rLoc = 2619;
+		rLoc = 2564;
 		rType = 0;
 		vrLen = 248;
 		vrLoc = 2815;
@@ -6013,7 +6028,7 @@
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		name = "MPDPlayerController.m: 202";
 		rLen = 0;
-		rLoc = 5066;
+		rLoc = 5822;
 		rType = 0;
 		vrLen = 304;
 		vrLoc = 4518;
@@ -6103,7 +6118,7 @@
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		name = "MPDPlayerController.m: 203";
 		rLen = 0;
-		rLoc = 5182;
+		rLoc = 5938;
 		rType = 0;
 		vrLen = 1883;
 		vrLoc = 2938;
@@ -6133,7 +6148,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 115";
 		rLen = 237;
-		rLoc = 2384;
+		rLoc = 2329;
 		rType = 0;
 		vrLen = 1604;
 		vrLoc = 1779;
@@ -6173,7 +6188,7 @@
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		name = "MPDPlayerController.m: 203";
 		rLen = 0;
-		rLoc = 5182;
+		rLoc = 5938;
 		rType = 0;
 		vrLen = 1883;
 		vrLoc = 2938;
@@ -6383,7 +6398,7 @@
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		name = "MPDPlayerController.m: 202";
 		rLen = 0;
-		rLoc = 5066;
+		rLoc = 5822;
 		rType = 0;
 		vrLen = 304;
 		vrLoc = 4518;
@@ -6401,7 +6416,7 @@
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		name = "MPDPlayerController.m: 202";
 		rLen = 0;
-		rLoc = 5066;
+		rLoc = 5822;
 		rType = 0;
 		vrLen = 304;
 		vrLoc = 4518;
@@ -6649,7 +6664,7 @@
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		name = "MPDPlayerController.m: 203";
 		rLen = 0;
-		rLoc = 5182;
+		rLoc = 5938;
 		rType = 0;
 		vrLen = 1886;
 		vrLoc = 2936;
@@ -6676,7 +6691,7 @@
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		name = "MPDPlayerController.m: 203";
 		rLen = 0;
-		rLoc = 5182;
+		rLoc = 5938;
 		rType = 0;
 		vrLen = 1886;
 		vrLoc = 2936;
@@ -6728,7 +6743,7 @@
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		name = "MPDPlayerController.m: 203";
 		rLen = 0;
-		rLoc = 5182;
+		rLoc = 5938;
 		rType = 0;
 		vrLen = 1886;
 		vrLoc = 2936;
@@ -6798,7 +6813,7 @@
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		name = "MPDPlayerController.m: 203";
 		rLen = 0;
-		rLoc = 5182;
+		rLoc = 5938;
 		rType = 0;
 		vrLen = 1886;
 		vrLoc = 2936;
@@ -7090,7 +7105,7 @@
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		name = "MPDPlayerController.m: 202";
 		rLen = 0;
-		rLoc = 5134;
+		rLoc = 5890;
 		rType = 0;
 		vrLen = 1881;
 		vrLoc = 2938;
@@ -7150,7 +7165,7 @@
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		name = "MPDPlayerController.m: 202";
 		rLen = 0;
-		rLoc = 5134;
+		rLoc = 5890;
 		rType = 0;
 		vrLen = 1881;
 		vrLoc = 2938;
@@ -7372,7 +7387,7 @@
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		name = "MPDPlayerController.m: 202";
 		rLen = 0;
-		rLoc = 5134;
+		rLoc = 5890;
 		rType = 0;
 		vrLen = 1886;
 		vrLoc = 2936;
@@ -7402,7 +7417,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 110";
 		rLen = 238;
-		rLoc = 2383;
+		rLoc = 2328;
 		rType = 0;
 		vrLen = 1578;
 		vrLoc = 1485;
@@ -7412,7 +7427,7 @@
 		fRef = 717234850D8E07F9001E578B /* MPDPlayerArtistsController.m */;
 		name = "MPDPlayerArtistsController.m: 100";
 		rLen = 0;
-		rLoc = 2318;
+		rLoc = 2263;
 		rType = 0;
 		vrLen = 1565;
 		vrLoc = 1237;
@@ -7469,7 +7484,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 110";
 		rLen = 238;
-		rLoc = 2383;
+		rLoc = 2328;
 		rType = 0;
 		vrLen = 1578;
 		vrLoc = 1485;
@@ -7479,7 +7494,7 @@
 		fRef = 717234850D8E07F9001E578B /* MPDPlayerArtistsController.m */;
 		name = "MPDPlayerArtistsController.m: 100";
 		rLen = 0;
-		rLoc = 2318;
+		rLoc = 2263;
 		rType = 0;
 		vrLen = 1565;
 		vrLoc = 1237;
@@ -7657,7 +7672,7 @@
 		fRef = 717233C90D8DF841001E578B /* MPDPlayerGenresController.m */;
 		name = "MPDPlayerGenresController.m: 75";
 		rLen = 0;
-		rLoc = 1954;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 1581;
 		vrLoc = 664;
@@ -7667,7 +7682,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 108";
 		rLen = 0;
-		rLoc = 2380;
+		rLoc = 2325;
 		rType = 0;
 		vrLen = 1593;
 		vrLoc = 1463;
@@ -7677,7 +7692,7 @@
 		fRef = 717234850D8E07F9001E578B /* MPDPlayerArtistsController.m */;
 		name = "MPDPlayerArtistsController.m: 99";
 		rLen = 0;
-		rLoc = 2316;
+		rLoc = 2261;
 		rType = 0;
 		vrLen = 1580;
 		vrLoc = 1215;
@@ -7737,7 +7752,7 @@
 		fRef = 717233C90D8DF841001E578B /* MPDPlayerGenresController.m */;
 		name = "MPDPlayerGenresController.m: 75";
 		rLen = 0;
-		rLoc = 1954;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 1581;
 		vrLoc = 664;
@@ -7747,7 +7762,7 @@
 		fRef = 717234850D8E07F9001E578B /* MPDPlayerArtistsController.m */;
 		name = "MPDPlayerArtistsController.m: 99";
 		rLen = 0;
-		rLoc = 2316;
+		rLoc = 2261;
 		rType = 0;
 		vrLen = 1558;
 		vrLoc = 1237;
@@ -7757,7 +7772,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 108";
 		rLen = 0;
-		rLoc = 2380;
+		rLoc = 2325;
 		rType = 0;
 		vrLen = 1571;
 		vrLoc = 1485;
@@ -7767,7 +7782,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 108";
 		rLen = 0;
-		rLoc = 2380;
+		rLoc = 2325;
 		rType = 0;
 		vrLen = 1593;
 		vrLoc = 1463;
@@ -7777,7 +7792,7 @@
 		fRef = 717234850D8E07F9001E578B /* MPDPlayerArtistsController.m */;
 		name = "MPDPlayerArtistsController.m: 99";
 		rLen = 0;
-		rLoc = 2316;
+		rLoc = 2261;
 		rType = 0;
 		vrLen = 1580;
 		vrLoc = 1215;
@@ -7957,7 +7972,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 108";
 		rLen = 0;
-		rLoc = 2380;
+		rLoc = 2325;
 		rType = 0;
 		vrLen = 1571;
 		vrLoc = 1485;
@@ -8027,7 +8042,7 @@
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		name = "MPDPlayerController.m: 216";
 		rLen = 0;
-		rLoc = 5183;
+		rLoc = 5939;
 		rType = 0;
 		vrLen = 1810;
 		vrLoc = 3346;
@@ -8047,7 +8062,7 @@
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		name = "MPDPlayerController.m: 216";
 		rLen = 0;
-		rLoc = 5183;
+		rLoc = 5939;
 		rType = 0;
 		vrLen = 1810;
 		vrLoc = 3346;
@@ -8167,7 +8182,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 76";
 		rLen = 106;
-		rLoc = 1512;
+		rLoc = 1457;
 		rType = 0;
 		vrLen = 1593;
 		vrLoc = 1463;
@@ -8197,7 +8212,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 76";
 		rLen = 106;
-		rLoc = 1512;
+		rLoc = 1457;
 		rType = 0;
 		vrLen = 1593;
 		vrLoc = 1463;
@@ -8227,7 +8242,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 43";
 		rLen = 0;
-		rLoc = 1309;
+		rLoc = 1254;
 		rType = 0;
 		vrLen = 1879;
 		vrLoc = 682;
@@ -8247,7 +8262,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 43";
 		rLen = 0;
-		rLoc = 1309;
+		rLoc = 1254;
 		rType = 0;
 		vrLen = 1879;
 		vrLoc = 682;
@@ -8387,7 +8402,7 @@
 		fRef = 717233C90D8DF841001E578B /* MPDPlayerGenresController.m */;
 		name = "MPDPlayerGenresController.m: 75";
 		rLen = 0;
-		rLoc = 1954;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 1661;
 		vrLoc = 499;
@@ -8417,7 +8432,7 @@
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		name = "MPDPlayerController.m: 227";
 		rLen = 0;
-		rLoc = 6121;
+		rLoc = 6877;
 		rType = 0;
 		vrLen = 1841;
 		vrLoc = 3595;
@@ -8437,7 +8452,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 52";
 		rLen = 0;
-		rLoc = 1309;
+		rLoc = 1254;
 		rType = 0;
 		vrLen = 1603;
 		vrLoc = 917;
@@ -8467,7 +8482,7 @@
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		name = "MPDPlayerController.m: 227";
 		rLen = 0;
-		rLoc = 6121;
+		rLoc = 6877;
 		rType = 0;
 		vrLen = 1841;
 		vrLoc = 3595;
@@ -8587,7 +8602,7 @@
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		name = "MPDPlayerController.m: 235";
 		rLen = 0;
-		rLoc = 5973;
+		rLoc = 6729;
 		rType = 0;
 		vrLen = 1883;
 		vrLoc = 4238;
@@ -8597,7 +8612,7 @@
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		name = "MPDPlayerController.m: 235";
 		rLen = 0;
-		rLoc = 5973;
+		rLoc = 6729;
 		rType = 0;
 		vrLen = 1883;
 		vrLoc = 4238;
@@ -8607,7 +8622,7 @@
 		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
 		name = "MPDPlayerController.m: 235";
 		rLen = 0;
-		rLoc = 5973;
+		rLoc = 6729;
 		rType = 0;
 		vrLen = 1883;
 		vrLoc = 4238;
@@ -8627,7 +8642,7 @@
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 51";
 		rLen = 0;
-		rLoc = 1309;
+		rLoc = 1254;
 		rType = 0;
 		vrLen = 1651;
 		vrLoc = 648;
@@ -8636,7 +8651,7 @@
 		isa = PBXTextBookmark;
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 39";
-		rLen = 484;
+		rLen = 429;
 		rLoc = 825;
 		rType = 0;
 		vrLen = 1651;
@@ -8647,7 +8662,7 @@
 		fRef = 717234850D8E07F9001E578B /* MPDPlayerArtistsController.m */;
 		name = "MPDPlayerArtistsController.m: 48";
 		rLen = 0;
-		rLoc = 1256;
+		rLoc = 1201;
 		rType = 0;
 		vrLen = 1628;
 		vrLoc = 228;
@@ -8656,7 +8671,7 @@
 		isa = PBXTextBookmark;
 		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
 		name = "MPDPlayerAlbumsController.m: 39";
-		rLen = 484;
+		rLen = 429;
 		rLoc = 825;
 		rType = 0;
 		vrLen = 1651;
@@ -8667,7 +8682,7 @@
 		fRef = 717234850D8E07F9001E578B /* MPDPlayerArtistsController.m */;
 		name = "MPDPlayerArtistsController.m: 48";
 		rLen = 0;
-		rLoc = 1256;
+		rLoc = 1201;
 		rType = 0;
 		vrLen = 1628;
 		vrLoc = 228;
@@ -8677,10 +8692,160 @@
 		fRef = 717233C90D8DF841001E578B /* MPDPlayerGenresController.m */;
 		name = "MPDPlayerGenresController.m: 42";
 		rLen = 0;
-		rLoc = 1154;
+		rLoc = 1099;
 		rType = 0;
 		vrLen = 1717;
 		vrLoc = 297;
+	};
+	718C54CD0D971C4D00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
+		name = "MPDAlbumArtworkManager.m: 330";
+		rLen = 69;
+		rLoc = 10227;
+		rType = 0;
+		vrLen = 1489;
+		vrLoc = 9257;
+	};
+	718C54CE0D971C4D00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
+		name = "MPDAlbumArtworkPreviewController.m: 25";
+		rLen = 13;
+		rLoc = 552;
+		rType = 0;
+		vrLen = 1419;
+		vrLoc = 203;
+	};
+	718C54CF0D971C4D00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
+		name = "MPDPlayerSongsController.m: 62";
+		rLen = 45;
+		rLoc = 1640;
+		rType = 0;
+		vrLen = 1664;
+		vrLoc = 145;
+	};
+	718C54D00D971C4D00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
+		name = "MPDPlayerRootController.m: 54";
+		rLen = 0;
+		rLoc = 1526;
+		rType = 0;
+		vrLen = 2175;
+		vrLoc = 3627;
+	};
+	718C54D10D971C4D00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 717233C90D8DF841001E578B /* MPDPlayerGenresController.m */;
+		name = "MPDPlayerGenresController.m: 40";
+		rLen = 0;
+		rLoc = 1048;
+		rType = 0;
+		vrLen = 1659;
+		vrLoc = 297;
+	};
+	718C54D20D971C4D00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
+		name = "MPDPlayerAlbumsController.m: 48";
+		rLen = 0;
+		rLoc = 1153;
+		rType = 0;
+		vrLen = 1621;
+		vrLoc = 3;
+	};
+	718C54D30D971C4D00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 717234850D8E07F9001E578B /* MPDPlayerArtistsController.m */;
+		name = "MPDPlayerArtistsController.m: 46";
+		rLen = 0;
+		rLoc = 1150;
+		rType = 0;
+		vrLen = 1531;
+		vrLoc = 228;
+	};
+	718C54D40D971C4D00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
+		name = "MPDPlayerController.m: 216";
+		rLen = 0;
+		rLoc = 5421;
+		rType = 0;
+		vrLen = 1734;
+		vrLoc = 4235;
+	};
+	718C54D50D971C4D00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
+		name = "MPDAlbumArtworkManager.m: 251";
+		rLen = 0;
+		rLoc = 8577;
+		rType = 0;
+		vrLen = 1494;
+		vrLoc = 9252;
+	};
+	718C54D60D971C4D00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 717233C20D8DEBDD001E578B /* MPDPlayerRootController.m */;
+		name = "MPDPlayerRootController.m: 54";
+		rLen = 0;
+		rLoc = 1526;
+		rType = 0;
+		vrLen = 2175;
+		vrLoc = 3627;
+	};
+	718C54D70D971C4D00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 717233C90D8DF841001E578B /* MPDPlayerGenresController.m */;
+		name = "MPDPlayerGenresController.m: 40";
+		rLen = 0;
+		rLoc = 1048;
+		rType = 0;
+		vrLen = 1659;
+		vrLoc = 297;
+	};
+	718C54D80D971C4D00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */;
+		name = "MPDPlayerAlbumsController.m: 48";
+		rLen = 0;
+		rLoc = 1153;
+		rType = 0;
+		vrLen = 1621;
+		vrLoc = 3;
+	};
+	718C54D90D971C4D00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 717234850D8E07F9001E578B /* MPDPlayerArtistsController.m */;
+		name = "MPDPlayerArtistsController.m: 46";
+		rLen = 0;
+		rLoc = 1150;
+		rType = 0;
+		vrLen = 1531;
+		vrLoc = 228;
+	};
+	718C54DA0D971C4D00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
+		name = "MPDPlayerController.m: 222";
+		rLen = 0;
+		rLoc = 5524;
+		rType = 0;
+		vrLen = 1706;
+		vrLoc = 4154;
+	};
+	718C54DC0D971CDE00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4E066E410C1228EE00DC29BF /* MPDPlayerController.m */;
+		name = "MPDPlayerController.m: 232";
+		rLen = 0;
+		rLoc = 5778;
+		rType = 0;
+		vrLen = 1769;
+		vrLoc = 4943;
 	};
 	71A11DA50D839DE300E38D42 /* Source Control */ = {
 		isa = PBXSourceControlManager;
