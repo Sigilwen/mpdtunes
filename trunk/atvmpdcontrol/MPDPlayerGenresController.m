@@ -31,15 +31,14 @@
     
     _names = [[NSMutableArray alloc] initWithObjects: @"All", nil];
     
-    mpd_database_search_field_start([_mpdConnection object], MPD_TAG_ITEM_GENRE);
-    for( data = mpd_database_search_commit([_mpdConnection object]);
-        data != NULL;
-        data = mpd_data_get_next(data) )
+    for( data = [self mpdSearchTag:MPD_TAG_ITEM_GENRE forGenre:nil andArtist:nil andAlbum:nil andSong:nil];
+         data != NULL;
+         data = [self mpdSearchNext: data] )
     {
       if( data->type == MPD_DATA_TYPE_TAG )
         [_names addObject: [[NSString alloc] initWithCString: data->tag encoding:NSUTF8StringEncoding]];
     }
-    // last mpd_data_get_next() free's the search
+    // last mpdSearchNext: free's the search
   }
   
   // set the datasource *after* you've setup your array....
