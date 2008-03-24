@@ -98,7 +98,6 @@
 
 - (id<BRMediaPreviewController>) previewControllerForItem: (long) item
 {
-  printf("previewControllerForItem: %d\n", item);
   NSString *artist = (_artist != nil) ? _artist : ((item == 0) ? nil : [_artists objectAtIndex:item]);
   NSString *album  = (_album != nil)  ? _album  : ((item == 0) ? nil : [_albums objectAtIndex:item]);
   NSString *song   = (item == 0) ? nil : [self titleForRow:item];
