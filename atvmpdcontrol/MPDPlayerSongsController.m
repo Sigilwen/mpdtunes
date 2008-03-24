@@ -51,7 +51,6 @@
     {
       if( data->type == MPD_DATA_TYPE_SONG )
       {
-//        printf("title=%s\n",data->song->title);
         [_names addObject: str2nsstr(data->song->title)];
         if( artist == nil )
           [_artists addObject: str2nsstr(data->song->artist)];
@@ -100,9 +99,9 @@
 - (id<BRMediaPreviewController>) previewControllerForItem: (long) item
 {
   printf("previewControllerForItem: %d\n", item);
-  NSString *artist = (_artist != nil) ? _artist : [_artists objectAtIndex:item];
-  NSString *album  = (_album != nil)  ? _album  : [_albums objectAtIndex:item];
-  NSString *song   = [self titleForRow:item];
+  NSString *artist = (_artist != nil) ? _artist : ((item == 0) ? nil : [_artists objectAtIndex:item]);
+  NSString *album  = (_album != nil)  ? _album  : ((item == 0) ? nil : [_albums objectAtIndex:item]);
+  NSString *song   = (item == 0) ? nil : [self titleForRow:item];
   return [self previewControllerForArtist:artist andAlbum:album andSong:song];
 }
 

@@ -315,7 +315,7 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
   else
     _assetUrls = [_assetUrls mutableCopy];
   
-  NSString *path = [[[NSBundle bundleForClass:[self class]] bundlePath] stringByAppendingString:@"/Contents/Resources/DefaultPreview.png"];
+  NSString *path = @"/System/Library/PrivateFrameworks/BackRow.framework/Resources/Music.png";
   NSURL *url = [NSURL fileURLWithPath:path];
   CGImageSourceRef  sourceRef = CGImageSourceCreateWithURL((CFURLRef)url, NULL);
   if(sourceRef) {

@@ -1137,6 +1137,41 @@
 			718C565A0D976DD900FD9A5D /* PBXTextBookmark */ = 718C565A0D976DD900FD9A5D /* PBXTextBookmark */;
 			718C565C0D976DED00FD9A5D /* PBXTextBookmark */ = 718C565C0D976DED00FD9A5D /* PBXTextBookmark */;
 			718C565D0D976DED00FD9A5D /* PBXTextBookmark */ = 718C565D0D976DED00FD9A5D /* PBXTextBookmark */;
+			718C565F0D9770EC00FD9A5D /* PBXTextBookmark */ = 718C565F0D9770EC00FD9A5D /* PBXTextBookmark */;
+			718C56600D9770EC00FD9A5D /* PBXTextBookmark */ = 718C56600D9770EC00FD9A5D /* PBXTextBookmark */;
+			718C56610D9770EC00FD9A5D /* PBXTextBookmark */ = 718C56610D9770EC00FD9A5D /* PBXTextBookmark */;
+			718C56620D9770EC00FD9A5D /* PBXTextBookmark */ = 718C56620D9770EC00FD9A5D /* PBXTextBookmark */;
+			718C56630D9770EC00FD9A5D /* PBXTextBookmark */ = 718C56630D9770EC00FD9A5D /* PBXTextBookmark */;
+			718C56640D9770EC00FD9A5D /* PBXTextBookmark */ = 718C56640D9770EC00FD9A5D /* PBXTextBookmark */;
+			718C56650D9770EC00FD9A5D /* PBXTextBookmark */ = 718C56650D9770EC00FD9A5D /* PBXTextBookmark */;
+			718C56660D97717E00FD9A5D /* PBXTextBookmark */ = 718C56660D97717E00FD9A5D /* PBXTextBookmark */;
+			718C56670D97717E00FD9A5D /* PBXTextBookmark */ = 718C56670D97717E00FD9A5D /* PBXTextBookmark */;
+			718C56680D97717E00FD9A5D /* PBXTextBookmark */ = 718C56680D97717E00FD9A5D /* PBXTextBookmark */;
+			718C56690D97717E00FD9A5D /* PBXTextBookmark */ = 718C56690D97717E00FD9A5D /* PBXTextBookmark */;
+			718C566A0D97717E00FD9A5D /* PBXTextBookmark */ = 718C566A0D97717E00FD9A5D /* PBXTextBookmark */;
+			718C566F0D97736700FD9A5D /* PBXTextBookmark */ = 718C566F0D97736700FD9A5D /* PBXTextBookmark */;
+			718C56700D97736700FD9A5D /* PBXTextBookmark */ = 718C56700D97736700FD9A5D /* PBXTextBookmark */;
+			718C56710D97736700FD9A5D /* PBXTextBookmark */ = 718C56710D97736700FD9A5D /* PBXTextBookmark */;
+			718C56720D97736700FD9A5D /* PBXTextBookmark */ = 718C56720D97736700FD9A5D /* PBXTextBookmark */;
+			718C56730D97736700FD9A5D /* PBXTextBookmark */ = 718C56730D97736700FD9A5D /* PBXTextBookmark */;
+			718C56740D97736700FD9A5D /* PBXTextBookmark */ = 718C56740D97736700FD9A5D /* PBXTextBookmark */;
+			718C56750D97736700FD9A5D /* PBXTextBookmark */ = 718C56750D97736700FD9A5D /* PBXTextBookmark */;
+			718C56760D97736700FD9A5D /* PBXTextBookmark */ = 718C56760D97736700FD9A5D /* PBXTextBookmark */;
+			718C56770D97736700FD9A5D /* PBXTextBookmark */ = 718C56770D97736700FD9A5D /* PBXTextBookmark */;
+			718C56780D97736700FD9A5D /* PBXTextBookmark */ = 718C56780D97736700FD9A5D /* PBXTextBookmark */;
+			718C567A0D97739300FD9A5D /* PBXTextBookmark */ = 718C567A0D97739300FD9A5D /* PBXTextBookmark */;
+			718C567B0D97739300FD9A5D /* PBXTextBookmark */ = 718C567B0D97739300FD9A5D /* PBXTextBookmark */;
+			718C567C0D9773C700FD9A5D /* PBXTextBookmark */ = 718C567C0D9773C700FD9A5D /* PBXTextBookmark */;
+			718C567D0D9773C700FD9A5D /* PBXTextBookmark */ = 718C567D0D9773C700FD9A5D /* PBXTextBookmark */;
+			718C567E0D97755400FD9A5D /* PBXTextBookmark */ = 718C567E0D97755400FD9A5D /* PBXTextBookmark */;
+			718C567F0D97755400FD9A5D /* PBXTextBookmark */ = 718C567F0D97755400FD9A5D /* PBXTextBookmark */;
+			718C56800D97755400FD9A5D /* PBXTextBookmark */ = 718C56800D97755400FD9A5D /* PBXTextBookmark */;
+			718C56810D97755400FD9A5D /* PBXTextBookmark */ = 718C56810D97755400FD9A5D /* PBXTextBookmark */;
+			718C56820D97755400FD9A5D /* PBXTextBookmark */ = 718C56820D97755400FD9A5D /* PBXTextBookmark */;
+			718C56830D97757C00FD9A5D /* PBXTextBookmark */ = 718C56830D97757C00FD9A5D /* PBXTextBookmark */;
+			718C56840D97757C00FD9A5D /* PBXTextBookmark */ = 718C56840D97757C00FD9A5D /* PBXTextBookmark */;
+			718C56860D9775A700FD9A5D /* PBXTextBookmark */ = 718C56860D9775A700FD9A5D /* PBXTextBookmark */;
+			718C56870D9775A700FD9A5D /* PBXTextBookmark */ = 718C56870D9775A700FD9A5D /* PBXTextBookmark */;
 		};
 		sourceControlManager = 71A11DA50D839DE300E38D42 /* Source Control */;
 		userBuildSettings = {
@@ -1852,9 +1887,9 @@
 	};
 	717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {974, 1332}}";
-			sepNavSelRange = "{2780, 0}";
-			sepNavVisRange = "{2396, 419}";
+			sepNavIntBoundsRect = "{{0, 0}, {1134, 1308}}";
+			sepNavSelRange = "{2542, 0}";
+			sepNavVisRange = "{1117, 1712}";
 			sepNavWindowFrame = "{{15, 4}, {1118, 874}}";
 		};
 	};
@@ -1893,7 +1928,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 67";
 		rLen = 0;
-		rLoc = 1705;
+		rLoc = 1655;
 		rType = 0;
 		vrLen = 1063;
 		vrLoc = 1580;
@@ -2725,9 +2760,9 @@
 	};
 	718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1134, 4284}}";
-			sepNavSelRange = "{338, 0}";
-			sepNavVisRange = "{0, 614}";
+			sepNavIntBoundsRect = "{{0, 0}, {1134, 4704}}";
+			sepNavSelRange = "{9911, 0}";
+			sepNavVisRange = "{9252, 1449}";
 			sepNavWindowFrame = "{{15, 4}, {1118, 874}}";
 		};
 	};
@@ -3066,7 +3101,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 106";
 		rLen = 0;
-		rLoc = 10741;
+		rLoc = 10696;
 		rType = 0;
 		vrLen = 1225;
 		vrLoc = 350;
@@ -3084,7 +3119,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 90";
 		rLen = 0;
-		rLoc = 10741;
+		rLoc = 10696;
 		rType = 0;
 		vrLen = 239;
 		vrLoc = 2029;
@@ -3124,7 +3159,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 90";
 		rLen = 0;
-		rLoc = 10741;
+		rLoc = 10696;
 		rType = 0;
 		vrLen = 1848;
 		vrLoc = 420;
@@ -3134,7 +3169,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 76";
 		rLen = 0;
-		rLoc = 10226;
+		rLoc = 10181;
 		rType = 0;
 		vrLen = 1824;
 		vrLoc = 419;
@@ -3174,7 +3209,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 76";
 		rLen = 0;
-		rLoc = 10226;
+		rLoc = 10181;
 		rType = 0;
 		vrLen = 1826;
 		vrLoc = 417;
@@ -3194,7 +3229,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 76";
 		rLen = 0;
-		rLoc = 10226;
+		rLoc = 10181;
 		rType = 0;
 		vrLen = 1826;
 		vrLoc = 417;
@@ -3331,7 +3366,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 89";
 		rLen = 0;
-		rLoc = 10226;
+		rLoc = 10181;
 		rType = 0;
 		vrLen = 1869;
 		vrLoc = 419;
@@ -3341,7 +3376,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 92";
 		rLen = 0;
-		rLoc = 10741;
+		rLoc = 10696;
 		rType = 0;
 		vrLen = 281;
 		vrLoc = 2007;
@@ -3359,7 +3394,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 92";
 		rLen = 0;
-		rLoc = 10741;
+		rLoc = 10696;
 		rType = 0;
 		vrLen = 281;
 		vrLoc = 2007;
@@ -3379,7 +3414,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 89";
 		rLen = 0;
-		rLoc = 10226;
+		rLoc = 10181;
 		rType = 0;
 		vrLen = 1869;
 		vrLoc = 419;
@@ -3389,7 +3424,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 89";
 		rLen = 0;
-		rLoc = 10226;
+		rLoc = 10181;
 		rType = 0;
 		vrLen = 1869;
 		vrLoc = 419;
@@ -3615,7 +3650,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 89";
 		rLen = 0;
-		rLoc = 10226;
+		rLoc = 10181;
 		rType = 0;
 		vrLen = 1869;
 		vrLoc = 419;
@@ -3665,7 +3700,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 89";
 		rLen = 0;
-		rLoc = 10226;
+		rLoc = 10181;
 		rType = 0;
 		vrLen = 1869;
 		vrLoc = 419;
@@ -3844,9 +3879,9 @@
 		path = /Developer/SDKs/MacOSX10.4u.sdk/System/Library/PrivateFrameworks/BackRow.framework/PrivateHeaders/BRMetadataPreviewController.h;
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1134, 552}}";
-			sepNavSelRange = "{1211, 0}";
-			sepNavVisRange = "{382, 926}";
+			sepNavIntBoundsRect = "{{0, 0}, {1134, 751}}";
+			sepNavSelRange = "{303, 77}";
+			sepNavVisRange = "{0, 1309}";
 			sepNavWindowFrame = "{{15, 4}, {1118, 874}}";
 		};
 	};
@@ -3926,7 +3961,7 @@
 		isa = PBXTextBookmark;
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 38";
-		rLen = 185;
+		rLen = 140;
 		rLoc = 9819;
 		rType = 0;
 		vrLen = 1898;
@@ -4067,8 +4102,8 @@
 		path = "/Developer/SDKs/MacOSX10.4u.sdk/System/Library/PrivateFrameworks/BackRow.framework/PrivateHeaders/BRMetadataPreviewController-Private.h";
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1134, 357}}";
-			sepNavSelRange = "{452, 27}";
+			sepNavIntBoundsRect = "{{0, 0}, {1134, 751}}";
+			sepNavSelRange = "{652, 70}";
 			sepNavVisRange = "{0, 849}";
 		};
 	};
@@ -4147,7 +4182,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 95";
 		rLen = 0;
-		rLoc = 10746;
+		rLoc = 10701;
 		rType = 0;
 		vrLen = 1765;
 		vrLoc = 577;
@@ -4187,7 +4222,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 95";
 		rLen = 0;
-		rLoc = 10746;
+		rLoc = 10701;
 		rType = 0;
 		vrLen = 1765;
 		vrLoc = 577;
@@ -4257,7 +4292,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 93";
 		rLen = 0;
-		rLoc = 10738;
+		rLoc = 10693;
 		rType = 0;
 		vrLen = 1795;
 		vrLoc = 577;
@@ -4315,7 +4350,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 92";
 		rLen = 0;
-		rLoc = 10259;
+		rLoc = 10214;
 		rType = 0;
 		vrLen = 1801;
 		vrLoc = 577;
@@ -4335,7 +4370,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 92";
 		rLen = 0;
-		rLoc = 10259;
+		rLoc = 10214;
 		rType = 0;
 		vrLen = 1851;
 		vrLoc = 532;
@@ -4375,7 +4410,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 97";
 		rLen = 0;
-		rLoc = 10737;
+		rLoc = 10692;
 		rType = 0;
 		vrLen = 1525;
 		vrLoc = 966;
@@ -4395,7 +4430,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 106";
 		rLen = 0;
-		rLoc = 10746;
+		rLoc = 10701;
 		rType = 0;
 		vrLen = 1234;
 		vrLoc = 1412;
@@ -4405,7 +4440,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 97";
 		rLen = 0;
-		rLoc = 10731;
+		rLoc = 10686;
 		rType = 0;
 		vrLen = 1382;
 		vrLoc = 1262;
@@ -4425,7 +4460,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 106";
 		rLen = 0;
-		rLoc = 10746;
+		rLoc = 10701;
 		rType = 0;
 		vrLen = 1235;
 		vrLoc = 1412;
@@ -4445,7 +4480,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 106";
 		rLen = 0;
-		rLoc = 10746;
+		rLoc = 10701;
 		rType = 0;
 		vrLen = 1234;
 		vrLoc = 1412;
@@ -4465,7 +4500,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 111";
 		rLen = 0;
-		rLoc = 10746;
+		rLoc = 10701;
 		rType = 0;
 		vrLen = 1334;
 		vrLoc = 1371;
@@ -4485,7 +4520,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 52";
 		rLen = 0;
-		rLoc = 10731;
+		rLoc = 10686;
 		rType = 0;
 		vrLen = 1093;
 		vrLoc = 309;
@@ -4545,7 +4580,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 52";
 		rLen = 0;
-		rLoc = 10731;
+		rLoc = 10686;
 		rType = 0;
 		vrLen = 1093;
 		vrLoc = 309;
@@ -4615,7 +4650,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 52";
 		rLen = 0;
-		rLoc = 10731;
+		rLoc = 10686;
 		rType = 0;
 		vrLen = 1162;
 		vrLoc = 173;
@@ -4635,7 +4670,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 52";
 		rLen = 0;
-		rLoc = 10731;
+		rLoc = 10686;
 		rType = 0;
 		vrLen = 1162;
 		vrLoc = 173;
@@ -4655,7 +4690,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 79";
 		rLen = 0;
-		rLoc = 10731;
+		rLoc = 10686;
 		rType = 0;
 		vrLen = 1062;
 		vrLoc = 422;
@@ -4665,7 +4700,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 79";
 		rLen = 0;
-		rLoc = 10731;
+		rLoc = 10686;
 		rType = 0;
 		vrLen = 1133;
 		vrLoc = 173;
@@ -4675,7 +4710,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 79";
 		rLen = 0;
-		rLoc = 10731;
+		rLoc = 10686;
 		rType = 0;
 		vrLen = 1133;
 		vrLoc = 173;
@@ -4715,7 +4750,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 79";
 		rLen = 0;
-		rLoc = 10731;
+		rLoc = 10686;
 		rType = 0;
 		vrLen = 854;
 		vrLoc = 3;
@@ -4735,7 +4770,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 79";
 		rLen = 0;
-		rLoc = 10731;
+		rLoc = 10686;
 		rType = 0;
 		vrLen = 854;
 		vrLoc = 3;
@@ -4745,7 +4780,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 79";
 		rLen = 0;
-		rLoc = 10731;
+		rLoc = 10686;
 		rType = 0;
 		vrLen = 854;
 		vrLoc = 3;
@@ -4795,7 +4830,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 82";
 		rLen = 13;
-		rLoc = 10472;
+		rLoc = 10427;
 		rType = 0;
 		vrLen = 1220;
 		vrLoc = 480;
@@ -4805,7 +4840,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 82";
 		rLen = 13;
-		rLoc = 10472;
+		rLoc = 10427;
 		rType = 0;
 		vrLen = 1220;
 		vrLoc = 480;
@@ -4825,7 +4860,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 83";
 		rLen = 0;
-		rLoc = 10721;
+		rLoc = 10676;
 		rType = 0;
 		vrLen = 1221;
 		vrLoc = 480;
@@ -4835,7 +4870,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 87";
 		rLen = 0;
-		rLoc = 10563;
+		rLoc = 10518;
 		rType = 0;
 		vrLen = 1378;
 		vrLoc = 504;
@@ -4845,7 +4880,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 84";
 		rLen = 0;
-		rLoc = 10563;
+		rLoc = 10518;
 		rType = 0;
 		vrLen = 1613;
 		vrLoc = 572;
@@ -4872,7 +4907,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 84";
 		rLen = 0;
-		rLoc = 10563;
+		rLoc = 10518;
 		rType = 0;
 		vrLen = 1613;
 		vrLoc = 572;
@@ -4892,7 +4927,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 82";
 		rLen = 0;
-		rLoc = 10482;
+		rLoc = 10437;
 		rType = 0;
 		vrLen = 1614;
 		vrLoc = 571;
@@ -4902,7 +4937,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 84";
 		rLen = 0;
-		rLoc = 10563;
+		rLoc = 10518;
 		rType = 0;
 		vrLen = 1666;
 		vrLoc = 563;
@@ -4912,7 +4947,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 83";
 		rLen = 0;
-		rLoc = 10381;
+		rLoc = 10336;
 		rType = 0;
 		vrLen = 1701;
 		vrLoc = 546;
@@ -6281,17 +6316,17 @@
 	};
 	718C536B0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1134, 357}}";
-			sepNavSelRange = "{156, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1134, 751}}";
+			sepNavSelRange = "{230, 76}";
 			sepNavVisRange = "{0, 568}";
 			sepNavWindowFrame = "{{15, 4}, {1118, 874}}";
 		};
 	};
 	718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1134, 1992}}";
-			sepNavSelRange = "{836, 0}";
-			sepNavVisRange = "{2326, 1760}";
+			sepNavIntBoundsRect = "{{0, 0}, {1134, 2028}}";
+			sepNavSelRange = "{1609, 0}";
+			sepNavVisRange = "{839, 1547}";
 		};
 	};
 	718C53710D96DD0700FD9A5D /* PBXTextBookmark */ = {
@@ -6597,7 +6632,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 38";
 		rLen = 0;
-		rLoc = 4218;
+		rLoc = 4288;
 		rType = 0;
 		vrLen = 1086;
 		vrLoc = 0;
@@ -6627,7 +6662,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 34";
 		rLen = 0;
-		rLoc = 4196;
+		rLoc = 4266;
 		rType = 0;
 		vrLen = 910;
 		vrLoc = 0;
@@ -6657,7 +6692,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 35";
 		rLen = 0;
-		rLoc = 4139;
+		rLoc = 4209;
 		rType = 0;
 		vrLen = 1017;
 		vrLoc = 0;
@@ -6667,7 +6702,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 36";
 		rLen = 0;
-		rLoc = 4196;
+		rLoc = 4266;
 		rType = 0;
 		vrLen = 1082;
 		vrLoc = 0;
@@ -6677,7 +6712,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 38";
 		rLen = 0;
-		rLoc = 4196;
+		rLoc = 4266;
 		rType = 0;
 		vrLen = 1415;
 		vrLoc = 0;
@@ -6687,7 +6722,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 43";
 		rLen = 0;
-		rLoc = 4196;
+		rLoc = 4266;
 		rType = 0;
 		vrLen = 1436;
 		vrLoc = 0;
@@ -6783,7 +6818,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 59";
 		rLen = 16;
-		rLoc = 3933;
+		rLoc = 4003;
 		rType = 0;
 		vrLen = 1207;
 		vrLoc = 448;
@@ -6823,7 +6858,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 62";
 		rLen = 0;
-		rLoc = 4080;
+		rLoc = 4150;
 		rType = 0;
 		vrLen = 1383;
 		vrLoc = 404;
@@ -6843,7 +6878,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 62";
 		rLen = 0;
-		rLoc = 4080;
+		rLoc = 4150;
 		rType = 0;
 		vrLen = 1383;
 		vrLoc = 404;
@@ -6863,7 +6898,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 63";
 		rLen = 0;
-		rLoc = 4080;
+		rLoc = 4150;
 		rType = 0;
 		vrLen = 1414;
 		vrLoc = 404;
@@ -6873,7 +6908,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 63";
 		rLen = 0;
-		rLoc = 4080;
+		rLoc = 4150;
 		rType = 0;
 		vrLen = 1423;
 		vrLoc = 404;
@@ -6903,7 +6938,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 63";
 		rLen = 0;
-		rLoc = 4080;
+		rLoc = 4150;
 		rType = 0;
 		vrLen = 1343;
 		vrLoc = 493;
@@ -6933,7 +6968,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 65";
 		rLen = 0;
-		rLoc = 4080;
+		rLoc = 4150;
 		rType = 0;
 		vrLen = 1380;
 		vrLoc = 490;
@@ -6953,7 +6988,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 65";
 		rLen = 0;
-		rLoc = 4080;
+		rLoc = 4150;
 		rType = 0;
 		vrLen = 1375;
 		vrLoc = 490;
@@ -6980,7 +7015,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 65";
 		rLen = 0;
-		rLoc = 4080;
+		rLoc = 4150;
 		rType = 0;
 		vrLen = 1375;
 		vrLoc = 490;
@@ -7102,7 +7137,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 67";
 		rLen = 0;
-		rLoc = 4080;
+		rLoc = 4150;
 		rType = 0;
 		vrLen = 1419;
 		vrLoc = 238;
@@ -7212,7 +7247,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 67";
 		rLen = 0;
-		rLoc = 4080;
+		rLoc = 4150;
 		rType = 0;
 		vrLen = 1443;
 		vrLoc = 467;
@@ -7288,7 +7323,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 67";
 		rLen = 0;
-		rLoc = 4080;
+		rLoc = 4150;
 		rType = 0;
 		vrLen = 1443;
 		vrLoc = 467;
@@ -7328,7 +7363,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 67";
 		rLen = 0;
-		rLoc = 4080;
+		rLoc = 4150;
 		rType = 0;
 		vrLen = 1491;
 		vrLoc = 467;
@@ -7414,7 +7449,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 68";
 		rLen = 0;
-		rLoc = 4080;
+		rLoc = 4150;
 		rType = 0;
 		vrLen = 1529;
 		vrLoc = 157;
@@ -7474,7 +7509,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 68";
 		rLen = 0;
-		rLoc = 4080;
+		rLoc = 4150;
 		rType = 0;
 		vrLen = 1530;
 		vrLoc = 156;
@@ -7560,7 +7595,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 65";
 		rLen = 0;
-		rLoc = 4080;
+		rLoc = 4150;
 		rType = 0;
 		vrLen = 1595;
 		vrLoc = 240;
@@ -7632,7 +7667,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 65";
 		rLen = 0;
-		rLoc = 4080;
+		rLoc = 4150;
 		rType = 0;
 		vrLen = 1601;
 		vrLoc = 240;
@@ -7752,7 +7787,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 104";
 		rLen = 0;
-		rLoc = 2394;
+		rLoc = 2344;
 		rType = 0;
 		vrLen = 1598;
 		vrLoc = 1239;
@@ -7809,7 +7844,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 104";
 		rLen = 0;
-		rLoc = 2394;
+		rLoc = 2344;
 		rType = 0;
 		vrLen = 1598;
 		vrLoc = 1239;
@@ -7949,7 +7984,7 @@
 		comments = "error: syntax error before ‘?’ token";
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		rLen = 0;
-		rLoc = 105;
+		rLoc = 104;
 		rType = 1;
 	};
 	718C54350D96FB7C00FD9A5D /* PBXTextBookmark */ = {
@@ -7967,7 +8002,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 111";
 		rLen = 79;
-		rLoc = 2728;
+		rLoc = 2742;
 		rType = 0;
 		vrLen = 278;
 		vrLoc = 2561;
@@ -8137,7 +8172,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 50";
 		rLen = 0;
-		rLoc = 1705;
+		rLoc = 1655;
 		rType = 0;
 		vrLen = 1575;
 		vrLoc = 86;
@@ -8167,7 +8202,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 50";
 		rLen = 0;
-		rLoc = 1705;
+		rLoc = 1655;
 		rType = 0;
 		vrLen = 1575;
 		vrLoc = 86;
@@ -8207,7 +8242,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 46";
 		rLen = 0;
-		rLoc = 1398;
+		rLoc = 1358;
 		rType = 0;
 		vrLen = 1639;
 		vrLoc = 86;
@@ -8217,7 +8252,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 46";
 		rLen = 0;
-		rLoc = 1405;
+		rLoc = 1358;
 		rType = 0;
 		vrLen = 1621;
 		vrLoc = 86;
@@ -8227,7 +8262,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 51";
 		rLen = 0;
-		rLoc = 1705;
+		rLoc = 1655;
 		rType = 0;
 		vrLen = 1502;
 		vrLoc = 649;
@@ -8297,7 +8332,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 102";
 		rLen = 0;
-		rLoc = 2600;
+		rLoc = 2572;
 		rType = 0;
 		vrLen = 1798;
 		vrLoc = 1018;
@@ -8317,7 +8352,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 105";
 		rLen = 0;
-		rLoc = 2804;
+		rLoc = 2818;
 		rType = 0;
 		vrLen = 1862;
 		vrLoc = 1046;
@@ -8357,7 +8392,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 75";
 		rLen = 0;
-		rLoc = 2008;
+		rLoc = 1958;
 		rType = 0;
 		vrLen = 1847;
 		vrLoc = 956;
@@ -8377,7 +8412,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 54";
 		rLen = 0;
-		rLoc = 1360;
+		rLoc = 1358;
 		rType = 0;
 		vrLen = 1674;
 		vrLoc = 525;
@@ -8387,7 +8422,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 59";
 		rLen = 0;
-		rLoc = 1646;
+		rLoc = 1596;
 		rType = 0;
 		vrLen = 1730;
 		vrLoc = 525;
@@ -8397,7 +8432,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 59";
 		rLen = 0;
-		rLoc = 1646;
+		rLoc = 1596;
 		rType = 0;
 		vrLen = 1730;
 		vrLoc = 525;
@@ -8407,7 +8442,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 59";
 		rLen = 0;
-		rLoc = 1646;
+		rLoc = 1596;
 		rType = 0;
 		vrLen = 1730;
 		vrLoc = 525;
@@ -8467,7 +8502,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 63";
 		rLen = 0;
-		rLoc = 4019;
+		rLoc = 4089;
 		rType = 0;
 		vrLen = 1422;
 		vrLoc = 203;
@@ -8477,7 +8512,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 63";
 		rLen = 0;
-		rLoc = 4019;
+		rLoc = 4089;
 		rType = 0;
 		vrLen = 1420;
 		vrLoc = 203;
@@ -8497,7 +8532,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 75";
 		rLen = 0;
-		rLoc = 1908;
+		rLoc = 1858;
 		rType = 0;
 		vrLen = 1976;
 		vrLoc = 915;
@@ -8507,7 +8542,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 63";
 		rLen = 0;
-		rLoc = 4019;
+		rLoc = 4089;
 		rType = 0;
 		vrLen = 1420;
 		vrLoc = 203;
@@ -8527,7 +8562,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 77";
 		rLen = 0;
-		rLoc = 2008;
+		rLoc = 1958;
 		rType = 0;
 		vrLen = 1982;
 		vrLoc = 915;
@@ -8537,7 +8572,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 75";
 		rLen = 0;
-		rLoc = 1908;
+		rLoc = 1858;
 		rType = 0;
 		vrLen = 1940;
 		vrLoc = 915;
@@ -8557,7 +8592,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 75";
 		rLen = 0;
-		rLoc = 1908;
+		rLoc = 1858;
 		rType = 0;
 		vrLen = 1726;
 		vrLoc = 649;
@@ -8747,7 +8782,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 62";
 		rLen = 45;
-		rLoc = 1660;
+		rLoc = 1610;
 		rType = 0;
 		vrLen = 1692;
 		vrLoc = 0;
@@ -8797,7 +8832,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 62";
 		rLen = 45;
-		rLoc = 1660;
+		rLoc = 1610;
 		rType = 0;
 		vrLen = 1692;
 		vrLoc = 0;
@@ -8817,7 +8852,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 105";
 		rLen = 0;
-		rLoc = 2791;
+		rLoc = 2805;
 		rType = 0;
 		vrLen = 441;
 		vrLoc = 844;
@@ -8847,7 +8882,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 62";
 		rLen = 45;
-		rLoc = 1660;
+		rLoc = 1610;
 		rType = 0;
 		vrLen = 1665;
 		vrLoc = 145;
@@ -8887,7 +8922,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 62";
 		rLen = 45;
-		rLoc = 1660;
+		rLoc = 1610;
 		rType = 0;
 		vrLen = 1665;
 		vrLoc = 145;
@@ -9007,7 +9042,7 @@
 		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
 		name = "MPDAlbumArtworkManager.m: 330";
 		rLen = 69;
-		rLoc = 10227;
+		rLoc = 10182;
 		rType = 0;
 		vrLen = 1489;
 		vrLoc = 9257;
@@ -9027,7 +9062,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 62";
 		rLen = 45;
-		rLoc = 1660;
+		rLoc = 1610;
 		rType = 0;
 		vrLen = 1664;
 		vrLoc = 145;
@@ -9227,7 +9262,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 62";
 		rLen = 45;
-		rLoc = 1660;
+		rLoc = 1610;
 		rType = 0;
 		vrLen = 1452;
 		vrLoc = 357;
@@ -9297,7 +9332,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 105";
 		rLen = 0;
-		rLoc = 2791;
+		rLoc = 2805;
 		rType = 0;
 		vrLen = 461;
 		vrLoc = 844;
@@ -9315,7 +9350,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 105";
 		rLen = 0;
-		rLoc = 2791;
+		rLoc = 2805;
 		rType = 0;
 		vrLen = 461;
 		vrLoc = 844;
@@ -9445,7 +9480,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 29";
 		rLen = 0;
-		rLoc = 3250;
+		rLoc = 3320;
 		rType = 0;
 		vrLen = 1448;
 		vrLoc = 42;
@@ -10074,7 +10109,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 61";
 		rLen = 0;
-		rLoc = 3250;
+		rLoc = 3320;
 		rType = 0;
 		vrLen = 1683;
 		vrLoc = 203;
@@ -10084,7 +10119,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 101";
 		rLen = 0;
-		rLoc = 4139;
+		rLoc = 4209;
 		rType = 0;
 		vrLen = 1200;
 		vrLoc = 1556;
@@ -10314,7 +10349,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 95";
 		rLen = 0;
-		rLoc = 4139;
+		rLoc = 4209;
 		rType = 0;
 		vrLen = 1338;
 		vrLoc = 1341;
@@ -10361,7 +10396,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 95";
 		rLen = 0;
-		rLoc = 4139;
+		rLoc = 4209;
 		rType = 0;
 		vrLen = 1338;
 		vrLoc = 1341;
@@ -10401,7 +10436,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 97";
 		rLen = 0;
-		rLoc = 4139;
+		rLoc = 4209;
 		rType = 0;
 		vrLen = 1341;
 		vrLoc = 1362;
@@ -10548,7 +10583,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 110";
 		rLen = 0;
-		rLoc = 4139;
+		rLoc = 4209;
 		rType = 0;
 		vrLen = 644;
 		vrLoc = 2555;
@@ -10628,7 +10663,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 105";
 		rLen = 0;
-		rLoc = 4086;
+		rLoc = 4156;
 		rType = 0;
 		vrLen = 627;
 		vrLoc = 2551;
@@ -10734,7 +10769,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 74";
 		rLen = 0;
-		rLoc = 3247;
+		rLoc = 3317;
 		rType = 0;
 		vrLen = 738;
 		vrLoc = 1566;
@@ -10764,7 +10799,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 77";
 		rLen = 0;
-		rLoc = 3247;
+		rLoc = 3317;
 		rType = 0;
 		vrLen = 744;
 		vrLoc = 1566;
@@ -10804,7 +10839,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 73";
 		rLen = 0;
-		rLoc = 2815;
+		rLoc = 2865;
 		rType = 0;
 		vrLen = 1602;
 		vrLoc = 1625;
@@ -10834,7 +10869,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 74";
 		rLen = 8;
-		rLoc = 2835;
+		rLoc = 2887;
 		rType = 0;
 		vrLen = 1602;
 		vrLoc = 1625;
@@ -10854,7 +10889,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 76";
 		rLen = 0;
-		rLoc = 3247;
+		rLoc = 3317;
 		rType = 0;
 		vrLen = 1617;
 		vrLoc = 1625;
@@ -10874,7 +10909,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 73";
 		rLen = 0;
-		rLoc = 3247;
+		rLoc = 3317;
 		rType = 0;
 		vrLen = 1619;
 		vrLoc = 1625;
@@ -10954,7 +10989,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 76";
 		rLen = 0;
-		rLoc = 3247;
+		rLoc = 3317;
 		rType = 0;
 		vrLen = 1890;
 		vrLoc = 677;
@@ -10974,7 +11009,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 78";
 		rLen = 0;
-		rLoc = 3247;
+		rLoc = 3317;
 		rType = 0;
 		vrLen = 1702;
 		vrLoc = 1569;
@@ -10994,7 +11029,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 77";
 		rLen = 0;
-		rLoc = 3247;
+		rLoc = 3317;
 		rType = 0;
 		vrLen = 1701;
 		vrLoc = 1569;
@@ -11114,7 +11149,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 105";
 		rLen = 0;
-		rLoc = 2700;
+		rLoc = 2694;
 		rType = 0;
 		vrLen = 504;
 		vrLoc = 2311;
@@ -11154,7 +11189,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 105";
 		rLen = 0;
-		rLoc = 2700;
+		rLoc = 2694;
 		rType = 0;
 		vrLen = 504;
 		vrLoc = 2311;
@@ -11224,7 +11259,7 @@
 		comments = "warning: ‘MPDPlayerSongsController’ may not respond to ‘-previewControllerForAlbum:andArtist:andSong:’";
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		rLen = 1;
-		rLoc = 105;
+		rLoc = 104;
 		rType = 1;
 	};
 	718C55EA0D97531500FD9A5D /* PBXTextBookmark */ = {
@@ -11262,7 +11297,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 106";
 		rLen = 0;
-		rLoc = 2780;
+		rLoc = 2794;
 		rType = 0;
 		vrLen = 419;
 		vrLoc = 2396;
@@ -11392,7 +11427,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 76";
 		rLen = 0;
-		rLoc = 2495;
+		rLoc = 2529;
 		rType = 0;
 		vrLen = 1756;
 		vrLoc = 1117;
@@ -11412,7 +11447,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 81";
 		rLen = 0;
-		rLoc = 2810;
+		rLoc = 2858;
 		rType = 0;
 		vrLen = 1737;
 		vrLoc = 1117;
@@ -11432,7 +11467,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 81";
 		rLen = 0;
-		rLoc = 2810;
+		rLoc = 2858;
 		rType = 0;
 		vrLen = 1739;
 		vrLoc = 1117;
@@ -11752,7 +11787,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 106";
 		rLen = 0;
-		rLoc = 2780;
+		rLoc = 2794;
 		rType = 0;
 		vrLen = 419;
 		vrLoc = 2396;
@@ -11770,7 +11805,7 @@
 		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
 		name = "MPDPlayerSongsController.m: 106";
 		rLen = 0;
-		rLoc = 2780;
+		rLoc = 2794;
 		rType = 0;
 		vrLen = 419;
 		vrLoc = 2396;
@@ -12006,7 +12041,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 111";
 		rLen = 0;
-		rLoc = 3220;
+		rLoc = 3284;
 		rType = 0;
 		vrLen = 1709;
 		vrLoc = 1724;
@@ -12026,7 +12061,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 111";
 		rLen = 0;
-		rLoc = 3186;
+		rLoc = 3250;
 		rType = 0;
 		vrLen = 1755;
 		vrLoc = 1724;
@@ -12046,7 +12081,7 @@
 		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
 		name = "MPDAlbumArtworkPreviewController.m: 104";
 		rLen = 0;
-		rLoc = 2789;
+		rLoc = 2833;
 		rType = 0;
 		vrLen = 1744;
 		vrLoc = 1724;
@@ -12092,6 +12127,356 @@
 		vrLoc = 2326;
 	};
 	718C565D0D976DED00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C55A10D97484500FD9A5D /* ATVFMetadataPreviewController.m */;
+		name = "ATVFMetadataPreviewController.m: 74";
+		rLen = 13;
+		rLoc = 2485;
+		rType = 0;
+		vrLen = 2669;
+		vrLoc = 1151;
+	};
+	718C565F0D9770EC00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C52280D95AE6F00FD9A5D /* BRMetadataPreviewController-Private.h */;
+		name = "BRMetadataPreviewController-Private.h: 9";
+		rLen = 49;
+		rLoc = 182;
+		rType = 0;
+		vrLen = 849;
+		vrLoc = 0;
+	};
+	718C56600D9770EC00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C52090D95AA5000FD9A5D /* BRMetadataPreviewController.h */;
+		name = "BRMetadataPreviewController.h: 32";
+		rLen = 47;
+		rLoc = 987;
+		rType = 0;
+		vrLen = 1309;
+		vrLoc = 0;
+	};
+	718C56610D9770EC00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
+		name = "MPDAlbumArtworkPreviewController.m: 52";
+		rLen = 27;
+		rLoc = 1526;
+		rType = 0;
+		vrLen = 1558;
+		vrLoc = 778;
+	};
+	718C56620D9770EC00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
+		name = "MPDPlayerSongsController.m: 50";
+		rLen = 0;
+		rLoc = 1275;
+		rType = 0;
+		vrLen = 1727;
+		vrLoc = 357;
+	};
+	718C56630D9770EC00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
+		name = "MPDAlbumArtworkPreviewController.m: 52";
+		rLen = 27;
+		rLoc = 1526;
+		rType = 0;
+		vrLen = 1558;
+		vrLoc = 778;
+	};
+	718C56640D9770EC00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
+		name = "MPDPlayerSongsController.m: 102";
+		rLen = 0;
+		rLoc = 2542;
+		rType = 0;
+		vrLen = 1712;
+		vrLoc = 1117;
+	};
+	718C56650D9770EC00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C55A10D97484500FD9A5D /* ATVFMetadataPreviewController.m */;
+		name = "ATVFMetadataPreviewController.m: 74";
+		rLen = 13;
+		rLoc = 2485;
+		rType = 0;
+		vrLen = 2669;
+		vrLoc = 1151;
+	};
+	718C56660D97717E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
+		name = "MPDPlayerSongsController.m: 102";
+		rLen = 0;
+		rLoc = 2542;
+		rType = 0;
+		vrLen = 1712;
+		vrLoc = 1117;
+	};
+	718C56670D97717E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
+		name = "MPDAlbumArtworkPreviewController.m: 52";
+		rLen = 27;
+		rLoc = 1526;
+		rType = 0;
+		vrLen = 1558;
+		vrLoc = 778;
+	};
+	718C56680D97717E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */;
+		name = "MPDPlayerSongsController.m: 102";
+		rLen = 0;
+		rLoc = 2542;
+		rType = 0;
+		vrLen = 1712;
+		vrLoc = 1117;
+	};
+	718C56690D97717E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
+		name = "MPDAlbumArtworkPreviewController.m: 89";
+		rLen = 0;
+		rLoc = 2385;
+		rType = 0;
+		vrLen = 1780;
+		vrLoc = 1560;
+	};
+	718C566A0D97717E00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C55A10D97484500FD9A5D /* ATVFMetadataPreviewController.m */;
+		name = "ATVFMetadataPreviewController.m: 74";
+		rLen = 13;
+		rLoc = 2485;
+		rType = 0;
+		vrLen = 2669;
+		vrLoc = 1151;
+	};
+	718C566F0D97736700FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C536B0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.h */;
+		name = "MPDAlbumArtworkPreviewController.h: 12";
+		rLen = 76;
+		rLoc = 230;
+		rType = 0;
+		vrLen = 568;
+		vrLoc = 0;
+	};
+	718C56700D97736700FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C52280D95AE6F00FD9A5D /* BRMetadataPreviewController-Private.h */;
+		name = "BRMetadataPreviewController-Private.h: 23";
+		rLen = 70;
+		rLoc = 652;
+		rType = 0;
+		vrLen = 849;
+		vrLoc = 0;
+	};
+	718C56710D97736700FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C52090D95AA5000FD9A5D /* BRMetadataPreviewController.h */;
+		name = "BRMetadataPreviewController.h: 13";
+		rLen = 77;
+		rLoc = 303;
+		rType = 0;
+		vrLen = 1309;
+		vrLoc = 0;
+	};
+	718C56720D97736700FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
+		name = "MPDAlbumArtworkPreviewController.m: 57";
+		rLen = 0;
+		rLoc = 1609;
+		rType = 0;
+		vrLen = 1611;
+		vrLoc = 839;
+	};
+	718C56730D97736700FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C52280D95AE6F00FD9A5D /* BRMetadataPreviewController-Private.h */;
+		name = "BRMetadataPreviewController-Private.h: 5";
+		rLen = 0;
+		rLoc = 131;
+		rType = 0;
+		vrLen = 849;
+		vrLoc = 0;
+	};
+	718C56740D97736700FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C536B0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.h */;
+		name = "MPDAlbumArtworkPreviewController.h: 12";
+		rLen = 76;
+		rLoc = 230;
+		rType = 0;
+		vrLen = 568;
+		vrLoc = 0;
+	};
+	718C56750D97736700FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C52280D95AE6F00FD9A5D /* BRMetadataPreviewController-Private.h */;
+		name = "BRMetadataPreviewController-Private.h: 23";
+		rLen = 70;
+		rLoc = 652;
+		rType = 0;
+		vrLen = 849;
+		vrLoc = 0;
+	};
+	718C56760D97736700FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C52090D95AA5000FD9A5D /* BRMetadataPreviewController.h */;
+		name = "BRMetadataPreviewController.h: 13";
+		rLen = 77;
+		rLoc = 303;
+		rType = 0;
+		vrLen = 1309;
+		vrLoc = 0;
+	};
+	718C56770D97736700FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
+		name = "MPDAlbumArtworkPreviewController.m: 57";
+		rLen = 0;
+		rLoc = 1609;
+		rType = 0;
+		vrLen = 1601;
+		vrLoc = 839;
+	};
+	718C56780D97736700FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C55A10D97484500FD9A5D /* ATVFMetadataPreviewController.m */;
+		name = "ATVFMetadataPreviewController.m: 74";
+		rLen = 13;
+		rLoc = 2485;
+		rType = 0;
+		vrLen = 2669;
+		vrLoc = 1151;
+	};
+	718C567A0D97739300FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
+		name = "MPDAlbumArtworkPreviewController.m: 58";
+		rLen = 0;
+		rLoc = 1609;
+		rType = 0;
+		vrLen = 1598;
+		vrLoc = 839;
+	};
+	718C567B0D97739300FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C55A10D97484500FD9A5D /* ATVFMetadataPreviewController.m */;
+		name = "ATVFMetadataPreviewController.m: 74";
+		rLen = 13;
+		rLoc = 2485;
+		rType = 0;
+		vrLen = 2669;
+		vrLoc = 1151;
+	};
+	718C567C0D9773C700FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
+		name = "MPDAlbumArtworkPreviewController.m: 61";
+		rLen = 0;
+		rLoc = 1609;
+		rType = 0;
+		vrLen = 1554;
+		vrLoc = 839;
+	};
+	718C567D0D9773C700FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C55A10D97484500FD9A5D /* ATVFMetadataPreviewController.m */;
+		name = "ATVFMetadataPreviewController.m: 74";
+		rLen = 13;
+		rLoc = 2485;
+		rType = 0;
+		vrLen = 2669;
+		vrLoc = 1151;
+	};
+	718C567E0D97755400FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
+		name = "MPDAlbumArtworkPreviewController.m: 54";
+		rLen = 0;
+		rLoc = 1609;
+		rType = 0;
+		vrLen = 1547;
+		vrLoc = 839;
+	};
+	718C567F0D97755400FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
+		name = "MPDAlbumArtworkManager.m: 330";
+		rLen = 69;
+		rLoc = 10182;
+		rType = 0;
+		vrLen = 1494;
+		vrLoc = 9252;
+	};
+	718C56800D97755400FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */;
+		name = "MPDAlbumArtworkPreviewController.m: 54";
+		rLen = 0;
+		rLoc = 1609;
+		rType = 0;
+		vrLen = 1547;
+		vrLoc = 839;
+	};
+	718C56810D97755400FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
+		name = "MPDAlbumArtworkManager.m: 318";
+		rLen = 0;
+		rLoc = 9912;
+		rType = 0;
+		vrLen = 1416;
+		vrLoc = 9252;
+	};
+	718C56820D97755400FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C55A10D97484500FD9A5D /* ATVFMetadataPreviewController.m */;
+		name = "ATVFMetadataPreviewController.m: 74";
+		rLen = 13;
+		rLoc = 2485;
+		rType = 0;
+		vrLen = 2669;
+		vrLoc = 1151;
+	};
+	718C56830D97757C00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
+		name = "MPDAlbumArtworkManager.m: 318";
+		rLen = 0;
+		rLoc = 9911;
+		rType = 0;
+		vrLen = 1440;
+		vrLoc = 9252;
+	};
+	718C56840D97757C00FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C55A10D97484500FD9A5D /* ATVFMetadataPreviewController.m */;
+		name = "ATVFMetadataPreviewController.m: 74";
+		rLen = 13;
+		rLoc = 2485;
+		rType = 0;
+		vrLen = 2669;
+		vrLoc = 1151;
+	};
+	718C56860D9775A700FD9A5D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */;
+		name = "MPDAlbumArtworkManager.m: 318";
+		rLen = 0;
+		rLoc = 9911;
+		rType = 0;
+		vrLen = 1449;
+		vrLoc = 9252;
+	};
+	718C56870D9775A700FD9A5D /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 718C55A10D97484500FD9A5D /* ATVFMetadataPreviewController.m */;
 		name = "ATVFMetadataPreviewController.m: 74";
