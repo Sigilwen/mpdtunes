@@ -20,7 +20,7 @@ for album:
  Length: <>
 -------
 
-for Song():
+for Song (no zoom-out):
 -------
   Album: <>
  Artist: <>

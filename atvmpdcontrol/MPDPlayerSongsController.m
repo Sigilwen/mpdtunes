@@ -102,7 +102,8 @@
   printf("previewControllerForItem: %d\n", item);
   NSString *artist = (_artist != nil) ? _artist : [_artists objectAtIndex:item];
   NSString *album  = (_album != nil)  ? _album  : [_albums objectAtIndex:item];
-  return [self previewControllerForAlbum:album andArtist:artist];
+  NSString *song   = [self titleForRow:item];
+  return [self previewControllerForArtist:artist andAlbum:album andSong:song];
 }
 
 @end

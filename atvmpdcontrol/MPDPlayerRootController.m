@@ -24,7 +24,7 @@
   
   [self addLabel:@"com.apple.frontrow.appliance.axxr.mpdctrl.rootController"];
   
-  _mpdConnection = [[MPDConnection alloc] init];
+  _mpdConnection = [MPDConnection sharedInstance];
   
   _serverController = [[MPDServerController alloc] initWithScene:scene mpdConnection: _mpdConnection];
   

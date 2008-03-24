@@ -46,7 +46,7 @@
                    andAlbum: (NSString *)album
                     andSong: (NSString *)song;
 
-- (id<BRMediaPreviewController>) previewControllerForAlbum: (NSString *)album andArtist: (NSString *)artist;
+- (id<BRMediaPreviewController>) previewControllerForArtist: (NSString *)artist andAlbum: (NSString *)album andSong:(NSString *)song;
 
 
 @end
