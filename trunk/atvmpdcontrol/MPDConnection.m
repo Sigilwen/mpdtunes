@@ -10,7 +10,20 @@
 
 void addConstraints( MPDConnection * mpdConnection, NSString *genre, NSString *artist, NSString *album, NSString *song );
 
+static MPDConnection *instance;
+
+
 @implementation MPDConnection
+
++(id)singleton
+{
+  return instance;
+}
+
++(void)setSingleton:(id)singleton
+{
+  instance = (MPDConnection *)singleton;
+}
 
 - (id)init
 {

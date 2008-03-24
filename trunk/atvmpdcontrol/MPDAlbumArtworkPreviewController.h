@@ -14,11 +14,13 @@
   
   NSString *_album;
   NSString *_artist;
+  NSString *_song;
 }
 
 - (id)initWithScene: (BRRenderScene *)scene 
-    forAlbum: (NSString *)album
-    andArtist: (NSString *)artist;
+          forArtist: (NSString *)artist
+           andAlbum: (NSString *)album
+            andSong: (NSString *)song;
 
 
 @end

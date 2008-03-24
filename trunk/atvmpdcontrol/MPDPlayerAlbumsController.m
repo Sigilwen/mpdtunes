@@ -99,7 +99,7 @@
 {
   printf("previewControllerForItem: %d\n", item);
   NSString *album = [self titleForRow:item];
-  return [self previewControllerForAlbum:album andArtist:_artist];
+  return [self previewControllerForArtist:_artist andAlbum:album andSong:nil];
 }
 
 

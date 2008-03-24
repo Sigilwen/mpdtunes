@@ -172,7 +172,7 @@
 
 
 
-- (id<BRMediaPreviewController>) previewControllerForAlbum: (NSString *)album andArtist: (NSString *)artist
+- (id<BRMediaPreviewController>) previewControllerForArtist: (NSString *)artist andAlbum: (NSString *)album andSong:(NSString *)song;
 {
   MpdData *data;
   
@@ -204,7 +204,7 @@
       }
     }
   }
-  return [[[MPDAlbumArtworkPreviewController alloc] initWithScene: [self scene] forAlbum:album andArtist:artist] autorelease];
+  return [[[MPDAlbumArtworkPreviewController alloc] initWithScene: [self scene] forArtist:artist andAlbum:album andSong:song] autorelease];
 }
 
 @end

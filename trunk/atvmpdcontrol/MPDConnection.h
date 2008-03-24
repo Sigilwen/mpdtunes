@@ -7,6 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <BackRow/BRSingleton.h>
+
 #import "libmpd/libmpd.h"
 
 #import "MPDConnectionLostDelegate.h"
@@ -21,14 +23,17 @@ typedef enum
 } MPDConnectionResult;
 
 
-@interface MPDConnection : NSObject {
+@interface MPDConnection : BRSingleton {
 	MpdObj*			_mpdObj;
 	NSTimer*		_updateTimer;
 	NSMutableArray*	_connectionLostReceiverArray;
 	NSMutableArray* _statusChangedListenerArray;
 }
 
++ (id)singleton;
++ (void)setSingleton:(id)fp8;
 - (id)init;
+
 - (void)dealloc;
 
 - (id)retain;

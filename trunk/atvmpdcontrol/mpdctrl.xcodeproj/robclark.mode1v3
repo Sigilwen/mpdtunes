@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>718C55D80D974CE300FD9A5D</string>
+						<string>718C565D0D976DED00FD9A5D</string>
 						<key>history</key>
 						<array>
 							<string>718C559E0D97484500FD9A5D</string>
@@ -324,7 +324,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 425}, {223, 769}}</string>
+							<string>{{0, 407}, {223, 769}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -373,7 +373,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>718C55D70D974CE300FD9A5D</string>
+										<string>718C565C0D976DED00FD9A5D</string>
 										<key>history</key>
 										<array>
 											<string>710BD34B0D8DCDD40079CC88</string>
@@ -450,31 +450,32 @@
 											<string>718C54040D96ED9E00FD9A5D</string>
 											<string>718C54100D96F5C000FD9A5D</string>
 											<string>718C54160D96F9FD00FD9A5D</string>
-											<string>718C54520D96FDB600FD9A5D</string>
 											<string>718C54610D97016F00FD9A5D</string>
-											<string>718C54620D97016F00FD9A5D</string>
 											<string>718C54630D97016F00FD9A5D</string>
 											<string>718C546B0D97041000FD9A5D</string>
 											<string>718C546C0D97041000FD9A5D</string>
 											<string>718C54B50D97184D00FD9A5D</string>
 											<string>718C54CD0D971C4D00FD9A5D</string>
-											<string>718C54D00D971C4D00FD9A5D</string>
 											<string>718C54E60D97286900FD9A5D</string>
 											<string>718C54E70D97286900FD9A5D</string>
 											<string>718C54E80D97286900FD9A5D</string>
 											<string>718C54F50D9728F000FD9A5D</string>
-											<string>718C54F60D9728F000FD9A5D</string>
-											<string>718C54F70D9728F000FD9A5D</string>
-											<string>718C54F80D9728F000FD9A5D</string>
-											<string>718C54FF0D972AB600FD9A5D</string>
 											<string>718C55060D972BA200FD9A5D</string>
 											<string>718C55230D97322B00FD9A5D</string>
 											<string>718C55640D97428F00FD9A5D</string>
 											<string>718C55740D97441200FD9A5D</string>
-											<string>718C557E0D97449500FD9A5D</string>
 											<string>718C55B40D9749F500FD9A5D</string>
-											<string>718C55D30D974CE300FD9A5D</string>
-											<string>718C55D40D974CE300FD9A5D</string>
+											<string>718C55F00D9754C500FD9A5D</string>
+											<string>718C55F20D9754C500FD9A5D</string>
+											<string>718C56040D975FC300FD9A5D</string>
+											<string>718C56210D97616700FD9A5D</string>
+											<string>718C56220D97616700FD9A5D</string>
+											<string>718C56230D97616700FD9A5D</string>
+											<string>718C563F0D9762BF00FD9A5D</string>
+											<string>718C56400D9762BF00FD9A5D</string>
+											<string>718C56420D9762BF00FD9A5D</string>
+											<string>718C56490D9762F600FD9A5D</string>
+											<string>718C564A0D9762F600FD9A5D</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -519,29 +520,24 @@
 											<string>718C51720D958CA800FD9A5D</string>
 											<string>718C51F70D95A85200FD9A5D</string>
 											<string>718C53950D96E29600FD9A5D</string>
-											<string>718C53AC0D96E53300FD9A5D</string>
 											<string>718C53F70D96EC8700FD9A5D</string>
 											<string>718C53F80D96EC8700FD9A5D</string>
 											<string>718C53F90D96EC8700FD9A5D</string>
-											<string>718C53FA0D96EC8700FD9A5D</string>
 											<string>718C54080D96ED9E00FD9A5D</string>
 											<string>718C54090D96ED9E00FD9A5D</string>
-											<string>718C54140D96F5C000FD9A5D</string>
 											<string>718C54A60D97141500FD9A5D</string>
 											<string>718C54A70D97141500FD9A5D</string>
-											<string>718C54D50D971C4D00FD9A5D</string>
 											<string>718C54EC0D97286900FD9A5D</string>
 											<string>718C54ED0D97286900FD9A5D</string>
 											<string>718C54EE0D97286900FD9A5D</string>
-											<string>718C54FA0D9728F000FD9A5D</string>
 											<string>718C54FB0D9728F000FD9A5D</string>
 											<string>718C54FC0D9728F000FD9A5D</string>
-											<string>718C55020D972AB600FD9A5D</string>
 											<string>718C55790D97441200FD9A5D</string>
 											<string>718C557A0D97441200FD9A5D</string>
-											<string>718C557B0D97441200FD9A5D</string>
-											<string>718C55D50D974CE300FD9A5D</string>
-											<string>718C55D60D974CE300FD9A5D</string>
+											<string>718C56430D9762BF00FD9A5D</string>
+											<string>718C56440D9762BF00FD9A5D</string>
+											<string>718C56450D9762BF00FD9A5D</string>
+											<string>718C564B0D9762F600FD9A5D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -763,7 +759,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MPDControlBar.m</string>
+								<string>MPDAlbumArtworkPreviewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
