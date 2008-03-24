@@ -45,9 +45,9 @@
     if( album == nil )
       _albums = [[NSMutableArray alloc] initWithObjects: @"All", nil];
     
-    for( data = [self mpdSearchGenre:genre andArtist:artist andAlbum:album andSong:nil];
+    for( data = [_mpdConnection mpdSearchGenre:genre andArtist:artist andAlbum:album andSong:nil];
          data != NULL;
-         data = [self mpdSearchNext: data] )
+         data = [_mpdConnection mpdSearchNext: data] )
     {
       if( data->type == MPD_DATA_TYPE_SONG )
       {

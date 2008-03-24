@@ -55,6 +55,19 @@ typedef enum
 - (void)removeStatusListener:(id <MPDStatusChangedDelegate>)target;
 
 
+- (MpdData *)mpdSearchTag: (mpd_TagItems)tag
+                 forGenre: (NSString *)genre
+                andArtist: (NSString *)artist
+                 andAlbum: (NSString *)album
+                  andSong: (NSString *)song;
+- (MpdData *)mpdSearchGenre: (NSString *)genre
+                  andArtist: (NSString *)artist
+                   andAlbum: (NSString *)album
+                    andSong: (NSString *)song;
+- (MpdData *)mpdSearchNext: (MpdData *)data;
+- (void)mpdSearchFree: (MpdData *)data;
+
+
 // Private Functions, do not call ( or tell me how to protect them ;)
 - (void)onUpdateTimer;
 - (void)onError:(int)errorId withMsg:(NSString*)errorMsg;
@@ -63,5 +76,6 @@ typedef enum
 - (void)removeTimer;
 - (void)initTimer;
 
-
 @end
+
+NSString * str2nsstr( const char *str );
