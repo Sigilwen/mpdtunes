@@ -95,7 +95,7 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
   NSString *digest = md5([NSString stringWithFormat:@"%@%@%@%@", lastPart, userAgent, @"Dé#¢¢w™µ3gÝ", random]);
   NSString *valid  = [NSString stringWithFormat:@"%@-%@", random, digest];
   
-  printf("valid=%s\n", [valid UTF8String]);
+//  printf("valid=%s\n", [valid UTF8String]);
   
 /*
  request.UserAgent="iTunes/7.4 (Macintosh; U; PPC Mac OS X 10.4.7)"
@@ -132,11 +132,10 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
   BRImageManager *mgr = [BRImageManager sharedInstance];
   NSURL *imageURL = [NSURL URLWithString:url];
   _imageName = [[mgr imageNameFromURL: imageURL] retain];
-  printf("loadImageFromUrl: %s\n", [url UTF8String]);
   
   if ( [mgr isImageAvailable: _imageName] == NO )
   {
-    printf("starting download\n");
+    printf("starting download from url: %s\n", [url UTF8String]);
     // register for notifications and start downloading
     [[NSNotificationCenter defaultCenter] addObserver: self
                                              selector: @selector(imageLoaded:)
@@ -150,7 +149,7 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
   }
   else
   {
-    printf("image already available\n");
+    printf("image already available: %s\n", [_imageName UTF8String]);
     _image = (CGImageRef)[[mgr imageNamed: _imageName] retain];
     
     // XXX some way to notify that image has updated?
@@ -166,7 +165,6 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
   {
     return;
   }
-  printf("imageLoaded, my image\n");
   
   // we have our image, so we don't need any more notifications
   [[NSNotificationCenter defaultCenter] removeObserver: self 
@@ -204,7 +202,6 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
-  printf("didReceiveResponse\n");
   // this method is called when the server has determined that it
   // has enough information to create the NSURLResponse
   
@@ -216,7 +213,6 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
-  printf("didReceiveData\n");
   // append the new data to the receivedData
   // receivedData is declared as a method instance elsewhere
   [_receivedData appendData:data];
@@ -241,8 +237,6 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
 {
   // do something with the data
   // receivedData is declared as a method instance elsewhere
-  NSLog(@"Succeeded! Received %d bytes of data",[_receivedData length]);
-  
   NSString *decoded = [NSString stringWithCString:[_receivedData bytes] length:[_receivedData length]];
   
   const char *buf = [decoded UTF8String];

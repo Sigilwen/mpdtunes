@@ -94,7 +94,6 @@
 
 - (id<BRMediaPreviewController>) previewControllerForItem: (long) item
 {
-  printf("previewControllerForItem: %d\n", item);
   NSString *artist = [self titleForRow:item];
   return [self previewControllerForArtist:artist andAlbum:nil andSong:nil];
 }

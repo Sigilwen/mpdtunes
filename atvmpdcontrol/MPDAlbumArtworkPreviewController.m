@@ -144,7 +144,6 @@
   if( ![_asset waitingForUpdate] )
   {
     [self stopTimer];
-    printf("done waiting for image\n");
     [self _updateCoverArtLayerWithImage: [_asset coverArt]];
   }
 }

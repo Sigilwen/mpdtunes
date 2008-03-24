@@ -69,7 +69,6 @@
 		717234AF0D8E13B4001E578B /* MPDPlayerAlbumsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 717234AE0D8E13B4001E578B /* MPDPlayerAlbumsController.m */; };
 		717234C70D8E17A0001E578B /* MPDPlayerSongsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */; };
 		718C50EC0D94CA2400FD9A5D /* ApplianceIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 718C50EB0D94CA2400FD9A5D /* ApplianceIcon.png */; };
-		718C514C0D95802000FD9A5D /* DefaultPreview.png in Resources */ = {isa = PBXBuildFile; fileRef = 718C514B0D95802000FD9A5D /* DefaultPreview.png */; };
 		718C51550D95860400FD9A5D /* MPDAlbumArtworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */; };
 		718C536D0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
@@ -199,7 +198,6 @@
 		717234C50D8E17A0001E578B /* MPDPlayerSongsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDPlayerSongsController.h; sourceTree = "<group>"; };
 		717234C60D8E17A0001E578B /* MPDPlayerSongsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDPlayerSongsController.m; sourceTree = "<group>"; };
 		718C50EB0D94CA2400FD9A5D /* ApplianceIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ApplianceIcon.png; sourceTree = "<group>"; };
-		718C514B0D95802000FD9A5D /* DefaultPreview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DefaultPreview.png; sourceTree = "<group>"; };
 		718C51530D95860400FD9A5D /* MPDAlbumArtworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDAlbumArtworkManager.h; sourceTree = "<group>"; };
 		718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDAlbumArtworkManager.m; sourceTree = "<group>"; };
 		718C536B0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDAlbumArtworkPreviewController.h; sourceTree = "<group>"; };
@@ -288,7 +286,6 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				718C514B0D95802000FD9A5D /* DefaultPreview.png */,
 				718C50EB0D94CA2400FD9A5D /* ApplianceIcon.png */,
 				8D5B49B7048680CD000E48DA /* Info.plist */,
 				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
@@ -510,7 +507,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				718C514C0D95802000FD9A5D /* DefaultPreview.png in Resources */,
 				718C50EC0D94CA2400FD9A5D /* ApplianceIcon.png in Resources */,
 				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
 				4E0A84240C198C9C00BF8797 /* libmpd-version.h.in in Resources */,
