@@ -79,7 +79,6 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
 {
   NSString *lastPart = [NSString stringWithFormat:@"coverArtMatch?an=%@&pn=%@", urlEncodeValue(artist), urlEncodeValue(album)];
   NSString *urlStr = [NSString stringWithFormat:@"http://ax.phobos.apple.com.edgesuite.net/WebObjects/MZSearch.woa/wa/%@", lastPart];
-  printf("url=%s\n", [urlStr UTF8String]);
   NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlStr]];
   
   //           $random  = sprintf( "%04X%04X", rand(0,0x10000), rand(0,0x10000) ); 
@@ -244,7 +243,6 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
   char url[512];
   if( buf && sscanf( buf, "<key>cover-art-url</key> <string>%[^<]</string>", url) )
   {
-    printf("found url: %s\n", url);
     NSString *nUrl = [NSString stringWithUTF8String: url];
     setInTable( _assetUrls, _album, _artist, nUrl );
     if( [NSKeyedArchiver archiveRootObject:_assetUrls toFile:IMGDB] == NO )
