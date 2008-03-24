@@ -86,26 +86,29 @@
   }
   NSLog(@"done search\n");
   
-  if(_song)
+  if( ntracks > 0 )
   {
-    [_metadataLayer setTitle:_song];
-    if(_album)
-      [_metadataLayer addMetaData:_album forLabel:@"Album"];
-    if(_artist)
-      [_metadataLayer addMetaData:_artist forLabel:@"Artist"];
-    if(genre)
-      [_metadataLayer addMetaData:genre forLabel:@"Genre"];
-    [_metadataLayer addMetaData:[NSString stringWithFormat:@"%d:%d:%d", (length/3600), ((length/60)%60), (length % 60)] forLabel:@"Length"];
-  }
-  else if(_album)
-  {
-    [_metadataLayer setTitle:_album];
-    if(_artist)
-      [_metadataLayer addMetaData:_artist forLabel:@"Artist"];
-    if(genre)
-      [_metadataLayer addMetaData:genre forLabel:@"Genre"];
-    [_metadataLayer addMetaData:[NSString stringWithFormat:@"%d", ntracks] forLabel:@"Tracks"];
-    [_metadataLayer addMetaData:[NSString stringWithFormat:@"%d:%d:%d", (length/3600), ((length/60)%60), (length % 60)] forLabel:@"Length"];
+    if(_song)
+    {
+      [_metadataLayer setTitle:_song];
+      if(_album)
+        [_metadataLayer addMetaData:_album forLabel:@"Album"];
+      if(_artist)
+        [_metadataLayer addMetaData:_artist forLabel:@"Artist"];
+      if(genre)
+        [_metadataLayer addMetaData:genre forLabel:@"Genre"];
+      [_metadataLayer addMetaData:[NSString stringWithFormat:@"%d:%d:%d", (length/3600), ((length/60)%60), (length % 60)] forLabel:@"Length"];
+    }
+    else if(_album)
+    {
+      [_metadataLayer setTitle:_album];
+      if(_artist)
+        [_metadataLayer addMetaData:_artist forLabel:@"Artist"];
+      if(genre)
+        [_metadataLayer addMetaData:genre forLabel:@"Genre"];
+      [_metadataLayer addMetaData:[NSString stringWithFormat:@"%d", ntracks] forLabel:@"Tracks"];
+      [_metadataLayer addMetaData:[NSString stringWithFormat:@"%d:%d:%d", (length/3600), ((length/60)%60), (length % 60)] forLabel:@"Length"];
+    }
   }
 }
 
