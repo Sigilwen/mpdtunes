@@ -10,6 +10,27 @@
 
 #import "MPDAlbumArtworkManager.h"
 
+////////////////////////////////////////////////////////////////////////////////
+@interface BRMetadataLayer (MPDBRMetadataExtensions)
+- (void)addMetaData:(id)object forLabel:(id)label;
+@end
+@implementation BRMetadataLayer (MPDBRMetadataExtensions)
+- (void)addMetaData:(id)object forLabel:(id)label
+{
+  NSMutableArray *labels  = _metadataLabels ? [_metadataLabels mutableCopy] : [NSMutableArray array];
+  NSMutableArray *objects = _metadataObjs   ? [_metadataObjs mutableCopy]   : [NSMutableArray array];
+  
+  [labels addObject:label];
+  [objects addObject:object];
+  
+  NSLog(@"labels=%@, objects=%@", labels, objects);
+  
+  [self setMetadata:objects withLabels:labels];
+//  [self _setMetadata:objects withLabels:labels updateFrame:YES];
+}
+@end
+////////////////////////////////////////////////////////////////////////////////
+
 
 @implementation MPDAlbumArtworkPreviewController
 
@@ -17,16 +38,43 @@
     forAlbum: (NSString *)album
     andArtist: (NSString *)artist;
 {
-  if( [super initWithScene: scene] == nil )
+  if( [super initWithScene:scene] == nil )
     return nil;
+  
+  _album  = album;
+  _artist = artist;
   
   _refreshTimer = nil;
   
+  printf("metadataLayer: 0x%08x\n", _metadataLayer);
+  
   [self setAsset: [[MPDAlbumArtworkManager sharedInstance] getAlbumAsset:album forArtist:artist]];
-  [self setShowsMetadataImmediately:YES];
+//  [self setShowsMetadataImmediately:NO];
+//  [self _showMetadataWithAnimation:YES];
+  [self setDeletterboxAssetArtwork:YES];  // ???
   
   return self;
 }
+
+- (BOOL)_assetHasMetadata   /* ??? XXX */
+{
+  return YES;
+}
+
+-(void)_populateMetadata
+{
+printf("_populateMetadata\n");
+  [super _populateMetadata];
+  
+  if( _album != nil )
+    [_metadataLayer setTitle:_album];
+  if( _artist != nil )
+    [_metadataLayer addMetaData:_artist forLabel:@"Artist"];
+//  [_metadataLayer addMetaData:@"Value 2" forLabel:@"Label 2"];
+//  [_metadataLayer addMetaData:@"Value 3" forLabel:@"Size"];
+//  [_metadataLayer addMetaData:@"Value 4" forLabel:@"MetadataGenre"];
+}
+
 
 - (void)startTimer
 {

@@ -11,6 +11,9 @@
 
 @interface MPDAlbumArtworkPreviewController : BRMetadataPreviewController {
   NSTimer *_refreshTimer;
+  
+  NSString *_album;
+  NSString *_artist;
 }
 
 - (id)initWithScene: (BRRenderScene *)scene 
