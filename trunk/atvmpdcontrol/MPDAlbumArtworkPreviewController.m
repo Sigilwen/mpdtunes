@@ -71,7 +71,7 @@
   MPDConnection *mpdConnection = [MPDConnection sharedInstance];
   MpdData *data;
   
-  NSLog(@"starting search: %@ %@ %@\n", _album, _artist, _song);
+  //NSLog(@"starting search: %@ %@ %@\n", _album, _artist, _song);
   for( data = [mpdConnection mpdSearchGenre:nil andArtist:_artist andAlbum:_album andSong:_song];
        data != NULL;
        data = [mpdConnection mpdSearchNext: data] )
@@ -84,7 +84,7 @@
       length += data->song->time;
     }
   }
-  NSLog(@"done search\n");
+  //NSLog(@"done search\n");
   
   if( ntracks > 0 )
   {
