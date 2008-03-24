@@ -8,6 +8,7 @@
 
 #import "MPDConnection.h"
 
+void addConstraints( MPDConnection * mpdConnection, NSString *genre, NSString *artist, NSString *album, NSString *song );
 
 @implementation MPDConnection
 
@@ -231,4 +232,72 @@ void _mpdStatusChangedCallback(MpdObj * mi, ChangedStatusType what, void *userda
 	}
 }
 
+
+- (MpdData *)mpdSearchTag: (mpd_TagItems)tag
+                 forGenre: (NSString *)genre
+                andArtist: (NSString *)artist
+                 andAlbum: (NSString *)album
+                  andSong: (NSString *)song
+{
+  mpd_database_search_field_start([self object], tag);
+  addConstraints( self, genre, artist, album, song );
+  return mpd_database_search_commit([self object]);
+}
+
+- (MpdData *)mpdSearchGenre: (NSString *)genre
+                  andArtist: (NSString *)artist
+                   andAlbum: (NSString *)album
+                    andSong: (NSString *)song
+{
+  if( (genre == nil) && (artist == nil) && (album == nil) && (song == nil) )
+    return mpd_database_get_complete([self object]);
+  
+  mpd_database_search_start([self object], TRUE);
+  addConstraints( self, genre, artist, album, song );
+  return mpd_database_search_commit([self object]);
+}
+
+- (MpdData *)mpdSearchNext: (MpdData *)data
+{
+  return mpd_data_get_next(data);
+}
+
+- (void)mpdSearchFree: (MpdData *)data
+{
+  mpd_data_free(data);
+}
+
 @end
+
+
+NSString * str2nsstr( const char *str )
+{
+  return str ? [[NSString alloc] initWithCString: str encoding:NSUTF8StringEncoding] : @"";
+}
+
+
+void addConstraints( MPDConnection * mpdConnection, NSString *genre, NSString *artist, NSString *album, NSString *song )
+{
+  if( genre != nil )
+  {
+    const char *cGenre = [genre UTF8String];
+    mpd_database_search_add_constraint([mpdConnection object], MPD_TAG_ITEM_GENRE, cGenre);
+  }
+  if( artist != nil )
+  {
+    const char *cArtist = [artist UTF8String];
+    mpd_database_search_add_constraint([mpdConnection object], MPD_TAG_ITEM_ARTIST, cArtist);
+  }
+  if( album != nil )
+  {
+    const char *cAlbum = [album UTF8String];
+    mpd_database_search_add_constraint([mpdConnection object], MPD_TAG_ITEM_ALBUM, cAlbum);
+  }
+  if( song != nil )
+  {
+    const char *cSong = [song UTF8String];
+    mpd_database_search_add_constraint([mpdConnection object], MPD_TAG_ITEM_TITLE, cSong);
+  }
+}
+
+

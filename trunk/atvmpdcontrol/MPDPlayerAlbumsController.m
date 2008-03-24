@@ -40,9 +40,9 @@
     
     _names = [[NSMutableArray alloc] initWithObjects: @"All", nil];
     
-    for( data = [self mpdSearchTag:MPD_TAG_ITEM_ALBUM forGenre:genre andArtist:artist andAlbum:nil andSong:nil];
+    for( data = [_mpdConnection mpdSearchTag:MPD_TAG_ITEM_ALBUM forGenre:genre andArtist:artist andAlbum:nil andSong:nil];
          data != NULL;
-         data = [self mpdSearchNext: data] )
+         data = [_mpdConnection mpdSearchNext: data] )
     {
       if( data->type == MPD_DATA_TYPE_TAG )
         [_names addObject: str2nsstr(data->tag)];
