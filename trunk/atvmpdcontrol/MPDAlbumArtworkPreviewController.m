@@ -47,7 +47,7 @@
   
   _refreshTimer = nil;
   
-  [self setAsset: [[MPDAlbumArtworkManager sharedInstance] getAlbumAsset:album forArtist:artist]];
+  [self setAsset: [[MPDAlbumArtworkManager sharedInstance] getAlbumAssetForArtist:artist andAlbum:album]];
   if(song)
     [self setShowsMetadataImmediately:YES];
 //[self setDeletterboxAssetArtwork:YES];  // ???
@@ -111,7 +111,6 @@
     }
   }
 }
-
 
 - (void)startTimer
 {

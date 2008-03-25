@@ -171,39 +171,11 @@
 }
 
 
-
+/**
+ * removeme?
+ */
 - (id<BRMediaPreviewController>) previewControllerForArtist: (NSString *)artist andAlbum: (NSString *)album andSong:(NSString *)song;
 {
-  MpdData *data;
-  
-  if( album == nil )
-  {
-    for( data = [_mpdConnection mpdSearchTag:MPD_TAG_ITEM_ALBUM forGenre:nil andArtist:artist andAlbum:album andSong:nil];
-         data != NULL;
-         data = [_mpdConnection mpdSearchNext: data] )
-    {
-      if( data->type == MPD_DATA_TYPE_TAG )
-      {
-        album = str2nsstr(data->tag);
-        [_mpdConnection mpdSearchFree:data];
-        break;
-      }
-    }
-  }
-  else if( artist == nil )
-  {
-    for( data = [_mpdConnection mpdSearchTag:MPD_TAG_ITEM_ARTIST forGenre:nil andArtist:artist andAlbum:album andSong:nil];
-         data != NULL;
-         data = [_mpdConnection mpdSearchNext: data] )
-    {
-      if( data->type == MPD_DATA_TYPE_TAG )
-      {
-        artist = str2nsstr(data->tag);
-        [_mpdConnection mpdSearchFree:data];
-        break;
-      }
-    }
-  }
   return [[[MPDAlbumArtworkPreviewController alloc] initWithScene: [self scene] forArtist:artist andAlbum:album andSong:song] autorelease];
 }
 

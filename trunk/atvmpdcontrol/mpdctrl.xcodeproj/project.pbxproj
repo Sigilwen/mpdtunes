@@ -71,6 +71,7 @@
 		718C50EC0D94CA2400FD9A5D /* ApplianceIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 718C50EB0D94CA2400FD9A5D /* ApplianceIcon.png */; };
 		718C51550D95860400FD9A5D /* MPDAlbumArtworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */; };
 		718C536D0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */; };
+		718C571D0D98BF3000FD9A5D /* MPDMultiAlbumArtworkPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 718C571C0D98BF3000FD9A5D /* MPDMultiAlbumArtworkPreviewController.m */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
@@ -202,6 +203,8 @@
 		718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDAlbumArtworkManager.m; sourceTree = "<group>"; };
 		718C536B0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDAlbumArtworkPreviewController.h; sourceTree = "<group>"; };
 		718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDAlbumArtworkPreviewController.m; sourceTree = "<group>"; };
+		718C571B0D98BF3000FD9A5D /* MPDMultiAlbumArtworkPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDMultiAlbumArtworkPreviewController.h; sourceTree = "<group>"; };
+		718C571C0D98BF3000FD9A5D /* MPDMultiAlbumArtworkPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDMultiAlbumArtworkPreviewController.m; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* mpdctrl.frappliance */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mpdctrl.frappliance; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -398,6 +401,8 @@
 				718C51540D95860400FD9A5D /* MPDAlbumArtworkManager.m */,
 				718C536B0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.h */,
 				718C536C0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m */,
+				718C571B0D98BF3000FD9A5D /* MPDMultiAlbumArtworkPreviewController.h */,
+				718C571C0D98BF3000FD9A5D /* MPDMultiAlbumArtworkPreviewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -575,6 +580,7 @@
 				717234C70D8E17A0001E578B /* MPDPlayerSongsController.m in Sources */,
 				718C51550D95860400FD9A5D /* MPDAlbumArtworkManager.m in Sources */,
 				718C536D0D96DB4900FD9A5D /* MPDAlbumArtworkPreviewController.m in Sources */,
+				718C571D0D98BF3000FD9A5D /* MPDMultiAlbumArtworkPreviewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

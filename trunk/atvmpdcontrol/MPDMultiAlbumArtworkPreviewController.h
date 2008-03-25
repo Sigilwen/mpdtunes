@@ -7,22 +7,26 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <BackRow/BRMetadataPreviewController.h>
+#import <BackRow/BRCoverArtPreviewController.h>
 
 /**
- * Class supporting displaying single album cover preview with album or
- * song metadata.
+ * Class supporting displaying multiple album cover previews without metadata.
  */
-@interface MPDAlbumArtworkPreviewController : BRMetadataPreviewController {
+@interface MPDMultiAlbumArtworkPreviewController : BRCoverArtPreviewController {
   NSTimer *_refreshTimer;
   
-  NSString *_album;
+  NSString *_genre;
   NSString *_artist;
+  NSString *_album;
   NSString *_song;
 }
 
+/**
+ * genre/artist/album/song are all optional..
+ */
 - (id)initWithScene: (BRRenderScene *)scene 
-          forArtist: (NSString *)artist
+           forGenre: (NSString *)genre
+          andArtist: (NSString *)artist
            andAlbum: (NSString *)album
             andSong: (NSString *)song;
 
