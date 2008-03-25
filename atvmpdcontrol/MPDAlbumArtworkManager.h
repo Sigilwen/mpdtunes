@@ -25,7 +25,7 @@
   NSString  *_imageName;
 }
 
-- (id)initWithAlbum: (NSString *)album andArtist: (NSString *)artist;
+- (id)initWithArtist: (NSString *)artist andAlbum: (NSString *)album;
 
 - (BOOL)waitingForUpdate;
 
@@ -38,6 +38,13 @@
 + (void)setSingleton:(id)fp8;
 - (id)init;
 
-- (id)getAlbumAsset: (NSString *)album forArtist: (NSString *)artist;
+- (id)getAlbumAssetForArtist: (NSString *)artist andAlbum: (NSString *)album;
+
+
+- (id)getAlbumAssetsForGenre: (NSString *)genre
+                   andArtist: (NSString *)artist
+                    andAlbum: (NSString *)album
+                     andSong: (NSString *)song;
+
 
 @end

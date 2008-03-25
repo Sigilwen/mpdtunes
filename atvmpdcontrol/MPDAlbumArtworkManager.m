@@ -10,6 +10,7 @@
 #import "BackRowUtils.h"
 
 #import "MPDAlbumArtworkManager.h"
+#import "MPDConnection.h"
 
 
 #define IMGDB @"/Users/frontrow/mpd/imgdb"
@@ -90,9 +91,9 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
   // calculate validation string:
 //  NSString *userAgent = @"iTunes/7.0 (Macintosh; U; PPC Mac OS X 10.4.7)";
   NSString *userAgent = @"iTunes/7.4 (Macintosh; U; PPC Mac OS X 10.4.7)";
-  NSString *random = [NSString stringWithFormat:@"%08X", album];   // I guess pointer string is good enough random #?
-  NSString *digest = md5([NSString stringWithFormat:@"%@%@%@%@", lastPart, userAgent, @"Dé#¢¢w™µ3gÝ", random]);
-  NSString *valid  = [NSString stringWithFormat:@"%@-%@", random, digest];
+//  NSString *random = [NSString stringWithFormat:@"%08X", album];   // I guess pointer string is good enough random #?
+//  NSString *digest = md5([NSString stringWithFormat:@"%@%@%@%@", lastPart, userAgent, @"Dé#¢¢w™µ3gÝ", random]);
+//  NSString *valid  = [NSString stringWithFormat:@"%@-%@", random, digest];
   
 //  printf("valid=%s\n", [valid UTF8String]);
   
@@ -174,7 +175,7 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
 }
 
 
-- (id)initWithAlbum: (NSString *)album andArtist: (NSString *)artist
+- (id)initWithArtist: (NSString *)artist andAlbum: (NSString *)album
 {
   if( [super init] == nil )
     return nil;
@@ -187,9 +188,14 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
   {
     NSString *url = getFromTable( _assetUrls, album, artist );
     if( url != nil )
-      [self loadImageFromUrl:url];
+    {
+      if( ! [url hasPrefix:@"nak:"] )   // don't try to load if we've attempted but failed to find artwork before
+        [self loadImageFromUrl:url];
+    }
     else
+    {
       [self loadImageFromAlbum:album andArtist:artist];
+    }
   }
   
   return self;
@@ -241,14 +247,20 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
   const char *buf = [decoded UTF8String];
   buf = strstr( buf, "<key>cover-art-url</key>" );
   char url[512];
+  NSString *val;
   if( buf && sscanf( buf, "<key>cover-art-url</key> <string>%[^<]</string>", url) )
   {
-    NSString *nUrl = [NSString stringWithUTF8String: url];
-    setInTable( _assetUrls, _album, _artist, nUrl );
-    if( [NSKeyedArchiver archiveRootObject:_assetUrls toFile:IMGDB] == NO )
-      NSLog(@"error writing %@ to %@", _assetUrls, IMGDB);
-    [self loadImageFromUrl:nUrl];
+    val = [NSString stringWithUTF8String: url];
+    [self loadImageFromUrl:val];
   }
+  else
+  {
+    val = [NSString stringWithFormat:@"nak:%08x", time(NULL)];  // negative cache (not a valid URL)
+  }
+  
+  setInTable( _assetUrls, _album, _artist, val );
+  if( [NSKeyedArchiver archiveRootObject:_assetUrls toFile:IMGDB] == NO )
+    NSLog(@"error writing %@ to %@", _assetUrls, IMGDB);
   
   // release the connection, and the data object
   [connection release];
@@ -318,22 +330,94 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
   return self;
 }
 
-
-- (id)getAlbumAsset: (NSString *)album forArtist: (NSString *)artist
+/**
+ * at least one of artist or album must not be nil!
+ */
+- (id)getAlbumAssetForArtist: (NSString *)artist andAlbum: (NSString *)album
 {
+  MpdData *data;
+  MPDConnection *mpdConnection = [MPDConnection sharedInstance];
+  if( (album == nil) && (artist != nil) )
+  {
+    for( data = [mpdConnection mpdSearchTag:MPD_TAG_ITEM_ALBUM forGenre:nil andArtist:artist andAlbum:album andSong:nil];
+         data != NULL;
+         data = [mpdConnection mpdSearchNext: data] )
+    {
+      if( data->type == MPD_DATA_TYPE_TAG )
+      {
+        album = str2nsstr(data->tag);
+        [mpdConnection mpdSearchFree:data];
+        break;
+      }
+    }
+  }
+  else if( (artist == nil) && (album != nil) )
+  {
+    for( data = [mpdConnection mpdSearchTag:MPD_TAG_ITEM_ARTIST forGenre:nil andArtist:artist andAlbum:album andSong:nil];
+         data != NULL;
+         data = [mpdConnection mpdSearchNext: data] )
+    {
+      if( data->type == MPD_DATA_TYPE_TAG )
+      {
+        artist = str2nsstr(data->tag);
+        [mpdConnection mpdSearchFree:data];
+        break;
+      }
+    }
+  }
+  
   if( (album == nil) || (artist == nil) )
   {
     if( _defaultAsset == nil )
-      _defaultAsset = [[MPDAlbumArtworkAsset alloc] initWithAlbum:nil andArtist:nil];
+      _defaultAsset = [[MPDAlbumArtworkAsset alloc] initWithArtist:nil andAlbum:nil];
     return _defaultAsset;
   }
+  
   MPDAlbumArtworkAsset *asset = getFromTable( _assets, album, artist );
   if( asset == nil )
   {
-    asset = [[MPDAlbumArtworkAsset alloc] initWithAlbum:album andArtist:artist];
+    asset = [[MPDAlbumArtworkAsset alloc] initWithArtist:artist andAlbum:album];
     setInTable( _assets, album, artist, asset );
   }
+  
   return asset;
 }
+
+// XXX maybe move to MPDPlayerController??
+- (id)getAlbumAssetsForGenre: (NSString *)genre
+                   andArtist: (NSString *)artist
+                    andAlbum: (NSString *)album
+                     andSong: (NSString *)song
+{
+  NSMutableArray *assets = [NSMutableArray array];
+  int max = 20;
+  MpdData *data;
+  MPDConnection *mpdConnection = [MPDConnection sharedInstance];
+  for( data = [mpdConnection mpdSearchTag:MPD_TAG_ITEM_ALBUM forGenre:genre andArtist:artist andAlbum:album andSong:song];
+       data != NULL;
+       data = [mpdConnection mpdSearchNext: data] )
+  {
+    if( data->type == MPD_DATA_TYPE_TAG )
+    {
+      NSString *album = str2nsstr(data->tag);
+      
+      // don't add albums that we know we don't have a cover for:
+      NSString *url = getFromTable( _assetUrls, album, artist );
+      if( url && ![url hasPrefix:@"nak:"] )
+      {
+        [assets addObject:[self getAlbumAssetForArtist:artist andAlbum:album]];
+        if(!--max)
+        {
+          [mpdConnection mpdSearchFree:data];
+          break;
+        }
+      }
+    }
+  }
+  
+  return assets;  // hmm, need to go thru and figure out where stuff is deallocated... darn that java garbage collection
+}
+
+
 
 @end

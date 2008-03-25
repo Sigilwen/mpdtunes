@@ -8,6 +8,7 @@
 
 #import "MPDPlayerArtistsController.h"
 #import "MPDPlayerAlbumsController.h"
+#import "MPDMultiAlbumArtworkPreviewController.h"
 
 
 @implementation MPDPlayerArtistsController
@@ -95,7 +96,12 @@
 - (id<BRMediaPreviewController>) previewControllerForItem: (long) item
 {
   NSString *artist = [self titleForRow:item];
-  return [self previewControllerForArtist:artist andAlbum:nil andSong:nil];
+  return [[[MPDMultiAlbumArtworkPreviewController alloc] 
+           initWithScene:[self scene] 
+                forGenre:_genre 
+               andArtist:artist 
+                andAlbum:nil 
+                 andSong:nil] autorelease];
 }
 
 

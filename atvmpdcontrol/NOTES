@@ -8,9 +8,15 @@ Composers  (??)
 
 
 ---
-
-note:  LHS shows album artwork, either on rotation (if multiple matches) or single 
+note:  LHS shows album artwork, either on rotation (if multiple matches) or single
 or for Songs() shows album plus track details:
+
+BRMediaPreviewController:
+  Artists:  BRCoverArtPreviewController? cycle between available cover art; fade between (no animation); no metadata
+  Artists->All:  animated cycle, no metadata
+  Albums: BRMetadataPreviewController w/ animation, w/ metadata
+  Albums->All: animated cycle, no metadata
+  Songs:  BRMetadataPreviewController no animation, w/ metadata
 
 for album:
 -------
