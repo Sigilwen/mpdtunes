@@ -45,8 +45,6 @@
   _artist = artist;
   _song   = song;
   
-  _refreshTimer = nil;
-  
   [self setAsset: [[MPDAlbumArtworkManager sharedInstance] getAlbumAssetForArtist:artist andAlbum:album]];
   if(song)
     [self setShowsMetadataImmediately:YES];
@@ -112,54 +110,23 @@
   }
 }
 
-- (void)startTimer
-{
-  if( _refreshTimer == nil )
-  {
-    // start timer:
-    _refreshTimer = [NSTimer scheduledTimerWithTimeInterval:0.25 
-                                                     target:self
-                                                   selector:@selector(onRefreshTimer)
-                                                   userInfo: nil
-                                                    repeats:YES ];
-    [_refreshTimer retain];
-  }
-}
-
-- (void)stopTimer
-{
-  if( _refreshTimer != nil )
-  {
-    // stop timer:
-    [_refreshTimer invalidate];
-    [_refreshTimer release];
-    _refreshTimer = nil;
-  }
-}
-
-// called on timer
-- (void)onRefreshTimer
-{
-  if( ![_asset waitingForUpdate] )
-  {
-    [self stopTimer];
-    [self _updateCoverArtLayerWithImage: [_asset coverArt]];
-  }
-}
-
 // called once we are on screen:
 - (void)activate
 {
-  if( [_asset waitingForUpdate] )
-    [self startTimer];
+  [_asset setListener:self];
   [super activate];
 }
 
 // called when we are about to go off screen:
 - (void)willDeactivate
 {
-  [self stopTimer];
+  [_asset setListener:nil];
   [super willDeactivate];
+}
+
+- (void)imageLoaded
+{
+  [self _updateCoverArtLayerWithImage: [_asset coverArt]];
 }
 
 

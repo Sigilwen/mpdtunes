@@ -13,8 +13,6 @@
  * Class supporting displaying multiple album cover previews without metadata.
  */
 @interface MPDMultiAlbumArtworkPreviewController : BRCoverArtPreviewController {
-  NSTimer *_refreshTimer;
-  
   NSString *_genre;
   NSString *_artist;
   NSString *_album;

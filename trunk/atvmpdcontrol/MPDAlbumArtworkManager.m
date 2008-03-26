@@ -76,6 +76,43 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
 
 @implementation MPDAlbumArtworkAsset
 
+- (id)initWithArtist: (NSString *)artist andAlbum: (NSString *)album
+{
+  if( [super init] == nil )
+    return nil;
+  
+  _album  = album;
+  _artist = artist;
+  _image  = defaultImage;
+  
+  _listener = nil;
+  
+  if( (album != nil) && (artist != nil) )
+  {
+    NSString *url = getFromTable( _assetUrls, album, artist );
+    if( url != nil )
+    {
+      if( ! [url hasPrefix:@"nak:"] )   // don't try to load if we've attempted but failed to find artwork before
+        [self loadImageFromUrl:url];
+    }
+    else
+    {
+      [self loadImageFromAlbum:album andArtist:artist];
+    }
+  }
+  
+  return self;
+}
+
+- (void)setListener: (id)listener
+{
+  if( (_listener != nil) && (listener != nil) )
+  {
+    printf("hmm, this is bad\n%s\n", [[BRBacktracingException backtrace] UTF8String]);
+  }
+  _listener = listener;
+}
+
 - (void)loadImageFromAlbum: (NSString *)album andArtist: (NSString *)artist
 {
   NSString *lastPart = [NSString stringWithFormat:@"coverArtMatch?an=%@&pn=%@", urlEncodeValue(artist), urlEncodeValue(album)];
@@ -151,8 +188,8 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
   {
     printf("image already available: %s\n", [_imageName UTF8String]);
     _image = (CGImageRef)[[mgr imageNamed: _imageName] retain];
-    
-    // XXX some way to notify that image has updated?
+    id listener = _listener;
+    if(listener) [listener imageLoaded];
   }
 }
 
@@ -171,34 +208,8 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
                                                   name: @"BRAssetImageUpdated" object: nil];
   
   _image = (CGImageRef)[[userInfo objectForKey: @"BRImageKey"] retain];
-  // XXX some way to notify that image has updated?
-}
-
-
-- (id)initWithArtist: (NSString *)artist andAlbum: (NSString *)album
-{
-  if( [super init] == nil )
-    return nil;
-  
-  _album  = album;
-  _artist = artist;
-  _image  = defaultImage;
-  
-  if( (album != nil) && (artist != nil) )
-  {
-    NSString *url = getFromTable( _assetUrls, album, artist );
-    if( url != nil )
-    {
-      if( ! [url hasPrefix:@"nak:"] )   // don't try to load if we've attempted but failed to find artwork before
-        [self loadImageFromUrl:url];
-    }
-    else
-    {
-      [self loadImageFromAlbum:album andArtist:artist];
-    }
-  }
-  
-  return self;
+  id listener = _listener;
+  if(listener) [listener imageLoaded];
 }
 
 /* handlers for messages sent while downloading album info (which contains the
@@ -278,11 +289,6 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
 - (CGImageRef)coverArt
 {
   return _image;
-}
-
-- (BOOL)waitingForUpdate
-{
-  return _image == defaultImage;
 }
 
 

@@ -14,8 +14,6 @@
  * song metadata.
  */
 @interface MPDAlbumArtworkPreviewController : BRMetadataPreviewController {
-  NSTimer *_refreshTimer;
-  
   NSString *_album;
   NSString *_artist;
   NSString *_song;

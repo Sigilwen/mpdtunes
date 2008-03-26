@@ -22,14 +22,30 @@
    */
   NSMutableData *_receivedData;
   
-  NSString  *_imageName;
+  NSString      *_imageName;
+  
+  id _listener;
 }
 
 - (id)initWithArtist: (NSString *)artist andAlbum: (NSString *)album;
 
-- (BOOL)waitingForUpdate;
+/**
+ * add a object to have it's imageLoaded method called when image is loaded
+ * (if the image was not loaded immediately on creation).  To unregister the
+ * listener, call setListener:nil.
+ * <p>
+ * we are kinda lo-tech here... no supporting multiple listeners which can
+ * specify their own selectors, but I think we only need one listener at a
+ * time..
+ */
+- (void)setListener: (id)listener;
+
+//@private
+- (void)loadImageFromAlbum: (NSString *)album andArtist: (NSString *)artist;
+- (void)loadImageFromUrl: (NSString *)url;
 
 @end
+
 
 @interface MPDAlbumArtworkManager : BRSingleton {
 }
