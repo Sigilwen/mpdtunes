@@ -11,7 +11,6 @@
 #import "MPDAlbumArtworkPreviewController.h"
 #import "libmpd/libmpd.h"
 
-
 @implementation MPDPlayerController
 
 - (id) initWithScene: (id)scene
@@ -21,8 +20,8 @@
   
 	_mpdConnection = nil;
   _visible = TRUE;
-	
-	return ( self );
+  
+	return self;
 }
 
 - (void) dealloc
@@ -92,15 +91,17 @@
     
     switch (hashVal)
     {
-      case kBREventTapRight:           /* descend */
-      case kBREventTapPlayPause:
+//      case kBREventTapRight:    
+      case kBREventHoldPlayPause:
+        printf("hold\n");
+      case kBREventTapPlayPause:       /* descend */
         printf("descend\n");
         [self itemSelected:selected];
         return YES;
-      case kBREventTapLeft:            /* ascend */
-        printf("ascend\n");
-        [[self stack]popController];
-        return YES;
+//      case kBREventTapLeft:            /* ascend */
+//        printf("ascend\n");
+//        [[self stack]popController];
+//        return YES;
       case kBREventFastForward:        /* add to playlist */
         printf("add to playlist\n");
         [self itemPlay:selected];

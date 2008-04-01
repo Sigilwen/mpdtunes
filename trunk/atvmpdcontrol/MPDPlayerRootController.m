@@ -134,35 +134,39 @@
   
   if( [item isEqualToString:@"Shuffle"] )
   {
-    controller = [[BRAlertController alertOfType:2
-                                          titled:@"Error"
-                                     primaryText:@"Not implemented"
-                                   secondaryText:@""
-                                       withScene:[self scene]] autorelease];
+    controller = [BRAlertController alertOfType:2
+                                         titled:@"Error"
+                                    primaryText:@"Not implemented"
+                                  secondaryText:nil
+                                      withScene:[self scene]];
   }
   else if( [item isEqualToString:@"Playlists"] )
   {
-    controller = [[BRAlertController alertOfType:2
-                                          titled:@"Error"
-                                     primaryText:@"Not implemented"
-                                   secondaryText:@""
-                                       withScene:[self scene]] autorelease];
+    controller = [BRAlertController alertOfType:2
+                                         titled:@"Error"
+                                    primaryText:@"Not implemented"
+                                  secondaryText:nil
+                                      withScene:[self scene]];
   }
   else if( [item isEqualToString:@"Artists"] )
   {
     controller = [[[MPDPlayerArtistsController alloc] autorelease] initWithScene: [self scene] mpdConnection:_mpdConnection genre:nil];
+    [controller setListIcon: [self listIcon]];
   }
   else if( [item isEqualToString:@"Albums"] )
   {
     controller = [[[MPDPlayerAlbumsController alloc] autorelease] initWithScene: [self scene] mpdConnection:_mpdConnection genre:nil artist:nil];
+    [controller setListIcon: [self listIcon]];
   }
   else if( [item isEqualToString:@"Songs"] )
   {
     controller = [[[MPDPlayerSongsController alloc] autorelease] initWithScene: [self scene] mpdConnection:_mpdConnection genre:nil artist:nil album:nil];
+    [controller setListIcon: [self listIcon]];
   }
   else if( [item isEqualToString:@"Genres"] )
   {
     controller = [[[MPDPlayerGenresController alloc] autorelease] initWithScene: [self scene] mpdConnection: _mpdConnection];
+    [controller setListIcon: [self listIcon]];
   }
   else if( [item isEqualToString:@"Now Playing"] )
   {
@@ -171,6 +175,11 @@
   else if( [item isEqualToString:@"Clear Playlist"] )
   {
     mpd_playlist_clear([_mpdConnection object]);
+    controller = [BRAlertController alertOfType:2
+                                         titled:@"Ok"
+                                    primaryText:@"Playlist cleared"
+                                  secondaryText:nil
+                                      withScene:[self scene]];
   }
   else if( [item isEqualToString:@"Settings"] )
   {
