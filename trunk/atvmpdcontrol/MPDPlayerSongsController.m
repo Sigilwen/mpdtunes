@@ -37,13 +37,13 @@
   {
     MpdData *data;
     
-    _names = [[NSMutableArray alloc] initWithObjects: @"All", nil];
+    _names = [[NSMutableArray alloc] initWithObjects: @"Shuffle", nil];
     
     if( artist == nil )
-      _artists = [[NSMutableArray alloc] initWithObjects: @"All", nil];
+      _artists = [[NSMutableArray alloc] initWithObjects: @"Shuffle", nil];
     
     if( album == nil )
-      _albums = [[NSMutableArray alloc] initWithObjects: @"All", nil];
+      _albums = [[NSMutableArray alloc] initWithObjects: @"Shuffle", nil];
     
     for( data = [_mpdConnection mpdSearchGenre:genre andArtist:artist andAlbum:album andSong:nil];
          data != NULL;
@@ -71,28 +71,65 @@
 {
   if( row >= [_names count] )
     return nil;
-  BRAdornedMenuItemLayer *result = [BRAdornedMenuItemLayer adornedMenuItemWithScene: [self scene]];
+  BRAdornedMenuItemLayer *result;
+  if( row == 0 )
+    result = [BRAdornedMenuItemLayer adornedShuffleMenuItemWithScene: [self scene]];
+  else
+    result = [BRAdornedMenuItemLayer adornedMenuItemWithScene: [self scene]];
   [[result textItem] setTitle: [self titleForRow: row]];
   return result;
 }
 
+/** play */
 - (void) itemSelected: (long) row
 {
   [self itemPlay:row];
 }
 
 
+/** fast-fwd */
 - (void) itemPlay: (long)row
 {
-  NSString *song = nil;
-  
   if( row >= [_names count] )
     return;
   
-  if( row != 0 )
-    song = [_names objectAtIndex: row];
+  mpd_playlist_clear([_mpdConnection object]);
+  [self addToPlaylistGenre:_genre andArtist:_artist andAlbum:_album andSong:nil];
   
-  [self addToPlaylistGenre:_genre andArtist:_artist andAlbum:_album andSong:song];
+  int songId = -1;
+  if( row != 0 )  // not "Shuffle"
+  {
+    mpd_player_set_random([_mpdConnection object], NO);
+    
+    mpd_Song* pSong = mpd_playlist_get_song_from_pos([_mpdConnection object], row-1);
+    songId = pSong->id;
+    mpd_freeSong(pSong);
+    
+/*
+    NSString *song = [_names objectAtIndex: row];
+    MpdData *data;
+    for( data = [_mpdConnection mpdSearchGenre:_genre andArtist:_artist andAlbum:_album andSong:song];
+         data != NULL;
+         data = [_mpdConnection mpdSearchNext: data] )
+    {
+      if( data->type == MPD_DATA_TYPE_SONG )
+      {
+        songId = data->song->id;
+        [_mpdConnection mpdSearchFree:data];
+        break;
+      }
+    }
+*/
+  }
+  else
+  {
+    mpd_player_set_random([_mpdConnection object], YES);
+    // XXX should randomly pick first song..
+  }
+  
+  printf("mpd_player_play_id(%d)\n", songId);
+  mpd_player_play_id([_mpdConnection object], songId);
+  
 }
 
 

@@ -14,8 +14,8 @@
 }
 
 - (id) initWithScene: (BRRenderScene *) scene 
-    mpdConnection: (MPDConnection *) mpdConnection 
-    genre: (NSString *)genre;
+       mpdConnection: (MPDConnection *) mpdConnection 
+               genre: (NSString *)genre;
 - (id) itemForRow: (long) row;
 - (void) itemSelected: (long) row;
 - (void) itemPlay: (long)row;
