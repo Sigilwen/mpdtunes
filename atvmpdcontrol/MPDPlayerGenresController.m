@@ -68,6 +68,7 @@
     genre = [_names objectAtIndex: row];
   
   controller = [[MPDPlayerArtistsController alloc] initWithScene: [self scene] mpdConnection: _mpdConnection genre: genre];
+  [controller setListIcon: [self listIcon]];
   [controller autorelease];
   [[self stack] pushController: controller];
 }

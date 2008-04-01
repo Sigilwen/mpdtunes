@@ -54,6 +54,8 @@
 + (void)setSingleton:(id)fp8;
 - (id)init;
 
+- (CGImageRef)loadImageFromFilesystem: (NSString *)path;
+
 - (id)getAlbumAssetForArtist: (NSString *)artist andAlbum: (NSString *)album;
 
 

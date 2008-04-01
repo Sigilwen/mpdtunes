@@ -75,6 +75,7 @@
     artist = [_names objectAtIndex: row];
   
   controller = [[MPDPlayerAlbumsController alloc] initWithScene: [self scene] mpdConnection:_mpdConnection genre:_genre artist:artist];
+  [controller setListIcon: [self listIcon]];
   [controller autorelease];
   [[self stack] pushController: controller];
 }

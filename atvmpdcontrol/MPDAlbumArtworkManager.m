@@ -326,14 +326,21 @@ id getFromTable( NSMutableDictionary *dict, NSString *album, NSString *artist )
     _assetUrls = [_assetUrls mutableCopy];
   
   NSString *path = @"/System/Library/PrivateFrameworks/BackRow.framework/Resources/Music.png";
+  defaultImage = [self loadImageFromFilesystem:path];
+  
+  return self;
+}
+
+- (CGImageRef)loadImageFromFilesystem: (NSString *)path
+{
+  CGImageRef image = nil;
   NSURL *url = [NSURL fileURLWithPath:path];
   CGImageSourceRef  sourceRef = CGImageSourceCreateWithURL((CFURLRef)url, NULL);
   if(sourceRef) {
-    defaultImage = CGImageSourceCreateImageAtIndex(sourceRef, 0, NULL);
+    image = CGImageSourceCreateImageAtIndex(sourceRef, 0, NULL);
     CFRelease(sourceRef);
   }
-  
-  return self;
+  return image;
 }
 
 /**
